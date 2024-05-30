@@ -1,0 +1,18 @@
+<div *ngIf="area.length > 0 && datos" class="box-areas">
+  <div  class="cont_title">
+    <p>Áreas</p>
+  </div>
+  <div *ngFor="let area of area" (click)="areaClick.emit(area.area)">
+    <div class="search-area" [class.selected]="area.area === select">
+      <img src="../../assets/media/Banca Privada.svg" alt="Banca Privada">
+      <div id="info-area">
+        <p>{{area.area}}</p>
+        <h2>${{area.limite | number:'1.2-2'}}</h2>
+      </div>
+    <!--*ngIf="ocultarIcono"-->
+      <div id="search_img">
+        <img (click)="infoClick.emit(area.area)" class="arrow" src="../../assets/media/Icon2.svg" alt="Arrow Right">
+      </div>
+    </div>
+    </div>
+</div>

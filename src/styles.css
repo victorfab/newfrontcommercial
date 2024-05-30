@@ -1,0 +1,55 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  /*
+  overflow: scroll;
+    /*Posiciona al elemento por debajo*/
+
+}
+*::-webkit-scrollbar{
+  width: 3px;
+}
+*::-webkit-scrollbar-thumb{
+  background: #dedede;
+}
+.main{
+  position: relative;
+  padding: 20px;
+  width: 100%;
+    /*Posiciona al elemento por debajo*/
+      z-index: 1;
+
+}
+.barra{
+  width: 100%;
+  height: 8px;
+  background: red;
+  z-index: 2;
+  position: fixed;
+}
+.mat-expansion-panel-content {
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+  background-color: lightgray;
+}
+.mat-expansion-panel-body {
+  padding: 0 !important;
+  background-color: lightgray;
+}

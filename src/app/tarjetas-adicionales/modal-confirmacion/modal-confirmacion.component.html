@@ -1,0 +1,15 @@
+<div *ngIf="showConfirmacion" class="container-check">
+  <div id="head-check">
+    <p class="text-check">Confirmación</p>
+    <img class="close" (click)="closedConfirmar.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container">
+    <div class="fondo">
+    <img class="img-check" src="../../../assets/media/tarjeta.svg" alt="Confirmar">
+    </div>
+      <p class="question">¿Quieres marcar esta tarjeta cómo entregada?</p>
+      <p class="id">ID {{confirmarId.idSolicitud}}</p>
+      <input class="button-check" (click)="confirmarTarjeta.emit()" type="submit" value="Aceptar">
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showConfirmacion"></div>

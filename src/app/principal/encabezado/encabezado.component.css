@@ -1,0 +1,99 @@
+.title-top{
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+.text-title{
+  color: #0D0D0D;
+  font-size: 22px;
+  font-weight: 100;
+  margin-top: 10px;
+}
+.span-title{
+  color: #0D0D0D;
+  font-weight: 700;
+}
+.user{
+  display: flex;
+  margin-right: 15px;
+}
+.cont-user{
+  text-align: right;
+}
+.saludo{
+  font-size: 13px;
+  margin: 2px;
+  font-weight: 200;
+}
+.nombre-user{
+  font-size: 12px;
+  margin: 2px;
+}
+.razon {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 2px;
+}
+#icon-user{
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: center;
+  padding: 5px;
+  margin-right: 5px;
+}
+#icon-user .usuario{
+  width: 25px;
+  height: 25px;
+}
+#icon-user .toggle{
+  width: 15px;
+  height: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.nav{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 198px;
+  height: 120px;
+  background: #FFF;
+  /*z-index: 2; Subiendo el z-index del contenedor resuelves ese problema*/
+  top: 83px;
+  right: 70px;
+  padding-top: 10px;
+  opacity: 0.9999;
+  box-shadow: 2px 3px 10px 0 rgb(0, 0, 0,0.1);
+  border-radius: 5px;
+}
+.nav a{
+  position: relative;
+  font-size: 12px;
+  display: block;
+  padding: 10px;
+  margin-left: 9px;
+}
+.nav .icon{
+  position: absolute;
+  justify-content: center;
+}
+.nav .nav-item{
+  font-size: 12px;
+  margin-left: 30px;
+}
+a:hover{
+  background: #FFF;
+  box-shadow: 0 20px 35px rgb(0,0,0,0.1);
+  border-radius: 10px;
+  font-weight: bolder;
+}
+#icon-notifi{
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+#icon-notifi img{
+  margin: 14px;
+  border-left: 1px solid #000;
+  padding-left: 8px;
+}

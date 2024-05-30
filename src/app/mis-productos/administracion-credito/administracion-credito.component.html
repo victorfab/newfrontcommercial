@@ -1,0 +1,93 @@
+    <div *ngIf="visibility" class="container-area">
+      <div class="subtitle">
+        <p>Administración de crédito por área</p>
+      </div>
+        <div class="show-area">
+          <div class="areas">
+            <div *ngFor="let row of userPorArea">
+              <div id="userPorArea" *ngFor="let area of row.area | paginate: {itemsPerPage: 8, currentPage: page}; let i = index">
+                <div id="conexiona">
+                  <div [class.contorno-area]="area.iconRotation" class="area">
+                    <div class="length">
+                      <div class="text-area">
+                        <ul><li></li></ul>
+                        <h2 (click)="infoClick.emit(area.nombreArea)"
+                         [class.resaltar]="area.iconRotation">{{area.nombreArea}}</h2>
+                      </div>
+                      <div class="count">
+                        <h2 class="numero">{{area.subareas.length}} Sub áreas</h2>
+                        <h2 class="numero">{{area.empleadosArea.length}} empleados</h2>
+                      </div>
+                    </div>
+                    <svg (click)="rotation(area)" class="righta" [class.rotated]="area.iconRotation"  xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69157 15C6.44274 15.0013 6.20358 14.9119 6.02691 14.7515C5.84969 14.5906 5.75 14.3716 5.75 14.1431C5.75 13.9146 5.84969 13.6956 6.02691 13.5347L10.9885 9.00174L6.02691 4.46879C5.65983 4.13278 5.65983 3.58801 6.02691 3.252C6.39399 2.916 6.98915 2.916 7.35623 3.252L12.9731 8.39335C13.1503 8.55424 13.25 8.77326 13.25 9.00174C13.25 9.23022 13.1503 9.44924 12.9731 9.61013L7.35623 14.7515C7.17957 14.9119 6.9404 15.0013 6.69157 15Z" fill="#999999"/>
+                    </svg>
+                  </div>
+                  <div [class.show-border]="area.iconRotation" class="border-aplication">
+                    <div>
+                      <div *ngFor="let usuario of area.empleadosArea" id="empleadosArea">
+                        <div *ngIf="area.showEmpleadosArea && area.empleadosArea" >
+                          <div [class.border-empl]="area.iconRotation" id="banca-comer" (click)="infoUserClicked(usuario.usuario)">
+                            <div class="text-user-area">
+                              <ul><li></li></ul>
+                              <div>
+                                <h2 class="name">{{usuario.usuario | transformWord}}</h2>
+                                <p class="content">{{usuario.puesto | transformWord}}</p>
+                              </div>
+                            </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div *ngFor="let sub of area.subareas; let last = last">
+                        <div [class.contorno-subarea]="area.iconRotation" [class.last-subarea]="last && area.iconRotation"
+                         *ngIf="area.showSubArea" class="subarea">
+                          <div class="length-sub">
+                              <div class="text-sub">
+                                <ul><li></li></ul>
+                                <div class="text-subarea">
+                                <h2 (click)="infoSubarea.emit(sub.subarea)"
+                                 [class.resaltar]="sub.iconRotation" class="nombre-sub">{{sub.subarea}}</h2>
+                                <p class="clasificacion">Subárea</p>
+                                </div>
+                              </div>
+                              <div>
+                                <h2 class="numero">{{ sub.empleadosSub.length }} empleados</h2>
+                              </div>
+                          </div>
+                          <div [hidden]="sub.empleadosSub.length === 0">
+                            <svg (click)="rotationEmpleados(sub)" class="righta" [class.rotated]="sub.iconRotation" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69157 15C6.44274 15.0013 6.20358 14.9119 6.02691 14.7515C5.84969 14.5906 5.75 14.3716 5.75 14.1431C5.75 13.9146 5.84969 13.6956 6.02691 13.5347L10.9885 9.00174L6.02691 4.46879C5.65983 4.13278 5.65983 3.58801 6.02691 3.252C6.39399 2.916 6.98915 2.916 7.35623 3.252L12.9731 8.39335C13.1503 8.55424 13.25 8.77326 13.25 9.00174C13.25 9.23022 13.1503 9.44924 12.9731 9.61013L7.35623 14.7515C7.17957 14.9119 6.9404 15.0013 6.69157 15Z" fill="#999999"/>
+                            </svg>
+                          </div>
+                        </div>
+                        <div >
+                          <div *ngIf="area.showSubArea && sub.showEmpleados">
+                            <div *ngFor="let usuario of sub.empleadosSub">
+                              <div *ngIf="sub.showEmpleados">
+                                <div [class.border-empl]="sub.iconRotation" id="banca-comer" (click)="infoUserClicked(usuario.usuario)">
+                                  <div class="user-sub">
+                                    <ul><li></li></ul>
+                                    <div>
+                                      <h2 class="name">{{usuario.usuario | transformWord}}</h2>
+                                      <p class="content">{{usuario.puesto | transformWord}}</p>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      <div class="pagination-controls">
+        <pagination-controls (pageChange)="page = $event" previousLabel="" nextLabel="" class="custom-pagination"></pagination-controls>
+        <!--<input class="cargar-areas" (click)="cargarMasAreas.emit()" type="submit" value="Cargar más áreas">-->
+        <!--<input class="cargar-areas" (click)="sendPostRequest.emit()" type="submit" value="Cargar más áreas">-->
+      </div>
+    </div>

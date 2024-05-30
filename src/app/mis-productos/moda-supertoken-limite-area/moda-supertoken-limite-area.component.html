@@ -1,0 +1,26 @@
+<div *ngIf="showTokenLimiteArea" class="token-limite-area">
+  <div id="encabezado">
+    <img class="close" (click)="closedTokenArea.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container-limite-area">
+    <div class="text">
+      <img src="../../../assets/media/PasswordTyping.svg" alt="Candado">
+      <h1>SuperToken</h1>
+    </div>
+    <p class="instruction">Genera un código de 8 dígitos desde tu app SuperMóvil y captúralos aquí</p>
+    <div class="container-supertoken">
+      <input type="password" [(ngModel)] ="passwordChars[0]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(0)" [style.border-color]="inputColors[0] ? '#595959' : '#ccc'" name="firstdigit" aria-label="firstdigit">
+      <input type="password" [(ngModel)] ="passwordChars[1]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(1)" [style.border-color]="inputColors[1] ? '#595959' : '#ccc'" name="seconddigit" aria-label="seconddigit">
+      <input type="password" [(ngModel)] ="passwordChars[2]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(2)" [style.border-color]="inputColors[2] ? '#595959' : '#ccc'" name="thirddigit" aria-label="thirddigit">
+      <input type="password" [(ngModel)] ="passwordChars[3]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(3)" [style.border-color]="inputColors[3] ? '#595959' : '#ccc'" name="fourthdigit" aria-label="fourthdigit">
+      <input type="password" [(ngModel)] ="passwordChars[4]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(4)" [style.border-color]="inputColors[4] ? '#595959' : '#ccc'" name="fifthdigit" aria-label="fifthdigit">
+      <input type="password" [(ngModel)] ="passwordChars[5]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(5)" [style.border-color]="inputColors[5] ? '#595959' : '#ccc'" name="sixthdigit" aria-label="sixthdigit">
+      <input type="password" [(ngModel)] ="passwordChars[6]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(6)" [style.border-color]="inputColors[6] ? '#595959' : '#ccc'" name="seventhdigit" aria-label="seventhdigit">
+      <input type="password" [(ngModel)] ="passwordChars[7]" class="container-token" maxlength="1" size="1" (keyup)="verificarCaracteres(7)" [style.border-color]="inputColors[7] ? '#595959' : '#ccc'" name="eighthdigit" aria-label="eighthdigit">
+    </div>
+    <div class="aviso">
+      <p>Por tu seguridad, nunca compartas tu SuperToken</p>
+    </div>
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showTokenLimiteArea"></div>

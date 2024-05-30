@@ -1,0 +1,5 @@
+<h6>Paso {{ currentStep }} de {{numSteps}}</h6>
+<h2>{{title}}</h2>
+<div class="steps">
+  <div class="step" *ngFor="let step of steps; let index = index" [ngClass]="{'active': index <= step}"></div>
+</div>

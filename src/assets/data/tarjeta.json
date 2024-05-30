@@ -1,0 +1,199 @@
+{
+    "cardRec": {
+        "cardInfo": {
+            "cardNum": "1234567890123456789022",
+            "promotionCode": "2",
+            "closedCode": "string",
+            "renovationDt": "2023-12-14",
+            "closedDt": "2023-12-14",
+            "lastPurchaseDt": "2023-12-14",
+            "directDebitInd": true,
+            "installmentPurchaseInd": true,
+            "cardRestrictionInd": true,
+            "limitsInd": true,
+            "imgInd": true,
+            "imgIdent": "string",
+            "activityRestrictionInd": true,
+            "tradeRestrictionInd": true,
+            "amountRestrictionInd": true,
+            "intAPR": 0,
+            "cardSeqNum": 0,
+            "previousExpirationDt": "2023-12-14",
+            "activationDt": 1702591702142,
+            "noRenewInd": true,
+            "lastCardInd": true,
+            "previousCardNum": "string",
+            "cryptSecurityGroupCode": "string",
+            "cryptSecurityGroupDesc": "string",
+            "openDt": "2023-12-14",
+            "cardEmbossDt": "2023-12-14",
+            "cardEmbossRejectDt": "2023-12-14",
+            "closeStmtDt": "2023-12-14",
+            "installmentDt": "2023-12-14",
+            "closeDt": "2023-12-14",
+            "cardSubTypeCode": "string",
+            "cardSubType": "string",
+            "desc": "string",
+            "cardEmbossName": "BENEFICIARIO",
+            "partyCardRelType": "string",
+            "cardCategoryCode": "22",
+            "cardEmbossCode": "333",
+            "productIdent": "string",
+            "cardCategoryDesc": "string",
+            "expDt": "2023-12-14",
+            "seqNum": 1,
+            "brand": "XX",
+            "cardType": "string",
+            "bonusTypeCode": "string",
+            "acctRef": {
+                "acctId": "454545454545",
+                "acctInfo": {
+                    "fiData": {
+                        "fiIdent": "1234",
+                        "branchIdent": "SUCU"
+                    },
+                    "clabe": "123456789012345678",
+                    "closeStmtDt": "2023-12-14",
+                    "countSeqNum": 0,
+                    "productIdent": "11",
+                    "subProductIdent": "4444",
+                    "debitBalanceInd": true,
+                    "openDt": "2023-12-14",
+                    "acctBal": [
+                        {
+                            "curAmt": {
+                                "amt": 2500,
+                                "amtType": "string",
+                                "curCode": {
+                                    "curCodeValue": "string",
+                                    "curCodeType": "MONEDA"
+                                }
+                            },
+                            "balType": {
+                                "balTypeValues": "TotalHeld"
+                            }
+                        }
+                    ],
+                    "relAcctKeys": {
+                        "bban": "1234567890234567890",
+                        "clabe": "string",
+                        "acctId": "string"
+                    },
+                    "creditAcctData": {
+                        "dueDt": "2023-12-14"
+                    },
+                    "curCode": {
+                        "curCodeValue": "string",
+                        "curCodeType": "string"
+                    },
+                    "desc": "string"
+                },
+                "relAcctKeys": {
+                    "bban": "string",
+                    "clabe": "string",
+                    "acctId": "string"
+                }
+            },
+            "cardTrnLimit": [
+                {
+                    "curAmt": {
+                        "amt": 3500,
+                        "amtType": "string",
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        }
+                    },
+                    "limitCount": 0,
+                    "trnSrc": [
+                        "string"
+                    ],
+                    "limitType": "Max",
+                    "trnType": {
+                        "trnTypeValue": "Credit"
+                    }
+                }
+            ],
+            "partyKeys": {
+                "partyId": "00000003",
+                "employeeIdentNum": "string"
+            },
+            "cardPeriodData": [
+                {
+                    "lastOccuranceDt": 1702591702142,
+                    "cardAmtType": "BalMod",
+                    "lastOccurInd": true
+                }
+            ],
+            "cardMagData": {
+                "magDataNum": "string"
+            },
+            "fiData": {
+                "fiIdent": "string",
+                "branchIdent": "string"
+            },
+            "directDebitData": {
+                "directDebitType": "string",
+                "acctKeys": {
+                    "bban": "string"
+                },
+                "curAmt": [
+                    {
+                        "amt": 0,
+                        "amtType": "string",
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        }
+                    }
+                ]
+            },
+            "curCode": {
+                "curCodeValue": "string",
+                "curCodeType": "string"
+            },
+            "secTokenCard": {
+                "PINData": null
+            },
+            "acctTrnRef": {
+                "acctTrnInfo": {
+                    "networkTrnData": {
+                        "sourceSysDesc": "string",
+                        "SourceSysIdent": null
+                    }
+                }
+            }
+        },
+        "cardStatus": {
+            "blockCode": {
+                "blockReasonCode": "22",
+                "desc": "SE BLOQUEO POR REINTENTO",
+                "blockReason": "22",
+                "blockDt": "2023-12-14",
+                "blockOperInd": true,
+                "blockRevInd": true
+            },
+            "enrollBlockOpenDt": "2023-12-14",
+            "enrollBlockClosedDt": "2023-12-14",
+            "enrollBlockStatusCode": "string",
+            "issueStatusCode": "11",
+            "issueStatusDesc": "string"
+        },
+        "cardenvr": {
+            "acctTrnRef": {
+                "acctTrnInfo": {
+                    "networkTrnData": {
+                        "sourceSysDesc": "string",
+                        "SourceSysIdent": null
+                    }
+                }
+            },
+            "lastUseDt": "2023-12-14",
+            "lastUpdateDt": "2023-12-14"
+        }
+    },
+    "pagoMinimo": 2456,
+    "lineaAsignada": 27000,
+    "fechaCorte": "2024-01-09",
+    "fechaLimite": "2024-01-09"
+}

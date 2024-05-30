@@ -1,0 +1,41 @@
+/*[
+  {
+    "idSolicitud":"Z948204",
+    "idArea":2000,
+    "area":"Contabilidad",
+    "idSubArea":3000,
+    "subarea":"Servicio",
+    "idEmpleado":"Z10FZW5",
+    "nombre":"Emmanuel Romero Cruz",
+    "correo":"emro@minsait.com",
+    "limite_credito":"23000.00",
+    "idStatus":3,
+    "fecha":"17/10/2023"
+  },
+  {
+    "idSolicitud":"Z623129",
+    "idArea":2003,
+    "area":"Recursos Humanos",
+    "idSubArea":303,
+    "subarea":"Tesoreria",
+    "idEmpleado":"Z65AFQ5",
+    "nombre":"Ana Luisa Miranda Nieto",
+    "correo":"anila@minsait.com",
+    "limite_credito":"95000.00",
+    "idStatus":3,
+    "fecha":"17/10/2023"
+  },
+  {
+    "idSolicitud":"Z398432",
+    "idArea":2003,
+    "area":"Recursos Humanos",
+    "idSubArea":303,
+    "subarea":"Tesoreria",
+    "idEmpleado":"Z12NAL5",
+    "nombre":"Diana Laura Fernandez Cruz",
+    "correo":"diana@minsait.com",
+    "limite_credito":"12000.00",
+    "idStatus":3,
+    "fecha":"17/10/2023"
+  }
+]*/

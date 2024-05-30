@@ -1,0 +1,77 @@
+  <div *ngIf="totalEmpleados <= 0; else emplist" id="container-tarjetas">
+    <div class="head-solicitar">
+      <div id="solicitar">
+        <p>Lista de presolicitudes</p>
+      </div>
+      <div (click)="addEmpleados.emit()" class="agregar-empleado">
+        <flame-icon fontIcon="add" size="m"></flame-icon>
+        <span class="nav-item">Agregar un empleado</span>
+      </div>
+    </div>
+<!--     <div *ngIf="registrarUsuarios">
+      <div class="pre-solicitud">
+        <div id="solicitar">
+          <p>¡Aún no tienes empleados registrados!</p>
+        </div>
+        <br/>
+        <span>
+          Pre solicitud de tarjetas. &nbsp; <p>Aún no tienes usuarios registrados</p>
+        </span>
+      </div>
+      <div class="start-proceso">
+        <span>
+          Recuerda que al subir la &nbsp;<b>lista de empleados</b>&nbsp; debe coincidir con la &nbsp;<b>plantilla genérica</b>&nbsp; que puedes descargar dando clic &nbsp; <a id="tuEnlace" (click)="descargarArchivo()">aqui</a>.
+        </span>
+      </div>
+      <div class="col-md-12" *ngIf="progress">
+         <div class="progress form-group">
+          <div
+            class="progress-bar progress-bar-striped bg-success"
+            role="progressbar"
+            [style.width.%]="progress"
+          ></div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div
+          class="fileupload"
+          appDragDropFileUpload
+          (fileDropped)="upload($event)"
+        >
+          <span class="ddinfo">Choose a file or drag here</span>
+          <input
+            type="file"
+            name="avatars"
+            #fileField
+            (change)="upload($any($event).target.files)"
+            hidden
+            multiple
+          />
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="image-list" *ngFor="let file of fileArr; let i = index">
+          <div class="profile">
+            <img [src]="sanitize(file['url'])" alt="" />
+          </div>
+          <p>{{ fileArr }}</p>
+        </div>
+        <p class="message">{{ msg }}</p>
+      </div>
+    </div> -->
+      <div class="arrastrar-archivo">
+        <div id="archivos">
+          <p>Seleccionar archivo</p>
+          <input  type="file" id="fileInput" [ngStyle]="{ display:'none' }" (change)="upload($event)">
+          <label for="fileInput" [ngStyle]="{ cursor:'pointer' }">Buscar en mis archivos</label>
+        </div>
+      </div>
+      <!-- <button (click)="muestraModal.emit()">Mostrar Modal</button> -->
+  <!--   <button (click)="infoComprobante.emit($event)">Mostrar</button>
+    <button (click)="showEliminarTarjetas.emit($event)">Mostrar</button> -->
+  </div>
+  <ng-template #emplist>
+    <div [hidden]="redirectListEmp()"></div>
+  </ng-template>
+  <app-loading-modal [showLoading]="modalLoading" ></app-loading-modal>
+  <app-modal-error [showUploadError]="modalErrorLoading" [erroresfile]="listusrerror" (closedConfirmar)="closedModal()"></app-modal-error>

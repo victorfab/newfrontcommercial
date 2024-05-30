@@ -1,0 +1,17 @@
+<div *ngIf="showConfirmarSolicitud" class="container-confirmarSolicitud">
+  <div id="head-add">
+    <img class="icon" src="../../assets/media/IconSnatnder.svg" alt="Icon Santander">
+    <img class="close" (click)="closeConfirmarSolicitud.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container">
+    <h1 class="text-confirmar">Confirmar solicitud</h1>
+    <img src="../../../assets/media/Group-cancel.svg" alt="">
+      <div >
+        <p class="solicitud">Solicitaras {{totalUserSelect}} tarjetas</p>
+      </div>
+    <h3 class="text-direccion">Enviaremos las tarjetas a:</h3>
+    <p class="direccion">Jacarandas #44. Col Arcos del Alba Cuautilán Izcalli Edo. de Méx.C.P 54750</p>
+    <input (click)="solicitarToken.emit()" class="button-solicitar" type="submit" value="Solicitar tarjetas">
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showConfirmarSolicitud"></div>

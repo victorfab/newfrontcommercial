@@ -1,0 +1,197 @@
+
+  <div *ngIf=" currentRoute === '/initial-configuration/company-structure'; else elseBlock ">
+      <div class="navigation-bar">
+        <p class="btn" [routerLink]="['/authentication/terms-and-conditions']"> Regresar</p>
+        <div class="status-navigation">
+          <sn-stepper [currentStep]="3" title="Empresa" [numSteps]="4"></sn-stepper>
+        </div>
+          <a class="closeicon" [routerLink]="['/authentication/login']" >
+            <flame-icon fontIcon="close-1px" size="m"></flame-icon>
+            <p class="salir">Salir</p>
+          </a>
+      </div>
+  
+    <h2>Crea la estructura de la empresa</h2>
+    <p>Agrega las áreas y subáreas que sean necesarias para tenerla mejor organizada</p>
+    <div class="border">
+        <p>Podrás cambiar la organización de tu empresa cuando lo necesites en la sección <strong>Configuración</strong> del menú principal.</p>
+    </div>
+  </div>
+  
+  <ng-template #elseBlock >
+    <h2 class="bk-color-white">Configurar la estructura de la empresa</h2>
+  </ng-template>
+  <br>
+  <div id="structure-boder">
+      <div class="row">
+        <p id="bottom-border">Razón Social <br><strong>Galleteras Mexicanas del Sureste</strong></p>
+        <div class="col-xs-12 bk-color-graylight">
+          <div *ngFor="let areaElementX of areas; let i = index" class="subapanel">
+            <mat-accordion class="bk-color-graylight">
+              <mat-expansion-panel>
+                <mat-expansion-panel-header expandedHeight="auto" collapsedHeight="auto">
+                  <div class="container bk-color-white">
+                    <div class="rowalign">
+                      
+                        <p class="p-18"><strong>{{ areaElementX.nombre }}</strong></p>
+                        
+                        <div class="col" *ngIf="areas[i].subareas.length == 1; else subareasLenghtNotOne">
+                          <p class="p-18">| {{ areas[i].subareas.length }} subárea</p> 
+                        </div>
+    
+                        <ng-template #subareasLenghtNotOne>
+                          <div class="col">
+                            <p class="p-18">| {{ areas[i].subareas.length }} subáreas</p>
+                          </div>
+                        </ng-template>
+                      
+                      <div *ngIf="modifyAreaButtonPressed && i === currentIndexOfArea">
+                        <form (ngSubmit)="modifyArea(i)" #f3="ngForm">
+                            <div class="row">
+                              <div class="col-sm-5 form-group">
+                                <label for="newAreaName"></label>
+                                <input
+                                  type="text"
+                                  id="newAreaName"
+                                  class="form-control"
+                                  name="newAreaName"
+                                  ngModel
+                                >
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <button flameButton type="submit">Guardar</button>
+                                <button flameButton type="button" (click)="onCancelModifyArea()">Cancelar</button>
+                              </div>
+                            </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </mat-expansion-panel-header>
+                  <div class="col mt-10 mb-20">
+                    <app-action-dropdown-menu
+                      [areaIndexPassed]="i"
+                      [showDropdownMenuForElement]="'areas'"
+                      (sendCurrentIndexes)="checkChange($event)">
+                    </app-action-dropdown-menu>
+                  </div>
+                <div class="containersub bk-color-graylight">
+                  <div class="row">
+                    <div class="col">
+  
+                      <div *ngFor="let sub of areas[i].subareas ; let j = index">
+                        <div class="subtab border-subtab bk-color-white">
+                          <div class="mat-content">
+                            <div class="container">
+                              <p> {{ sub.nombre }} </p>
+                            </div>
+    
+                            <div class="col">
+                              <app-action-dropdown-menu 
+                                [areaIndexPassed]="i" [subareaIndexPassed]="j" 
+                                [showDropdownMenuForElement]="'subareas'"
+                                (sendCurrentIndexes)="checkChangeSubareas($event)">
+                              </app-action-dropdown-menu>
+                            </div>
+  
+                            <div *ngIf="modifySubareaButtonPressed && i === currentIndexOfArea && j === currentIndexOfSubarea  ">
+                              <form (ngSubmit)="modifySubarea(i,j)" #f4="ngForm">
+                                  <div class="row">
+                                    <div class="col-sm-5 form-group">
+                                      <label for="newSubareaName"></label>
+                                      <input
+                                        type="text"
+                                        id="newSubareaName"
+                                        class="form-control"
+                                        name="newSubareaName"
+                                        ngModel
+                                      >
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-xs-12">
+                                      <button flameButton type="submit">Guardar</button>
+                                      <button flameButton type="button" (click)="onCancelModifySubarea()">Cancelar</button>
+                                    </div>
+                                  </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div *ngIf="addNewSubareaButtonPressed == false || i != currentIndexOfArea">
+                        <button class="addSubAreaButton"  (click)="onAddNewSubarea(i)"><strong class="color-red">+ </strong><strong>Agregar subárea</strong></button>
+                      </div>
+                      
+                      <div *ngIf="addNewSubareaButtonPressed && i === currentIndexOfArea;">
+                        <form (ngSubmit)="addNewSubarea(i)" #f2="ngForm">
+                            <div class="row">
+                              <div class="col form-group">
+                                <label for="subareaName"></label>
+                                <input
+                                  type="text"
+                                  id="subareaName"
+                                  class="form-control"
+                                  name="subareaName"
+                                  ngModel
+                                >
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-xs-12">
+                                <button flameButton type="submit">Agregar subárea</button>
+                                <button flameButton type="button" (click)="onCancelAddSubarea()">Cancelar</button>
+                              </div>
+                            </div>
+                          </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+
+        <button class="addAreaButton" (click)="onAddNewArea()"><strong class="color-red">+ </strong><strong>Agregar área</strong></button>
+        
+        <div *ngIf="addNewAreaButtonPressed;">
+            <form (ngSubmit)="addNewArea()" #f="ngForm">
+                <div class="row">
+                  <div class="col-sm-5 form-group">
+                    <label for="areaName"></label>
+                    <input
+                      type="text"
+                      id="areaName"
+                      class="form-control"
+                      name="areaName"
+                      ngModel
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <button flameButton type="submit">Agregar área</button>
+                    <button flameButton type="button" (click)="onCancelAddArea()">Cancelar</button>
+                  </div>
+                </div>
+              </form>
+        </div>
+    
+        </div>
+    </div>
+    </div>
+
+    <div>
+      <div class="center">
+        <button flameButton color="primary" (click)="stepadvanced($event)">Aceptar</button>
+      </div>
+    </div>
+  
+<!--     <ng-template #elseButton >
+      <div class="center">
+        <button flameButton color="primary" [routerLink]="['/initial-configuration/delivery-addressess']">Aceptar</button>
+      </div>
+    </ng-template> -->

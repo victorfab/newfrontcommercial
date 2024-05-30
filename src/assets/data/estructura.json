@@ -1,0 +1,2600 @@
+{
+    "empresa": {
+        "nombreNombre": null,
+        "nombreEmpresa": "BET-2023",
+        "razonSocial": "Inversiones López Hermanos, S.C.",
+        "sucursal": "SUC TRES CULTURAS",
+        "idDireccion": "a9affbaa-7e69-11ee-b962-0242ac120002",
+        "idArea": null,
+        "nuevoIngreso": false,
+        "buc": "51663539",
+        "avisoPrivacidad": null,
+        "area": null,
+        "lstDirecciones": [
+            {
+                "calle": "CLL MAGISTERIO",
+                "estado": "ESTADO DE MÉXICO",
+                "pais": "MÉXICO",
+                "alias": null,
+                "municipio": null,
+                "id": "a9affbaa-7e69-11ee-b962-0242ac120002",
+                "numeroExterior": "100",
+                "numeroInterior": null,
+                "colonia": "COL CENTRO",
+                "codigoPostal": "CP 44270"
+            }
+        ],
+        "limiteEmpresa": 100000
+    },
+    "area": [
+        {
+            "idArea": "d0fbe766-7f5c-11ee-b962-0242ac120002",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 43600,
+            "limiteDisponible": 6400,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "146b29ae-825e-11ee-b962-0242ac120002",
+                    "idPadre": "d0fbe766-7f5c-11ee-b962-0242ac120002",
+                    "nombArea": "Subarea de Desarrollo de Software",
+                    "limite": 8000,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "b30abace-01f8-d5ee-9712-f4bad91bbe74",
+                            "idArea": "146b29ae-825e-11ee-b962-0242ac120002",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "CESAR",
+                            "apellidoP": "LOPEZ",
+                            "apellidoM": "GARCIA",
+                            "email": "cesar@gmail.com",
+                            "rfc": "TOGE000101ABC",
+                            "limEmpleado": 1000,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 1000,
+                    "limiteDisponible": 7000,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 5500
+                },
+                {
+                    "idArea": "146b2c1a-825e-11ee-b962-0242ac120002",
+                    "idPadre": "d0fbe766-7f5c-11ee-b962-0242ac120002",
+                    "nombArea": "Subarea de Sistemas",
+                    "limite": 8000,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "fb33a6af-dff7-3a11-b6f3-822f281ce086",
+                            "idArea": "146b2c1a-825e-11ee-b962-0242ac120002",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "GUADALUPE",
+                            "apellidoP": "RODRIGUEZ",
+                            "apellidoM": "JUAREZ",
+                            "email": "guadalupe@gmail.com",
+                            "rfc": "ROJG000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 7990,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 5500
+                },
+                {
+                    "idArea": "146b2d5a-825e-11ee-b962-0242ac120002",
+                    "idPadre": "d0fbe766-7f5c-11ee-b962-0242ac120002",
+                    "nombArea": "Subarea de Ciberseguridad",
+                    "limite": 8000,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [],
+                    "limiteAsignado": 0,
+                    "limiteDisponible": 8000,
+                    "saldoDisponible": 0,
+                    "saldoGastado": 8000
+                },
+                {
+                    "idArea": "146b30fc-825e-11ee-b962-0242ac120002",
+                    "idPadre": "d0fbe766-7f5c-11ee-b962-0242ac120002",
+                    "nombArea": "Subarea de Soporte",
+                    "limite": 8000,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [],
+                    "limiteAsignado": 0,
+                    "limiteDisponible": 8000,
+                    "saldoDisponible": 0,
+                    "saldoGastado": 8000
+                },
+                {
+                    "idArea": "146b323c-825e-11ee-b962-0242ac120002",
+                    "idPadre": "d0fbe766-7f5c-11ee-b962-0242ac120002",
+                    "nombArea": "Subarea Recursos humanos",
+                    "limite": 8000,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [],
+                    "limiteAsignado": 0,
+                    "limiteDisponible": 8000,
+                    "saldoDisponible": 0,
+                    "saldoGastado": 8000
+                }
+            ],
+            "nombreArea": "Area de TI",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "d83ac11f-2ff3-cad0-25a1-e8fd18f18d11",
+                    "idArea": "d0fbe766-7f5c-11ee-b962-0242ac120002",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "HUGO",
+                    "apellidoP": "HERNANDEZ",
+                    "apellidoM": "GARCIA",
+                    "email": "hugo@gmail.com",
+                    "rfc": "TOGE000101ABC",
+                    "limEmpleado": 3600,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                },
+                {
+                    "id": "d83ac11f-2ff3-cad0-25a1-e8fd18f18d12",
+                    "idArea": "d0fbe766-7f5c-11ee-b962-0242ac120003",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "JULIAN",
+                    "apellidoP": "HERNANDEZ",
+                    "apellidoM": "HERNANDEZ",
+                    "email": "jhernandez@gmail.com",
+                    "rfc": "HEHEJU000101ABC",
+                    "limEmpleado": 3600,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672530800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "f63469ff-fee5-846e-ccea-5c1fb52ece1e",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 3520,
+            "limiteDisponible": 46480,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "7ca41a1c-0cfb-cb49-03e2-adc022983c4d",
+                    "idPadre": "f63469ff-fee5-846e-ccea-5c1fb52ece1e",
+                    "nombArea": "Subarea de Desarrollo de Software 2",
+                    "limite": 10,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "ae21f004-9cd3-104a-b222-cea3ca0a4a53",
+                            "idArea": "7ca41a1c-0cfb-cb49-03e2-adc022983c4d",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MARCOS",
+                            "apellidoP": "ALATORRE",
+                            "apellidoM": "ESCALANTE",
+                            "email": "marcos@gmail.com",
+                            "rfc": "ESAA000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 0,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": -2490
+                },
+                {
+                    "idArea": "04f04e03-e928-ece2-5cdc-73564f2bccf7",
+                    "idPadre": "f63469ff-fee5-846e-ccea-5c1fb52ece1e",
+                    "nombArea": "Subarea de Sistemas 2",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "05c0fe9a-fe9a-c3eb-a5ee-d1bdff800c45",
+                            "idArea": "04f04e03-e928-ece2-5cdc-73564f2bccf7",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "JUANA",
+                            "apellidoP": "MANRRIQUEZ",
+                            "apellidoM": "ESCALANTE",
+                            "email": "juana@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 2",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "3f242f33-2c6e-432f-b7a9-df9e91cfc9bc",
+                    "idArea": "f63469ff-fee5-846e-ccea-5c1fb52ece1e",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "RICARDO",
+                    "apellidoP": "MARQUEZ",
+                    "apellidoM": "HERNANDEZ",
+                    "email": "ricardo@gmail.com",
+                    "rfc": "TOGE000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "ca775b8b-8c7e-5184-4ca1-60faae777c61",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "ffcf333a-fa03-1a0f-2989-9bed4ab3db3e",
+                    "idPadre": "ca775b8b-8c7e-5184-4ca1-60faae777c61",
+                    "nombArea": "Subarea de Desarrollo de Software 3",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "31b901dc-cff0-31b2-b0fa-10bdb1da1e30",
+                            "idArea": "ffcf333a-fa03-1a0f-2989-9bed4ab3db3e",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ARACELI",
+                            "apellidoP": "GANDARA",
+                            "apellidoM": "BAUTISTA",
+                            "email": "araceli@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "29ae024a-370d-0c68-3bcc-daaa0dec43ed",
+                    "idPadre": "ca775b8b-8c7e-5184-4ca1-60faae777c61",
+                    "nombArea": "Subarea de Sistemas 3",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "afe8a02d-2731-cc51-9348-fcddcca2ad97",
+                            "idArea": "29ae024a-370d-0c68-3bcc-daaa0dec43ed",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "DEMIAN",
+                            "apellidoP": "HERNANDEZ",
+                            "apellidoM": "GARCIA",
+                            "email": "DEMIAN@gmail.com",
+                            "rfc": "TOGE000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 3",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "d0fd5ab1-613e-efac-645d-17cba06603c2",
+                    "idArea": "ca775b8b-8c7e-5184-4ca1-60faae777c61",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SANDRA",
+                    "apellidoP": "MANRRIQUEZ",
+                    "apellidoM": "ESCALANTE",
+                    "email": "sandra@gmail.com",
+                    "rfc": "ESMI000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "00e72051-d426-da1e-ceb0-ca5fde1b1ed9",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "a1f21f7-6580-1253-103c-3f23bbf05f07",
+                    "idPadre": "00e72051-d426-da1e-ceb0-ca5fde1b1ed9",
+                    "nombArea": "Subarea de Desarrollo de Software 4",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "bcbe01c7-4534-1ca2-9c5c-3ca02ae1d602",
+                            "idArea": "a1f21f7-6580-1253-103c-3f23bbf05f07",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MIRANDA",
+                            "apellidoP": "RODRIGUEZ",
+                            "apellidoM": "JUAREZ",
+                            "email": "MIRANDA@gmail.com",
+                            "rfc": "ROJG000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "b9157d18-9ad3-80eb-51e0-4c9626bdcca8",
+                    "idPadre": "00e72051-d426-da1e-ceb0-ca5fde1b1ed9",
+                    "nombArea": "Subarea de Sistemas 4",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "dde66bea-2b73-2c5d-72c9-012420b4d267",
+                            "idArea": "b9157d18-9ad3-80eb-51e0-4c9626bdcca8",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "AILIN",
+                            "apellidoP": "MARQUEZ",
+                            "apellidoM": "HERNANDEZ",
+                            "email": "AILIN@gmail.com",
+                            "rfc": "TOGE000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 4",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "c7deb8fe-14b4-fe20-01bc-c0cd7f0a98ab",
+                    "idArea": "00e72051-d426-da1e-ceb0-ca5fde1b1ed9",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "ANDREA",
+                    "apellidoP": "LOPEZ",
+                    "apellidoM": "GARCIA",
+                    "email": "ANDREA@gmail.com",
+                    "rfc": "TOGE000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "cfcd81-0cc7-cca7-836f-1534c3fa02da",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 38510,
+            "limiteDisponible": 11490,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "6feba222-30e7-5931-6893-ea2df152cb73",
+                    "idPadre": "cfcd81-0cc7-cca7-836f-1534c3fa02da",
+                    "nombArea": "Subarea de Desarrollo de Software 5",
+                    "limite": 35000,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "f4c615c0-091c-3c00-71e7-df334d3dbd02",
+                            "idArea": "6feba222-30e7-5931-6893-ea2df152cb73",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 34990,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 32500
+                },
+                {
+                    "idArea": "20edb208-f132-b318-1f9a-3bebdf9c36c2",
+                    "idPadre": "cfcd81-0cc7-cca7-836f-1534c3fa02da",
+                    "nombArea": "Subarea de Sistemas 5",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "29ec76de-0e6d-09c1-eadc-ce19dc9293f9",
+                            "idArea": "20edb208-f132-b318-1f9a-3bebdf9c36c2",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 5",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "9e1dde32-d262-fc40-2104-de26300030e2",
+                    "idArea": "cfcd81-0cc7-cca7-836f-1534c3fa02da",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "a202a34d-b104-91e3-a9b0-5f8ddaec35ce",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "500d0e99-bcc1-0820-3b2b-39132aa3e61c",
+                    "idPadre": "a202a34d-b104-91e3-a9b0-5f8ddaec35ce",
+                    "nombArea": "Subarea de Desarrollo de Software 6",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "3db3b60e-99c9-dd2e-ed13-efc6d1b7b01f",
+                            "idArea": "500d0e99-bcc1-0820-3b2b-39132aa3e61c",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "ec75c332-1dec-374c-ccd3-b3e410dbb7cf",
+                    "idPadre": "a202a34d-b104-91e3-a9b0-5f8ddaec35ce",
+                    "nombArea": "Subarea de Sistemas 6",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "ace9eabc-cc19-0092-0ce5-642da3123730",
+                            "idArea": "ec75c332-1dec-374c-ccd3-b3e410dbb7cf",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 6",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "10c014ee-f14e-2bd7-6c41-6725e7e5a0c6",
+                    "idArea": "a202a34d-b104-91e3-a9b0-5f8ddaec35ce",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "fa33118b-f6dc-d16b-de20-5c753ade1bdd",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "e8b152d2-91be-0bb4-467d-9f1f07df9cea",
+                    "idPadre": "fa33118b-f6dc-d16b-de20-5c753ade1bdd",
+                    "nombArea": "Subarea de Desarrollo de Software 7",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "3d0a0ffd-1d61-ced4-005a-d11e2ef0a92f",
+                            "idArea": "e8b152d2-91be-0bb4-467d-9f1f07df9cea",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "bfa8009c-b4ac-d80e-ca16-042bbfcab82a",
+                    "idPadre": "fa33118b-f6dc-d16b-de20-5c753ade1bdd",
+                    "nombArea": "Subarea de Sistemas 7",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "2fbcdbd2-05aa-abc2-14e0-20a21c105820",
+                            "idArea": "bfa8009c-b4ac-d80e-ca16-042bbfcab82a",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 7",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "c0f1d301-0f2b-51fa-462d-1f2b6b277a25",
+                    "idArea": "fa33118b-f6dc-d16b-de20-5c753ade1bdd",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "ccc61bc6-08f3-dd33-db15-ddbcac81e72e",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "6dfbf203-fd0a-714f-045e-b3cce14cf403",
+                    "idPadre": "ccc61bc6-08f3-dd33-db15-ddbcac81e72e",
+                    "nombArea": "Subarea de Desarrollo de Software 8",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "3b0f9e4f-1fa1-0de0-ce91-7ccd08543120",
+                            "idArea": "6dfbf203-fd0a-714f-045e-b3cce14cf403",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "2ab3c023-edcb-5610-7ac6-7a7bb9443727",
+                    "idPadre": "ccc61bc6-08f3-dd33-db15-ddbcac81e72e",
+                    "nombArea": "Subarea de Sistemas 8",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "d788e2b6-f8ad-c8d0-d80c-f1a0f1f9c35b",
+                            "idArea": "2ab3c023-edcb-5610-7ac6-7a7bb9443727",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 8",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "98a0f1cc-16bd-3a70-9372-02d082299ce0",
+                    "idArea": "ccc61bc6-08f3-dd33-db15-ddbcac81e72e",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "e1aa8d8b-885c-5a3b-2cec-5da3a545db18",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "ac13f01b-8d82-b633-c9df-13142bb15699",
+                    "idPadre": "e1aa8d8b-885c-5a3b-2cec-5da3a545db18",
+                    "nombArea": "Subarea de Desarrollo de Software 9",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "daddce71-9f2b-33c4-783a-b3268d7f4727",
+                            "idArea": "ac13f01b-8d82-b633-c9df-13142bb15699",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "0cbb11d1-0db6-04d2-a81a-bf33d31b21af",
+                    "idPadre": "e1aa8d8b-885c-5a3b-2cec-5da3a545db18",
+                    "nombArea": "Subarea de Sistemas 9",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "150f940f-227b-7e80-9135-1b21318cb657",
+                            "idArea": "0cbb11d1-0db6-04d2-a81a-bf33d31b21af",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 9",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "380bb037-3049-1f4a-d27f-e2c3eee6178e",
+                    "idArea": "e1aa8d8b-885c-5a3b-2cec-5da3a545db18",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "0aa2ec02-2e27-eac2-9326-192ab22ff3cd",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "414a7a03-297f-5bc3-c9da-680232e363bc",
+                    "idPadre": "0aa2ec02-2e27-eac2-9326-192ab22ff3cd",
+                    "nombArea": "Subarea de Desarrollo de Software 10",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "c390de27-e1ba-205b-e040-30f4feffb3ba",
+                            "idArea": "414a7a03-297f-5bc3-c9da-680232e363bc",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "cd71b3b2-201d-0a3e-260c-29b3f9a332b4",
+                    "idPadre": "0aa2ec02-2e27-eac2-9326-192ab22ff3cd",
+                    "nombArea": "Subarea de Sistemas 10",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "0161cbb6-f226-e027-1c60-28a27fce847b",
+                            "idArea": "cd71b3b2-201d-0a3e-260c-29b3f9a332b4",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 10",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "be0233a5-1019-d12e-b711-81f1c5100bd9",
+                    "idArea": "0aa2ec02-2e27-eac2-9326-192ab22ff3cd",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "2bcda41b-553d-f0c1-4ac4-9dc1280a1d31",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "1401ab53-1f5d-fe1a-9c38-5ecb93d2da33",
+                    "idPadre": "2bcda41b-553d-f0c1-4ac4-9dc1280a1d31",
+                    "nombArea": "Subarea de Desarrollo de Software 11",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "097c30c6-4fe5-c1f4-7846-6002c3b31b9b",
+                            "idArea": "1401ab53-1f5d-fe1a-9c38-5ecb93d2da33",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "0fa01e12-0e74-1421-09fd-2b37dafe14dd",
+                    "idPadre": "2bcda41b-553d-f0c1-4ac4-9dc1280a1d31",
+                    "nombArea": "Subarea de Sistemas 11",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "20a1a330-20ab-3de0-d5d7-a3223fbb2c8c",
+                            "idArea": "0fa01e12-0e74-1421-09fd-2b37dafe14dd",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 11",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "f71a2c79-fcc7-7e16-0c69-2b2ec8babe7a",
+                    "idArea": "2bcda41b-553d-f0c1-4ac4-9dc1280a1d31",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        },
+        {
+            "idArea": "5c3c292f-0032-9a90-23bc-c219054f8acb",
+            "idPadre": null,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "limiteAsignado": 7010,
+            "limiteDisponible": 42990,
+            "saldoDisponible": 5000,
+            "saldoGastado": 45000,
+            "subAreas": [
+                {
+                    "idArea": "01df30dd-6fb7-c84c-9613-2a318e17aa7d",
+                    "idPadre": "5c3c292f-0032-9a90-23bc-c219054f8acb",
+                    "nombArea": "Subarea de Desarrollo de Software 12",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "a3402fb2-012a-4dee-a834-18a2c1d939f5",
+                            "idArea": "01df30dd-6fb7-c84c-9613-2a318e17aa7d",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "MAIRA",
+                            "apellidoP": "RIVAS",
+                            "apellidoM": "ESCALANTE",
+                            "email": "MAIRA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "80000006"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                },
+                {
+                    "idArea": "dce87235-eda5-6125-2ce1-b53fbb291100",
+                    "idPadre": "5c3c292f-0032-9a90-23bc-c219054f8acb",
+                    "nombArea": "Subarea de Sistemas 12",
+                    "limite": 3500,
+                    "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+                    "lstEmpleado": [
+                        {
+                            "id": "e81200ec-c620-cec5-0833-c32c1d51573b",
+                            "idArea": "dce87235-eda5-6125-2ce1-b53fbb291100",
+                            "nombreEst": "CDMX",
+                            "ultimoDig": "9022",
+                            "puestoEmpl": "EMPLEADO",
+                            "idEmp": "IDEMPLEADO",
+                            "hashTar": null,
+                            "nombre": "ERIKA",
+                            "apellidoP": "MENDOZA",
+                            "apellidoM": "ESCALANTE",
+                            "email": "ERIKA@gmail.com",
+                            "rfc": "ESMI000101ABC",
+                            "limEmpleado": 10,
+                            "entidadPampa": "EPA",
+                            "registro": "CPA",
+                            "cuenta": "CUPA",
+                            "numBenef": 2,
+                            "status": "OK",
+                            "fechaSolic": 1672552800000,
+                            "buc": "00000000"
+                        }
+                    ],
+                    "limiteAsignado": 10,
+                    "limiteDisponible": 3490,
+                    "saldoDisponible": 2500,
+                    "saldoGastado": 1000
+                }
+            ],
+            "nombreArea": "Area de TI 12",
+            "limiteArea": 50000,
+            "empleados": [
+                {
+                    "id": "642d1ea5-e4e5-3aef-ff72-58a15b83c834",
+                    "idArea": "5c3c292f-0032-9a90-23bc-c219054f8acb",
+                    "nombreEst": "CDMX",
+                    "ultimoDig": "9022",
+                    "puestoEmpl": "EMPLEADO",
+                    "idEmp": "IDEMPLEADO",
+                    "hashTar": null,
+                    "nombre": "SILVIA",
+                    "apellidoP": "ALATORRE",
+                    "apellidoM": "ESCALANTE",
+                    "email": "SILVIA@gmail.com",
+                    "rfc": "ESAA000101ABC",
+                    "limEmpleado": 10,
+                    "entidadPampa": "EPA",
+                    "registro": "CPA",
+                    "cuenta": "CUPA",
+                    "numBenef": 2,
+                    "status": "OK",
+                    "fechaSolic": 1672552800000,
+                    "buc": "00000000"
+                }
+            ]
+        }
+    ],
+    "lmwl": {
+        "data": {
+            "rqUID": "string",
+            "status": {
+                "statusCode": 0,
+                "serverStatusCode": "string",
+                "severity": "string",
+                "statusDesc": "string",
+                "additionalStatus": [
+                    {
+                        "addStatusCode": "string",
+                        "addServerStatusCode": "string",
+                        "addSeverity": "string",
+                        "addStatusDesc": "string"
+                    }
+                ]
+            },
+            "recCtrlOut": {
+                "subseqRec": true,
+                "cursor": {
+                    "cursorValue": "string",
+                    "additionalCursor": [
+                        {
+                            "cursorValue": "1234567890123456789022"
+                        }
+                    ]
+                }
+            },
+            "cardRec": [
+                {
+                    "cardInfo": {
+                        "cardNum": "1234567890123456789020",
+                        "promotionCode": "2",
+                        "closedCode": "string",
+                        "renovationDt": "2023-12-14",
+                        "closedDt": "2023-12-14",
+                        "lastPurchaseDt": "2023-12-14",
+                        "directDebitInd": true,
+                        "installmentPurchaseInd": true,
+                        "cardRestrictionInd": true,
+                        "limitsInd": true,
+                        "imgInd": true,
+                        "imgIdent": "string",
+                        "activityRestrictionInd": true,
+                        "tradeRestrictionInd": true,
+                        "amountRestrictionInd": true,
+                        "intAPR": 0,
+                        "cardSeqNum": 0,
+                        "previousExpirationDt": "2023-12-14",
+                        "activationDt": 1702591702142,
+                        "noRenewInd": true,
+                        "lastCardInd": true,
+                        "previousCardNum": "string",
+                        "cryptSecurityGroupCode": "string",
+                        "cryptSecurityGroupDesc": "string",
+                        "openDt": "2023-12-14",
+                        "cardEmbossDt": "2023-12-14",
+                        "cardEmbossRejectDt": "2023-12-14",
+                        "closeStmtDt": "2023-12-14",
+                        "installmentDt": "2023-12-14",
+                        "closeDt": "2023-12-14",
+                        "cardSubTypeCode": "string",
+                        "cardSubType": "string",
+                        "desc": "string",
+                        "cardEmbossName": "BENEFICIARIO",
+                        "partyCardRelType": "string",
+                        "cardCategoryCode": "22",
+                        "cardEmbossCode": "333",
+                        "productIdent": "string",
+                        "cardCategoryDesc": "string",
+                        "expDt": "2023-12-14",
+                        "seqNum": 1,
+                        "brand": "XX",
+                        "cardType": "string",
+                        "bonusTypeCode": "string",
+                        "acctRef": {
+                            "acctId": "454545454545",
+                            "acctInfo": {
+                                "fiData": {
+                                    "fiIdent": "1234",
+                                    "branchIdent": "SUCU"
+                                },
+                                "clabe": "123456789012345678",
+                                "closeStmtDt": "2023-12-14",
+                                "countSeqNum": 0,
+                                "productIdent": "11",
+                                "subProductIdent": "4444",
+                                "debitBalanceInd": true,
+                                "openDt": "2023-12-14",
+                                "acctBal": [
+                                    {
+                                        "curAmt": {
+                                            "amt": 2500,
+                                            "amtType": "string",
+                                            "curCode": {
+                                                "curCodeValue": "string",
+                                                "curCodeType": "MONEDA"
+                                            }
+                                        },
+                                        "balType": {
+                                            "balTypeValues": "TotalHeld"
+                                        }
+                                    }
+                                ],
+                                "relAcctKeys": {
+                                    "bban": "1234567890234567890",
+                                    "clabe": "string",
+                                    "acctId": "string"
+                                },
+                                "creditAcctData": {
+                                    "dueDt": "2023-12-14"
+                                },
+                                "curCode": {
+                                    "curCodeValue": "string",
+                                    "curCodeType": "string"
+                                },
+                                "desc": "string"
+                            },
+                            "relAcctKeys": {
+                                "bban": "string",
+                                "clabe": "string",
+                                "acctId": "string"
+                            }
+                        },
+                        "cardTrnLimit": [
+                            {
+                                "curAmt": {
+                                    "amt": 3500,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                },
+                                "limitCount": 0,
+                                "trnSrc": [
+                                    "string"
+                                ],
+                                "limitType": "Max",
+                                "trnType": {
+                                    "trnTypeValue": "Credit"
+                                }
+                            }
+                        ],
+                        "partyKeys": {
+                            "partyId": "00000003",
+                            "employeeIdentNum": "string"
+                        },
+                        "cardPeriodData": [
+                            {
+                                "lastOccuranceDt": 1702591702142,
+                                "cardAmtType": "BalMod",
+                                "lastOccurInd": true
+                            }
+                        ],
+                        "cardMagData": {
+                            "magDataNum": "string"
+                        },
+                        "fiData": {
+                            "fiIdent": "string",
+                            "branchIdent": "string"
+                        },
+                        "directDebitData": {
+                            "directDebitType": "string",
+                            "acctKeys": {
+                                "bban": "string"
+                            },
+                            "curAmt": [
+                                {
+                                    "amt": 0,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                }
+                            ]
+                        },
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        },
+                        "secTokenCard": {
+                            "PINData": null
+                        },
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        }
+                    },
+                    "cardStatus": {
+                        "blockCode": {
+                            "blockReasonCode": "22",
+                            "desc": "SE BLOQUEO POR REINTENTO",
+                            "blockReason": "22",
+                            "blockDt": "2023-12-14",
+                            "blockOperInd": true,
+                            "blockRevInd": true
+                        },
+                        "enrollBlockOpenDt": "2023-12-14",
+                        "enrollBlockClosedDt": "2023-12-14",
+                        "enrollBlockStatusCode": "string",
+                        "issueStatusCode": "11",
+                        "issueStatusDesc": "string"
+                    },
+                    "cardenvr": {
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        },
+                        "lastUseDt": "2023-12-14",
+                        "lastUpdateDt": "2023-12-14"
+                    }
+                },
+                {
+                    "cardInfo": {
+                        "cardNum": "1234567890123456789021",
+                        "promotionCode": "2",
+                        "closedCode": "string",
+                        "renovationDt": "2023-12-14",
+                        "closedDt": "2023-12-14",
+                        "lastPurchaseDt": "2023-12-14",
+                        "directDebitInd": true,
+                        "installmentPurchaseInd": true,
+                        "cardRestrictionInd": true,
+                        "limitsInd": true,
+                        "imgInd": true,
+                        "imgIdent": "string",
+                        "activityRestrictionInd": true,
+                        "tradeRestrictionInd": true,
+                        "amountRestrictionInd": true,
+                        "intAPR": 0,
+                        "cardSeqNum": 0,
+                        "previousExpirationDt": "2023-12-14",
+                        "activationDt": 1702591702142,
+                        "noRenewInd": true,
+                        "lastCardInd": true,
+                        "previousCardNum": "string",
+                        "cryptSecurityGroupCode": "string",
+                        "cryptSecurityGroupDesc": "string",
+                        "openDt": "2023-12-14",
+                        "cardEmbossDt": "2023-12-14",
+                        "cardEmbossRejectDt": "2023-12-14",
+                        "closeStmtDt": "2023-12-14",
+                        "installmentDt": "2023-12-14",
+                        "closeDt": "2023-12-14",
+                        "cardSubTypeCode": "string",
+                        "cardSubType": "string",
+                        "desc": "string",
+                        "cardEmbossName": "BENEFICIARIO",
+                        "partyCardRelType": "string",
+                        "cardCategoryCode": "22",
+                        "cardEmbossCode": "333",
+                        "productIdent": "string",
+                        "cardCategoryDesc": "string",
+                        "expDt": "2023-12-14",
+                        "seqNum": 1,
+                        "brand": "XX",
+                        "cardType": "string",
+                        "bonusTypeCode": "string",
+                        "acctRef": {
+                            "acctId": "454545454545",
+                            "acctInfo": {
+                                "fiData": {
+                                    "fiIdent": "1234",
+                                    "branchIdent": "SUCU"
+                                },
+                                "clabe": "123456789012345678",
+                                "closeStmtDt": "2023-12-14",
+                                "countSeqNum": 0,
+                                "productIdent": "11",
+                                "subProductIdent": "4444",
+                                "debitBalanceInd": true,
+                                "openDt": "2023-12-14",
+                                "acctBal": [
+                                    {
+                                        "curAmt": {
+                                            "amt": 2500,
+                                            "amtType": "string",
+                                            "curCode": {
+                                                "curCodeValue": "string",
+                                                "curCodeType": "MONEDA"
+                                            }
+                                        },
+                                        "balType": {
+                                            "balTypeValues": "TotalHeld"
+                                        }
+                                    }
+                                ],
+                                "relAcctKeys": {
+                                    "bban": "1234567890234567890",
+                                    "clabe": "string",
+                                    "acctId": "string"
+                                },
+                                "creditAcctData": {
+                                    "dueDt": "2023-12-14"
+                                },
+                                "curCode": {
+                                    "curCodeValue": "string",
+                                    "curCodeType": "string"
+                                },
+                                "desc": "string"
+                            },
+                            "relAcctKeys": {
+                                "bban": "string",
+                                "clabe": "string",
+                                "acctId": "string"
+                            }
+                        },
+                        "cardTrnLimit": [
+                            {
+                                "curAmt": {
+                                    "amt": 3500,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                },
+                                "limitCount": 0,
+                                "trnSrc": [
+                                    "string"
+                                ],
+                                "limitType": "Max",
+                                "trnType": {
+                                    "trnTypeValue": "Credit"
+                                }
+                            }
+                        ],
+                        "partyKeys": {
+                            "partyId": "00000003",
+                            "employeeIdentNum": "string"
+                        },
+                        "cardPeriodData": [
+                            {
+                                "lastOccuranceDt": 1702591702142,
+                                "cardAmtType": "BalMod",
+                                "lastOccurInd": true
+                            }
+                        ],
+                        "cardMagData": {
+                            "magDataNum": "string"
+                        },
+                        "fiData": {
+                            "fiIdent": "string",
+                            "branchIdent": "string"
+                        },
+                        "directDebitData": {
+                            "directDebitType": "string",
+                            "acctKeys": {
+                                "bban": "string"
+                            },
+                            "curAmt": [
+                                {
+                                    "amt": 0,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                }
+                            ]
+                        },
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        },
+                        "secTokenCard": {
+                            "PINData": null
+                        },
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        }
+                    },
+                    "cardStatus": {
+                        "blockCode": {
+                            "blockReasonCode": "22",
+                            "desc": "SE BLOQUEO POR REINTENTO",
+                            "blockReason": "22",
+                            "blockDt": "2023-12-14",
+                            "blockOperInd": true,
+                            "blockRevInd": true
+                        },
+                        "enrollBlockOpenDt": "2023-12-14",
+                        "enrollBlockClosedDt": "2023-12-14",
+                        "enrollBlockStatusCode": "string",
+                        "issueStatusCode": "11",
+                        "issueStatusDesc": "string"
+                    },
+                    "cardenvr": {
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        },
+                        "lastUseDt": "2023-12-14",
+                        "lastUpdateDt": "2023-12-14"
+                    }
+                },
+                {
+                    "cardInfo": {
+                        "cardNum": "1234567890123456789022",
+                        "promotionCode": "2",
+                        "closedCode": "string",
+                        "renovationDt": "2023-12-14",
+                        "closedDt": "2023-12-14",
+                        "lastPurchaseDt": "2023-12-14",
+                        "directDebitInd": true,
+                        "installmentPurchaseInd": true,
+                        "cardRestrictionInd": true,
+                        "limitsInd": true,
+                        "imgInd": true,
+                        "imgIdent": "string",
+                        "activityRestrictionInd": true,
+                        "tradeRestrictionInd": true,
+                        "amountRestrictionInd": true,
+                        "intAPR": 0,
+                        "cardSeqNum": 0,
+                        "previousExpirationDt": "2023-12-14",
+                        "activationDt": 1702591702142,
+                        "noRenewInd": true,
+                        "lastCardInd": true,
+                        "previousCardNum": "string",
+                        "cryptSecurityGroupCode": "string",
+                        "cryptSecurityGroupDesc": "string",
+                        "openDt": "2023-12-14",
+                        "cardEmbossDt": "2023-12-14",
+                        "cardEmbossRejectDt": "2023-12-14",
+                        "closeStmtDt": "2023-12-14",
+                        "installmentDt": "2023-12-14",
+                        "closeDt": "2023-12-14",
+                        "cardSubTypeCode": "string",
+                        "cardSubType": "string",
+                        "desc": "string",
+                        "cardEmbossName": "BENEFICIARIO",
+                        "partyCardRelType": "string",
+                        "cardCategoryCode": "22",
+                        "cardEmbossCode": "333",
+                        "productIdent": "string",
+                        "cardCategoryDesc": "string",
+                        "expDt": "2023-12-14",
+                        "seqNum": 1,
+                        "brand": "XX",
+                        "cardType": "string",
+                        "bonusTypeCode": "string",
+                        "acctRef": {
+                            "acctId": "454545454545",
+                            "acctInfo": {
+                                "fiData": {
+                                    "fiIdent": "1234",
+                                    "branchIdent": "SUCU"
+                                },
+                                "clabe": "123456789012345678",
+                                "closeStmtDt": "2023-12-14",
+                                "countSeqNum": 0,
+                                "productIdent": "11",
+                                "subProductIdent": "4444",
+                                "debitBalanceInd": true,
+                                "openDt": "2023-12-14",
+                                "acctBal": [
+                                    {
+                                        "curAmt": {
+                                            "amt": 2500,
+                                            "amtType": "string",
+                                            "curCode": {
+                                                "curCodeValue": "string",
+                                                "curCodeType": "MONEDA"
+                                            }
+                                        },
+                                        "balType": {
+                                            "balTypeValues": "TotalHeld"
+                                        }
+                                    }
+                                ],
+                                "relAcctKeys": {
+                                    "bban": "1234567890234567890",
+                                    "clabe": "string",
+                                    "acctId": "string"
+                                },
+                                "creditAcctData": {
+                                    "dueDt": "2023-12-14"
+                                },
+                                "curCode": {
+                                    "curCodeValue": "string",
+                                    "curCodeType": "string"
+                                },
+                                "desc": "string"
+                            },
+                            "relAcctKeys": {
+                                "bban": "string",
+                                "clabe": "string",
+                                "acctId": "string"
+                            }
+                        },
+                        "cardTrnLimit": [
+                            {
+                                "curAmt": {
+                                    "amt": 3500,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                },
+                                "limitCount": 0,
+                                "trnSrc": [
+                                    "string"
+                                ],
+                                "limitType": "Max",
+                                "trnType": {
+                                    "trnTypeValue": "Credit"
+                                }
+                            }
+                        ],
+                        "partyKeys": {
+                            "partyId": "00000003",
+                            "employeeIdentNum": "string"
+                        },
+                        "cardPeriodData": [
+                            {
+                                "lastOccuranceDt": 1702591702142,
+                                "cardAmtType": "BalMod",
+                                "lastOccurInd": true
+                            }
+                        ],
+                        "cardMagData": {
+                            "magDataNum": "string"
+                        },
+                        "fiData": {
+                            "fiIdent": "string",
+                            "branchIdent": "string"
+                        },
+                        "directDebitData": {
+                            "directDebitType": "string",
+                            "acctKeys": {
+                                "bban": "string"
+                            },
+                            "curAmt": [
+                                {
+                                    "amt": 0,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                }
+                            ]
+                        },
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        },
+                        "secTokenCard": {
+                            "PINData": null
+                        },
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        }
+                    },
+                    "cardStatus": {
+                        "blockCode": {
+                            "blockReasonCode": "22",
+                            "desc": "SE BLOQUEO POR REINTENTO",
+                            "blockReason": "22",
+                            "blockDt": "2023-12-14",
+                            "blockOperInd": true,
+                            "blockRevInd": true
+                        },
+                        "enrollBlockOpenDt": "2023-12-14",
+                        "enrollBlockClosedDt": "2023-12-14",
+                        "enrollBlockStatusCode": "string",
+                        "issueStatusCode": "11",
+                        "issueStatusDesc": "string"
+                    },
+                    "cardenvr": {
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        },
+                        "lastUseDt": "2023-12-14",
+                        "lastUpdateDt": "2023-12-14"
+                    }
+                },
+                {
+                    "cardInfo": {
+                        "cardNum": "1234567890123456789023",
+                        "promotionCode": "2",
+                        "closedCode": "string",
+                        "renovationDt": "2023-12-14",
+                        "closedDt": "2023-12-14",
+                        "lastPurchaseDt": "2023-12-14",
+                        "directDebitInd": true,
+                        "installmentPurchaseInd": true,
+                        "cardRestrictionInd": true,
+                        "limitsInd": true,
+                        "imgInd": true,
+                        "imgIdent": "string",
+                        "activityRestrictionInd": true,
+                        "tradeRestrictionInd": true,
+                        "amountRestrictionInd": true,
+                        "intAPR": 0,
+                        "cardSeqNum": 0,
+                        "previousExpirationDt": "2023-12-14",
+                        "activationDt": 1702591702142,
+                        "noRenewInd": true,
+                        "lastCardInd": true,
+                        "previousCardNum": "string",
+                        "cryptSecurityGroupCode": "string",
+                        "cryptSecurityGroupDesc": "string",
+                        "openDt": "2023-12-14",
+                        "cardEmbossDt": "2023-12-14",
+                        "cardEmbossRejectDt": "2023-12-14",
+                        "closeStmtDt": "2023-12-14",
+                        "installmentDt": "2023-12-14",
+                        "closeDt": "2023-12-14",
+                        "cardSubTypeCode": "string",
+                        "cardSubType": "string",
+                        "desc": "string",
+                        "cardEmbossName": "BENEFICIARIO",
+                        "partyCardRelType": "string",
+                        "cardCategoryCode": "22",
+                        "cardEmbossCode": "333",
+                        "productIdent": "string",
+                        "cardCategoryDesc": "string",
+                        "expDt": "2023-12-14",
+                        "seqNum": 1,
+                        "brand": "XX",
+                        "cardType": "string",
+                        "bonusTypeCode": "string",
+                        "acctRef": {
+                            "acctId": "454545454545",
+                            "acctInfo": {
+                                "fiData": {
+                                    "fiIdent": "1234",
+                                    "branchIdent": "SUCU"
+                                },
+                                "clabe": "123456789012345678",
+                                "closeStmtDt": "2023-12-14",
+                                "countSeqNum": 0,
+                                "productIdent": "11",
+                                "subProductIdent": "4444",
+                                "debitBalanceInd": true,
+                                "openDt": "2023-12-14",
+                                "acctBal": [
+                                    {
+                                        "curAmt": {
+                                            "amt": 2500,
+                                            "amtType": "string",
+                                            "curCode": {
+                                                "curCodeValue": "string",
+                                                "curCodeType": "MONEDA"
+                                            }
+                                        },
+                                        "balType": {
+                                            "balTypeValues": "TotalHeld"
+                                        }
+                                    }
+                                ],
+                                "relAcctKeys": {
+                                    "bban": "1234567890234567890",
+                                    "clabe": "string",
+                                    "acctId": "string"
+                                },
+                                "creditAcctData": {
+                                    "dueDt": "2023-12-14"
+                                },
+                                "curCode": {
+                                    "curCodeValue": "string",
+                                    "curCodeType": "string"
+                                },
+                                "desc": "string"
+                            },
+                            "relAcctKeys": {
+                                "bban": "string",
+                                "clabe": "string",
+                                "acctId": "string"
+                            }
+                        },
+                        "cardTrnLimit": [
+                            {
+                                "curAmt": {
+                                    "amt": 3500,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                },
+                                "limitCount": 0,
+                                "trnSrc": [
+                                    "string"
+                                ],
+                                "limitType": "Max",
+                                "trnType": {
+                                    "trnTypeValue": "Credit"
+                                }
+                            }
+                        ],
+                        "partyKeys": {
+                            "partyId": "00000003",
+                            "employeeIdentNum": "string"
+                        },
+                        "cardPeriodData": [
+                            {
+                                "lastOccuranceDt": 1702591702142,
+                                "cardAmtType": "BalMod",
+                                "lastOccurInd": true
+                            }
+                        ],
+                        "cardMagData": {
+                            "magDataNum": "string"
+                        },
+                        "fiData": {
+                            "fiIdent": "string",
+                            "branchIdent": "string"
+                        },
+                        "directDebitData": {
+                            "directDebitType": "string",
+                            "acctKeys": {
+                                "bban": "string"
+                            },
+                            "curAmt": [
+                                {
+                                    "amt": 0,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                }
+                            ]
+                        },
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        },
+                        "secTokenCard": {
+                            "PINData": null
+                        },
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        }
+                    },
+                    "cardStatus": {
+                        "blockCode": {
+                            "blockReasonCode": "22",
+                            "desc": "SE BLOQUEO POR REINTENTO",
+                            "blockReason": "22",
+                            "blockDt": "2023-12-14",
+                            "blockOperInd": true,
+                            "blockRevInd": true
+                        },
+                        "enrollBlockOpenDt": "2023-12-14",
+                        "enrollBlockClosedDt": "2023-12-14",
+                        "enrollBlockStatusCode": "string",
+                        "issueStatusCode": "11",
+                        "issueStatusDesc": "string"
+                    },
+                    "cardenvr": {
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        },
+                        "lastUseDt": "2023-12-14",
+                        "lastUpdateDt": "2023-12-14"
+                    }
+                },
+                {
+                    "cardInfo": {
+                        "cardNum": "1234567890123456789024",
+                        "promotionCode": "2",
+                        "closedCode": "string",
+                        "renovationDt": "2023-12-14",
+                        "closedDt": "2023-12-14",
+                        "lastPurchaseDt": "2023-12-14",
+                        "directDebitInd": true,
+                        "installmentPurchaseInd": true,
+                        "cardRestrictionInd": true,
+                        "limitsInd": true,
+                        "imgInd": true,
+                        "imgIdent": "string",
+                        "activityRestrictionInd": true,
+                        "tradeRestrictionInd": true,
+                        "amountRestrictionInd": true,
+                        "intAPR": 0,
+                        "cardSeqNum": 0,
+                        "previousExpirationDt": "2023-12-14",
+                        "activationDt": 1702591702142,
+                        "noRenewInd": true,
+                        "lastCardInd": true,
+                        "previousCardNum": "string",
+                        "cryptSecurityGroupCode": "string",
+                        "cryptSecurityGroupDesc": "string",
+                        "openDt": "2023-12-14",
+                        "cardEmbossDt": "2023-12-14",
+                        "cardEmbossRejectDt": "2023-12-14",
+                        "closeStmtDt": "2023-12-14",
+                        "installmentDt": "2023-12-14",
+                        "closeDt": "2023-12-14",
+                        "cardSubTypeCode": "string",
+                        "cardSubType": "string",
+                        "desc": "string",
+                        "cardEmbossName": "BENEFICIARIO",
+                        "partyCardRelType": "string",
+                        "cardCategoryCode": "22",
+                        "cardEmbossCode": "333",
+                        "productIdent": "string",
+                        "cardCategoryDesc": "string",
+                        "expDt": "2023-12-14",
+                        "seqNum": 1,
+                        "brand": "XX",
+                        "cardType": "string",
+                        "bonusTypeCode": "string",
+                        "acctRef": {
+                            "acctId": "454545454545",
+                            "acctInfo": {
+                                "fiData": {
+                                    "fiIdent": "1234",
+                                    "branchIdent": "SUCU"
+                                },
+                                "clabe": "123456789012345678",
+                                "closeStmtDt": "2023-12-14",
+                                "countSeqNum": 0,
+                                "productIdent": "11",
+                                "subProductIdent": "4444",
+                                "debitBalanceInd": true,
+                                "openDt": "2023-12-14",
+                                "acctBal": [
+                                    {
+                                        "curAmt": {
+                                            "amt": 2500,
+                                            "amtType": "string",
+                                            "curCode": {
+                                                "curCodeValue": "string",
+                                                "curCodeType": "MONEDA"
+                                            }
+                                        },
+                                        "balType": {
+                                            "balTypeValues": "TotalHeld"
+                                        }
+                                    }
+                                ],
+                                "relAcctKeys": {
+                                    "bban": "1234567890234567890",
+                                    "clabe": "string",
+                                    "acctId": "string"
+                                },
+                                "creditAcctData": {
+                                    "dueDt": "2023-12-14"
+                                },
+                                "curCode": {
+                                    "curCodeValue": "string",
+                                    "curCodeType": "string"
+                                },
+                                "desc": "string"
+                            },
+                            "relAcctKeys": {
+                                "bban": "string",
+                                "clabe": "string",
+                                "acctId": "string"
+                            }
+                        },
+                        "cardTrnLimit": [
+                            {
+                                "curAmt": {
+                                    "amt": 3500,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                },
+                                "limitCount": 0,
+                                "trnSrc": [
+                                    "string"
+                                ],
+                                "limitType": "Max",
+                                "trnType": {
+                                    "trnTypeValue": "Credit"
+                                }
+                            }
+                        ],
+                        "partyKeys": {
+                            "partyId": "00000003",
+                            "employeeIdentNum": "string"
+                        },
+                        "cardPeriodData": [
+                            {
+                                "lastOccuranceDt": 1702591702142,
+                                "cardAmtType": "BalMod",
+                                "lastOccurInd": true
+                            }
+                        ],
+                        "cardMagData": {
+                            "magDataNum": "string"
+                        },
+                        "fiData": {
+                            "fiIdent": "string",
+                            "branchIdent": "string"
+                        },
+                        "directDebitData": {
+                            "directDebitType": "string",
+                            "acctKeys": {
+                                "bban": "string"
+                            },
+                            "curAmt": [
+                                {
+                                    "amt": 0,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                }
+                            ]
+                        },
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        },
+                        "secTokenCard": {
+                            "PINData": null
+                        },
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        }
+                    },
+                    "cardStatus": {
+                        "blockCode": {
+                            "blockReasonCode": "22",
+                            "desc": "SE BLOQUEO POR REINTENTO",
+                            "blockReason": "22",
+                            "blockDt": "2023-12-14",
+                            "blockOperInd": true,
+                            "blockRevInd": true
+                        },
+                        "enrollBlockOpenDt": "2023-12-14",
+                        "enrollBlockClosedDt": "2023-12-14",
+                        "enrollBlockStatusCode": "string",
+                        "issueStatusCode": "11",
+                        "issueStatusDesc": "string"
+                    },
+                    "cardenvr": {
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        },
+                        "lastUseDt": "2023-12-14",
+                        "lastUpdateDt": "2023-12-14"
+                    }
+                },
+                {
+                    "cardInfo": {
+                        "cardNum": "1234567890123456789025",
+                        "promotionCode": "2",
+                        "closedCode": "string",
+                        "renovationDt": "2023-12-14",
+                        "closedDt": "2023-12-14",
+                        "lastPurchaseDt": "2023-12-14",
+                        "directDebitInd": true,
+                        "installmentPurchaseInd": true,
+                        "cardRestrictionInd": true,
+                        "limitsInd": true,
+                        "imgInd": true,
+                        "imgIdent": "string",
+                        "activityRestrictionInd": true,
+                        "tradeRestrictionInd": true,
+                        "amountRestrictionInd": true,
+                        "intAPR": 0,
+                        "cardSeqNum": 0,
+                        "previousExpirationDt": "2023-12-14",
+                        "activationDt": 1702591702142,
+                        "noRenewInd": true,
+                        "lastCardInd": true,
+                        "previousCardNum": "string",
+                        "cryptSecurityGroupCode": "string",
+                        "cryptSecurityGroupDesc": "string",
+                        "openDt": "2023-12-14",
+                        "cardEmbossDt": "2023-12-14",
+                        "cardEmbossRejectDt": "2023-12-14",
+                        "closeStmtDt": "2023-12-14",
+                        "installmentDt": "2023-12-14",
+                        "closeDt": "2023-12-14",
+                        "cardSubTypeCode": "string",
+                        "cardSubType": "string",
+                        "desc": "string",
+                        "cardEmbossName": "BENEFICIARIO",
+                        "partyCardRelType": "string",
+                        "cardCategoryCode": "22",
+                        "cardEmbossCode": "333",
+                        "productIdent": "string",
+                        "cardCategoryDesc": "string",
+                        "expDt": "2023-12-14",
+                        "seqNum": 1,
+                        "brand": "XX",
+                        "cardType": "string",
+                        "bonusTypeCode": "string",
+                        "acctRef": {
+                            "acctId": "454545454545",
+                            "acctInfo": {
+                                "fiData": {
+                                    "fiIdent": "1234",
+                                    "branchIdent": "SUCU"
+                                },
+                                "clabe": "123456789012345678",
+                                "closeStmtDt": "2023-12-14",
+                                "countSeqNum": 0,
+                                "productIdent": "11",
+                                "subProductIdent": "4444",
+                                "debitBalanceInd": true,
+                                "openDt": "2023-12-14",
+                                "acctBal": [
+                                    {
+                                        "curAmt": {
+                                            "amt": 2500,
+                                            "amtType": "string",
+                                            "curCode": {
+                                                "curCodeValue": "string",
+                                                "curCodeType": "MONEDA"
+                                            }
+                                        },
+                                        "balType": {
+                                            "balTypeValues": "TotalHeld"
+                                        }
+                                    }
+                                ],
+                                "relAcctKeys": {
+                                    "bban": "1234567890234567890",
+                                    "clabe": "string",
+                                    "acctId": "string"
+                                },
+                                "creditAcctData": {
+                                    "dueDt": "2023-12-14"
+                                },
+                                "curCode": {
+                                    "curCodeValue": "string",
+                                    "curCodeType": "string"
+                                },
+                                "desc": "string"
+                            },
+                            "relAcctKeys": {
+                                "bban": "string",
+                                "clabe": "string",
+                                "acctId": "string"
+                            }
+                        },
+                        "cardTrnLimit": [
+                            {
+                                "curAmt": {
+                                    "amt": 3500,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                },
+                                "limitCount": 0,
+                                "trnSrc": [
+                                    "string"
+                                ],
+                                "limitType": "Max",
+                                "trnType": {
+                                    "trnTypeValue": "Credit"
+                                }
+                            }
+                        ],
+                        "partyKeys": {
+                            "partyId": "00000003",
+                            "employeeIdentNum": "string"
+                        },
+                        "cardPeriodData": [
+                            {
+                                "lastOccuranceDt": 1702591702142,
+                                "cardAmtType": "BalMod",
+                                "lastOccurInd": true
+                            }
+                        ],
+                        "cardMagData": {
+                            "magDataNum": "string"
+                        },
+                        "fiData": {
+                            "fiIdent": "string",
+                            "branchIdent": "string"
+                        },
+                        "directDebitData": {
+                            "directDebitType": "string",
+                            "acctKeys": {
+                                "bban": "string"
+                            },
+                            "curAmt": [
+                                {
+                                    "amt": 0,
+                                    "amtType": "string",
+                                    "curCode": {
+                                        "curCodeValue": "string",
+                                        "curCodeType": "string"
+                                    }
+                                }
+                            ]
+                        },
+                        "curCode": {
+                            "curCodeValue": "string",
+                            "curCodeType": "string"
+                        },
+                        "secTokenCard": {
+                            "PINData": null
+                        },
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        }
+                    },
+                    "cardStatus": {
+                        "blockCode": {
+                            "blockReasonCode": "22",
+                            "desc": "SE BLOQUEO POR REINTENTO",
+                            "blockReason": "22",
+                            "blockDt": "2023-12-14",
+                            "blockOperInd": true,
+                            "blockRevInd": true
+                        },
+                        "enrollBlockOpenDt": "2023-12-14",
+                        "enrollBlockClosedDt": "2023-12-14",
+                        "enrollBlockStatusCode": "string",
+                        "issueStatusCode": "11",
+                        "issueStatusDesc": "string"
+                    },
+                    "cardenvr": {
+                        "acctTrnRef": {
+                            "acctTrnInfo": {
+                                "networkTrnData": {
+                                    "sourceSysDesc": "string",
+                                    "SourceSysIdent": null
+                                }
+                            }
+                        },
+                        "lastUseDt": "2023-12-14",
+                        "lastUpdateDt": "2023-12-14"
+                    }
+                }
+            ]
+        },
+        "message": "OK"
+    }
+  }

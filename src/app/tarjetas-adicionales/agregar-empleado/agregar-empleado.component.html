@@ -1,0 +1,65 @@
+<div *ngIf="showAddEmpleado" class="component-agregar">
+  <div id="head-add">
+    <img src="../../assets/media/IconSnatnder.svg" alt="Icon Santander">
+    <img class="close" (click)="closeModalEmpleado.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <form (ngSubmit)="addUsuario.emit({nuevoUsuario: newUser, usuarioSelect:usuarioSelect})" class="container-add">
+    <div class="text-add">
+      <p class="add">Agregar un empleado</p>
+      <p class="config">Configurar su tarjeta</p>
+    </div>
+    <div class="form-container">
+      <div class="form-group">
+        <input id="nombre" type="text" class="form-input" name="nombre" [(ngModel)]="newUser.nombre" placeholder=" ">
+          <label for="nombre" class="form-label">Nombre(s)</label>
+      </div>
+      <div class="form-group">
+        <input id="apellido" type="text" class="form-input"  name="apellido" [(ngModel)]="newUser.apellido" placeholder=" ">
+          <label for="apellido" class="form-label">Apellido(s)</label>
+      </div>
+      <div class="form-group">
+        <input id="homoclave" type="text" class="form-input" [(ngModel)]="newUser.homoclave"  name="homoclave"  placeholder=" ">
+          <label for="homoclave" class="form-label">RFC con homoclave</label>
+      </div>
+      <div class="form-group">
+        <input id="correo" type="email" class="form-input"  name="correo" [(ngModel)]="newUser.correo" placeholder=" ">
+          <label for="correo" class="form-label">Correo electrónico empresarial</label>
+      </div>
+      <div class="form-group">
+        <select class="areas" id="areaSubarea" class="forms" name="areaSubArea" [(ngModel)]="usuarioSelect" placeholder =" ">
+          <option value=""></option>
+          <ng-container *ngFor="let area of arregloAreas">
+              <option disabled [ngValue]="area">{{ area.area }}</option>
+          <ng-container *ngFor="let subarea of area.subarea">
+              <option [ngValue]="subarea">{{ subarea.nombre }}</option>
+          </ng-container>
+          </ng-container>
+        </select>
+          <label for="areaSubarea" class="form-labelArea">Área o Sub Área</label>
+
+      </div>
+      <div class="form-group">
+        <input id="limite" type="number" class="form-input"  name="limite" [(ngModel)]="newUser.limiteCredito" placeholder=" ">
+          <label for="limite" class="form-label">Límite de Crédito</label>
+      </div>
+    </div>
+
+    <div class="credito">
+      <p>Crédito disponible por área $35,000.00 MXN</p>
+    </div>
+    <div class="toggle">
+      <div class="toggle-container" [ngClass]="{'active': isActive}" (click)="toggleSwitch()">
+        <div class="toggle-switch"></div>
+        <div class="toggle-label">{{ isActive ? 'Activo' : 'Inactivo' }}</div>
+      </div>
+      <div>
+        <p>Habilitar retiros en efectivo</p>
+      </div>
+    </div>
+
+    <div class="button-form">
+      <input type="submit" class="form-submit" value="Agregar">
+    </div>
+  </form>
+</div>
+<div class="background-overlay" *ngIf="showAddEmpleado"></div>

@@ -1,0 +1,15 @@
+/*[
+  {
+    "idSolicitud":"Z9098765",
+    "idArea":1,
+    "area":"Contabilidad",
+    "idSubArea":2,
+    "subarea":"Recursos",
+    "idEmpleado":"Z19NHW5",
+    "nombre":"Erika",
+    "correo":"dioni@minsait.com",
+    "limite_credito":"13000.00",
+    "idStatus":1,
+    "fecha":"6/9/2023"
+  }
+]*/

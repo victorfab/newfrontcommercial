@@ -1,0 +1,8 @@
+{
+    "app_path": "https://gateway-service-mx-comercial-cards-dev.apps.str01.mex.dev.mx1.paas.cloudcenter.corp/",
+    "estructura": "https://cards-web-app-service-mx-comercial-cards-dev.apps.str01.mex.dev.mx1.paas.cloudcenter.corp/card/v1/empresa/estructura",
+    "empleados": "https://cards-web-app-service-mx-comercial-cards-dev.apps.str01.mex.dev.mx1.paas.cloudcenter.corp/card/v1/empleado",
+    "empresa" : "https://gateway-service-mx-comercial-cards-dev.apps.str01.mex.dev.mx1.paas.cloudcenter.corp/card/v1/empresa",
+    "direccioncp" : "https://gateway-service-mx-comercial-cards-dev.apps.str01.mex.dev.mx1.paas.cloudcenter.corp/card/v1/uploadfile",
+    "direccion" : "https://gateway-service-mx-comercial-cards-dev.apps.str01.mex.dev.mx1.paas.cloudcenter.corp/card/v1/direccion"
+}

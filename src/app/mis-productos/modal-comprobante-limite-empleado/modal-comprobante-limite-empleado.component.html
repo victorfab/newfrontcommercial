@@ -1,0 +1,75 @@
+<div class="container-comprobante" *ngIf="showComprobanteLimiteEmp">
+  <div class="container-instruccion">
+    <img class="icon-check" src="../../../assets/media/check.svg" alt="icon-check">
+    <h2>¡Modificaste el monto de crédito!</h2>
+  </div>
+  <div class="inicio">
+  </div>
+    <div class="head">
+      <div>
+        <img class="icon" src="../../assets/media/IconSnatnder.svg" alt="Icon Santander">
+      </div>
+      <div>
+        <p class="text-comprobante">Comprobante</p>
+      </div>
+      <div>
+        <svg class="close" (click)="closedComprobanteEmp.emit()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8514 4C19.1559 4 19.4478 4.12165 19.6622 4.33791C20.105 4.78349 20.105 5.5031 19.6622 5.94867L13.616 11.9977L19.6622 18.0465C19.8784 18.261 20 18.553 20 18.8576C20 19.1622 19.8784 19.4542 19.6622 19.6687C19.4467 19.8825 19.155 20.0017 18.8514 20C18.5479 20.0017 18.2562 19.8825 18.0407 19.6687L11.9943 13.6194L5.95929 19.6572C5.74567 19.8753 5.4537 19.9987 5.14853 20C4.84501 20.0017 4.55328 19.8825 4.33778 19.6687C4.1216 19.4542 4 19.1622 4 18.8576C4 18.553 4.1216 18.261 4.33778 18.0465L10.3771 12.0034L4.33778 5.9601C3.89001 5.51214 3.89001 4.78587 4.33778 4.33791C4.78554 3.88996 5.51152 3.88996 5.95929 4.33791L12 10.3806L18.0407 4.33791C18.2551 4.12165 18.547 4 18.8514 4Z" fill="#EC0000"/>
+        </svg>
+      </div>
+    </div>
+    <div id="cont-category">
+      <p>Este comprobante no es un Estado de cuenta</p>
+    </div>
+    <div class="tarjeta-area">
+        <img src="../../../assets/media/Banca Privada.svg" alt="Tarjeta-area">
+        <div class="category">
+          <p>{{selectUser.usuario | transformWord}}</p>
+          <h2>TDC *{{selectUser.ultimoDig}}</h2>
+        </div>
+    </div>
+<div class="elipse">
+  <div class="container-elipse">
+    <img src="../../../assets/media/cont-elipse.svg" alt="">
+  </div>
+  <div class="elipses">
+    <img src="../../../assets/media/Ellipse 11.svg" alt="elipse">
+    <img src="../../../assets/media/Ellipse 12.svg" alt="">
+  </div>
+</div>
+    <div  class="modal-content">
+      <div class="description" id="periodo">
+        <p class="nombre">Límite de crédito anterior</p>
+        <h2 class="accion">${{limiteInicialEmp | number: '1.2-2'}}MXN</h2>
+      </div>
+      <div class="description" id="area">
+        <p class="nuevo-limite">Límite de crédito nuevo</p>
+        <h2 class="cantidad">${{obtenerLimiteEmp |number: '1.2-2'}}MXN</h2>
+      </div>
+      <div class="description" id="fecha">
+        <p class="fecha-operacion">Fecha y hora de operación</p>
+        <h2 class="fechao">{{fechaForm | fechaFolio}}-{{horaForm}}</h2>
+      </div>
+      <div class="description" id="referencia">
+        <p class="folio-referencia">No. folio de referencia</p>
+        <h2 class="caracteres">{{dcarcacteres}}</h2>
+      </div>
+    </div>
+<div class="elipse-bottom">
+  <div class="container-elipse-bottom">
+    <img src="../../../assets/media/cont-elipse.svg" alt="">
+  </div>
+  <div class="elipses-bottom">
+    <img src="../../../assets/media/Ellipse 11.svg" alt="elipse">
+    <img src="../../../assets/media/Ellipse 12.svg" alt="">
+  </div>
+</div>
+    <div class="cont-cargar">
+      <div class="cont-cargar" (click)="exportarCSV()">
+      <div id="carga">
+        <img src="../../../assets/media/_Core Quick Action.svg" alt="">
+      </div>
+      </div>
+    </div>
+</div>
+<div class="background-overlay" *ngIf="showComprobanteLimiteEmp"></div>

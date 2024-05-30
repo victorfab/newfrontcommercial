@@ -1,0 +1,442 @@
+/*INFO POR USUARIO*/
+.info-por-usua{
+  width: 100%;
+  height: 100%;
+}
+.detalle-empleado{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#cont_list{
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+#list_icon{
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  right: 0;
+  background: #F2F2F2;
+  padding: 4px;
+  border-radius: 50%;
+}
+#cont-usua h3{
+  font-size: 12px;
+  font-weight: 400;
+}
+#cont-usua p{
+  font-size: 18px;
+  font-weight: 700;
+  padding: 17px 0px 17px 0px;
+}
+#info-card-usua{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+#info-card-usua img{
+  width: 93px;
+  height: 148.43px;
+}
+#description-card-usua{
+  width: 100%;
+  margin-left: 10px;
+  line-height: 12px;
+}
+#description-card-usua p{
+  font-size: 12px;
+  font-weight: 400;
+  color: #000;
+}
+#description-card-usua h1{
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#description-card-usua h3{
+  font-size: 10px;
+  font-weight: 400;
+}
+
+/*ACCIONES RÁPIDAS*/
+.container-acciones-rapidas{
+  width: 100%;
+  height: 51%;
+}
+.container-acciones-rapidas .title-acciones{
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+#acciones-rapidas{
+  width: 100%;
+  display: flex;
+  /*justify-content: space-between;*/
+}
+#desactivar{
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-right: 5px;
+}
+#check-user{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#check-user .switch{
+  height: 25px;
+  padding: 0;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#check-user .switch .input {
+  display: none;
+}
+
+#check-user .switch .rail {
+  position: relative;
+  width: 30px;
+  height: 14px;
+  border: 1px solid #D9D9D9;
+  border-radius: 3rem;
+}
+#check-user .switch .rail .circle {
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #D9D9D9;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transition: transform 0.4s;
+}
+
+#check-user .switch .indicator {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 9px;
+  transition: 0.4s;
+}
+
+#check-user .switch .input:checked ~ .rail .circle {
+  transform: translate(14px, -50%);
+}
+
+#check-user .switch .input:checked ~ .indicator {
+  background-color: #43e97b;
+}
+
+#exportar{
+  width: 33.3%;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+}
+#enviar{
+  width: 33.33%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-left: 5px;
+}
+.subtitle-acciones{
+  width: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.acciones{
+  width: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+#subir{
+  width: 33.3%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-right: 5px;
+}
+/*
+#agregar{
+  width: 33.3%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+  margin-left: 5px;
+}*/
+
+
+/*EDITRA CRÉDITO*/
+.editar-credito{
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #D9D9D9;
+}
+#edit-credito{
+  position: absolute;
+  right: 0;
+}
+#edit-credito p{
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff0000;
+  margin-right: 10px;
+  cursor: pointer;
+}
+#limit{
+  margin-left: 10px;
+  line-height: 19px;
+}
+#limit p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#limit h2{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.limite-credito{
+  display: flex;
+}
+.mxn{
+  margin-left: 5px;
+}
+.button-modificar{
+  cursor: pointer;
+  padding: 10px 12px;
+  margin-right: 10px;
+  background: transparent;
+  border:1px solid #ff0000;
+  color: #ff0000;
+  font-size: 11.2px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+.limite-editable:focus{
+  outline: 1px solid #D9D9D9;
+}
+
+.detalles-pago{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 10px 0px;
+
+}
+.detalles-pago p{
+  font-size: 16px;
+  font-weight: 700;
+}
+.detalles-pago button{
+  cursor: pointer;
+  padding: 10px;
+  background: #ff0000;
+  color: #fff;
+  font-size: 11.2px;
+  font-weight: 700;
+  border-radius: 20px;
+}
+/*SALDO DESCRIPTION*/
+.datos-notarjeta{
+  width: 100%;
+  height: 100%;
+
+}
+#limite-credito{
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+#limite-credito p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#limite-credito h2{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#saldo-disponible{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px 5px 0px 0px;
+  align-items: center;
+  border-bottom: 0px;
+}
+#saldo-disponible p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#saldo-disponible h2{
+  font-size: 12px;
+  font-weight: 700;
+  color: #63B468;
+  letter-spacing: 1px;
+}
+#saldo-gastado{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 0px 0px 5px 5px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#saldo-gastado p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#saldo-gastado h2{
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff0000;
+  letter-spacing: 1px;
+}
+#saldo-gastado span{
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  letter-spacing: 1px;
+}
+
+#fecha-limite{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0px;
+  align-items: center;
+}
+#fecha-limite p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#fecha-limite h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#fecha-corte{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-bottom: 0px;
+  border-top: 0px;
+  align-items: center;
+}
+#fecha-corte p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#fecha-corte h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#pago-minimo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-bottom: 0px;
+  border-top: 0px;
+  align-items: center;
+}
+#pago-minimo p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#pago-minimo h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#linea-general{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-bottom: 0px;
+  border-top: 0px;
+  align-items: center;
+}
+#linea-general p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#linea-general h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#linea-asignada{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 0px 0px 5px 5px;
+  border-top: 0px;
+  align-items: center;
+}
+#linea-asignada p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#linea-asignada h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#linea-disponible{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 0px 0px 5px 5px;
+  border-top: 0px;
+  align-items: center;
+}
+#linea-disponible p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#linea-disponible h2{
+  font-size: 12px;
+  font-weight: 700;
+}

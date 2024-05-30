@@ -1,0 +1,83 @@
+.container-check{
+  width: 285px;
+  height: 16em;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+}
+#head-check{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #D9D9D9;
+  padding: 10px;
+}
+.fondo{
+  margin-top: 15px;
+  background: #F2F2F2;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-check{
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+}
+.text-check{
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.close{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question{
+  width: 70%;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  margin-top: 1em;
+  text-align: center;
+}
+.id{
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.button-check{
+  padding: 10px 22px;
+  font-size: 12px;
+  font-weight: 700;
+  background: #EC0000;
+  border-radius: 22px;
+  color: #fff;
+  cursor: pointer;
+}

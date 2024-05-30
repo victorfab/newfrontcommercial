@@ -1,0 +1,471 @@
+
+::ng-deep #dropzone-external {
+  width: 350px;
+  height: 350px;
+  background-color: rgba(183, 183, 183, 0.1);
+  border-width: 2px;
+  border-style: dashed;
+  padding: 10px;
+}
+
+::ng-deep #dropzone-external > * {
+  pointer-events: none;
+}
+
+::ng-deep #dropzone-external.dropzone-active {
+  border-style: solid;
+}
+
+::ng-deep .widget-container > span {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+::ng-deep #dropzone-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+::ng-deep #dropzone-text > span {
+  font-weight: 100;
+  opacity: 0.5;
+}
+
+::ng-deep #upload-progress {
+  display: flex;
+  margin-top: 10px;
+}
+
+::ng-deep .flex-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.head-solicitar{
+  display: flex;
+  justify-content: space-between;
+  margin-left: -5px;
+}
+#solicitar{
+  display: flex;
+  align-items: center;
+}
+#solicitar .return{
+  width: 22px;
+  height: 22px;
+}
+#solicitar p{
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+margin-left: 5px;
+}
+.agregar-empleado{
+  padding: 8px 15px;
+  display: flex;
+  cursor: pointer;
+  color: #EC0000;
+}
+.agregar-empleado span {
+  color: #000000;
+  margin: 2px 0 0 5px;
+  font-weight: bolder;
+}
+.agregar{
+ margin-right: 5px;
+ color: #EC0000;
+ font-weight: 700;
+ background: transparent;
+ padding-left: 5px;
+ cursor: pointer;
+}
+#tuEnlace {
+  color: #EC0000;
+  cursor: pointer;
+}
+.pre-solicitud span{
+  display: flex;
+  font-size: 12px;
+  font-weight: 400;
+}
+.start-proceso{
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+.start-proceso span{
+  display: flex;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 500;
+}
+.start-proceso p{
+  color: #595959;
+  font-size: 14px;
+  font-weight: 700;
+}
+.descarga a{
+  font-size: 14px;
+  font-weight: 700;
+  color: #EC0000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.arrastrar-archivo{
+  margin-top: 15px;
+  width: 100%;
+height: 200px;
+  border: 1.5px dashed #D9D9D9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#archivos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#archivos p{
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+#archivos label{
+  border: 1.4px solid #EC0000;
+  padding: 8px 15px;
+  border-radius: 22px;
+  background: transparent;
+  color: #EC0000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.progress {
+  margin-bottom: 30px;
+}
+.fileupload {
+  min-height: 400px;
+  min-width: 400px;
+  display: table;
+  width: 100%;
+  background-color: #eee;
+  border: dotted 1px #aaa;
+}
+.ddinfo {
+  display: block;
+  text-align: center;
+  padding-top: 130px;
+  color: #a0a1a2;
+}
+.image-list {
+  display: flex;
+  width: 100%;
+  background: #C2DFFC;
+  border: 1px solid;
+  border-radius: 3px;
+  padding: 10px 10px 10px 15px;
+  margin-bottom: 10px;
+}
+.image-list p {
+  line-height: normal;
+  padding: 0;
+  margin: 0 0 0 14px;
+  display: inline-block;
+  position: relative;
+  top: -2px;
+  color: #150938;
+  font-size: 14px;
+}
+.message {
+  text-align: center;
+  color: #C2DFFC;
+}
+.remove {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 4px;
+  display: inline-block;
+}
+.profile img {
+  width: 100%;
+}
+.remove img {
+  width: 15px;
+  position: relative;
+  top: -2px;
+}
+.fileUploadWrapper .card-body {
+  max-height: 330px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.contenido{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 10px;
+}
+.container-scroll{
+  width: 100%;
+  height: 40em;
+  overflow: scroll;
+}
+.container-asignadas {
+  background-color: #ffffff;
+  margin-top: 38px;
+  border-radius: 15px 15px 15px 15px;
+  padding: 20px;
+}
+.pendiente{
+  width: 100%;
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.modifi-pendiente{
+  border-radius: 8px 8px 0px 0px;
+}
+
+.status{
+  font-size: 14px;
+  font-weight: 700;
+}
+.status-realizado{
+  font-size: 14px;
+  font-weight: 700;
+}
+.status-enviadas{
+  font-size: 14px;
+  font-weight: 700;
+}
+.rotated{
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+.divisor{
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px 5px 0px 5px;
+}
+.divisor-realizado{
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px 5px 0px 5px;
+}
+.divisor-enviadas{
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px 5px 0px 5px;
+}
+.length{
+  font-size: 12px;
+  font-weight: 400;
+}
+.length-realizado{
+  font-size: 12px;
+  font-weight: 400;
+}
+.length-enviadas{
+  font-size: 12px;
+  font-weight: 400;
+}
+.row{
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+.texto-tarjetas-asignadas{
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.title-tarjetas{
+  margin-left: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.text-tarjetas{
+  margin-left: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.text-envio-realizado{
+  margin-left: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.text-enviadas{
+  margin-left: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.boton-asignar{
+  padding: 10px 22px;
+  border: 1px solid red;
+  color: red;
+  font-weight: 700;
+  background: transparent;
+  border-radius: 22px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.container-tarjetas{
+  border: 1px solid #D9D9D9;
+  border-radius: 8px 8px 8px 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.container-table{
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.container-table td, th{
+  border-bottom: 1px solid #D9D9D9;
+  border-top: none;
+  padding: 5px 10px 5px 10px;
+}
+.container-table-realizado{
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.container-table-realizado td, th{
+  border-bottom: 1px solid #D9D9D9;
+  border-top: none;
+  padding: 5px 10px 5px 10px;
+}
+.container-table-enviadas{
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+.container-table-enviadas td, th{
+  border-bottom: 1px solid #D9D9D9;
+  border-top: none;
+  padding: 5px 10px 5px 10px;
+}
+
+.header{
+  width: 15%;
+}
+.header-solicitud{
+  width: 15%;
+}
+.header-enviadas{
+  width: 15%;
+}
+.headers{
+  width: 40%;
+}
+.headers-solicitud{
+  width: 40%;
+}
+.headers-enviadas{
+  width: 40%;
+}
+.icon{
+  width: 5%;
+}
+.icon-realizado{
+  width: 5%;
+}
+.icon-enviadas{
+  width: 5%;
+}
+/*CHECKBOX*/
+input[type = "checkbox"]{
+  /*Quita el estilo del checkbox*/
+  -webkit-appearance: none;
+  cursor: pointer;
+
+}
+input[type = "checkbox"]:after{
+  font-family: "Font Awesome 5 Free", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  content: "\f111";
+  font-size: 14px;
+  color: #63B468;
+  margin-right: 5px;
+}
+input[type="checkbox"]:checked::after{
+  font-weight: 900;
+  content: "\f058";
+  color: #63B468;
+}
+#center{
+  vertical-align: middle;
+  text-align: center;
+}
+
+/*ENVIO REALIZADO*/
+.envio{
+  width: 100%;
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.container-envio{
+  border: 1px solid #D9D9D9;
+  border-radius: 8px 8px 8px 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/*ENVIADAS*/
+.enviadas{
+  width: 100%;
+  background: #F2F2F2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.container-entregadas{
+  border: 1px solid #D9D9D9;
+  border-radius: 8px 8px 8px 8px;
+  margin-top: 10px;
+}
+.entregadas{
+  color: #63B468;
+}

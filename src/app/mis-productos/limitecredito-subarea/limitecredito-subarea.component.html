@@ -1,0 +1,121 @@
+   <!--INFO POR AREA-->
+
+   <div *ngIf="showLimiteCreditoSub" class="info-por-area">
+    <div  id="cont-area">
+      <div class="detalle-subarea">
+        <a>
+          <svg (click)="return.emit()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7446 4.00002C16.0763 3.99828 16.3952 4.11751 16.6308 4.33137C16.8671 4.5459 17 4.83792 17 5.14256C17 5.4472 16.8671 5.73922 16.6308 5.95375L10.0154 11.9977L16.6308 18.0416C17.1202 18.4896 17.1202 19.216 16.6308 19.664C16.1413 20.112 15.3478 20.112 14.8584 19.664L7.36921 12.8089C7.13292 12.5943 7 12.3023 7 11.9977C7 11.693 7.13292 11.401 7.36921 11.1865L14.8584 4.33137C15.0939 4.1175 15.4128 3.99828 15.7446 4.00002Z" fill="#EC0000"/>
+          </svg>
+        </a>
+        <p>Detalle de SubÁrea</p>
+      </div>
+      <h3>Sub Área</h3>
+      <p>{{limitCreditoSub.subarea}}</p>
+    </div>
+    <div id="info-card-area">
+      <img src="../../assets/media/Banca Privada.svg" alt="Tarjeta Banca Privada">
+        <div  id="description-card-area">
+          <p>Límite de crédito</p>
+          <h1>${{limitCreditoSub.limiteSub | number:'1.2-2'}}</h1>
+        </div>
+    </div>
+
+    <div class="container-acciones-rapidas test">
+      <p class="title-acciones test-acciones">Acciones rápidas</p>
+    <div id="acciones-rapidas">
+      <div routerLink="/tarjetas-adicionales" (click)="solicitando.emit()" id="solicitar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
+          <path d="M21 10.8276H1M21 12.8965H1" stroke="#EC0000" stroke-linecap="round"/>
+          <path d="M11 7.2069V1" stroke="#EC0000" stroke-linecap="round"/>
+          <path d="M14.1576 4.10345L7.8418 4.10345" stroke="#EC0000" stroke-linecap="round"/>
+          <path d="M5.21053 4.62067H2C1.44772 4.62067 1 5.06838 1 5.62067V15C1 15.5523 1.44772 16 2 16H20C20.5523 16 21 15.5523 21 15V5.62067C21 5.06838 20.5523 4.62067 20 4.62067H16.7895" stroke="#EC0000" stroke-linecap="round"/>
+        </svg>
+        <p class="subtitle-acciones test-solicitar">Solicitar tarjetas</p>
+      </div>
+      <div id="asignar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 6.10106C6.77637 6.10106 7 6.31746 7 6.58489C7 6.85232 6.77637 7.06872 6.5 7.06872H3.96191C3.43164 7.06872 3 7.4864 3 8V12.194H21V7.99764C21 7.48546 20.5693 7.06872 20.04 7.06872H17.5C17.2236 7.06872 17 6.85232 17 6.58489C17 6.31746 17.2236 6.10106 17.5 6.10106H20.04C21.1211 6.10106 22 6.95202 22 7.99764V16.1011C22 17.1481 21.1201 18 20.0381 18H3.96191C2.87988 18 2 17.1481 2 16.1011L2 8C2 6.95296 2.87988 6.10106 3.96191 6.10106H6.5ZM21 15.097H3V16.1011C3 16.6147 3.43164 17.0323 3.96191 17.0323H20.0381C20.5684 17.0323 21 16.6147 21 16.1011V15.097ZM21 13.1617H3V14.1294H21V13.1617ZM15.5488 2.21033C15.707 1.99015 16.0195 1.93392 16.2441 2.08418C16.4727 2.2349 16.5303 2.53635 16.375 2.75653L12.2207 8.63052C12.1348 8.75148 11.998 8.82802 11.8477 8.83984C11.834 8.84078 11.8213 8.84125 11.8076 8.84125C11.6709 8.84125 11.54 8.78739 11.4453 8.69053L8.67578 5.86835C8.48535 5.67463 8.49316 5.36845 8.69336 5.18418C8.89355 5.00086 9.21191 5.00794 9.40039 5.20214L11.7441 7.5901L15.5488 2.21033Z" fill="#EC0000"/>
+        </svg>
+        <p class="subtitle-acciones test-tarjetas">Tarjetas asignadas</p>
+      </div>
+      <div (click)="exportSub.emit()" id="exportar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M6.36044 1.66669C6.64837 1.66669 6.88137 1.89968 6.88137 2.18762C6.88137 2.47555 6.64837 2.70854 6.36044 2.70854H5.80593C4.09867 2.70854 2.70885 4.09837 2.70885 5.80563V14.1944C2.70885 15.9017 4.09867 17.2915 5.80593 17.2915H14.1978C15.905 17.2915 17.2949 15.9017 17.2949 14.1944V13.645C17.2949 13.3571 17.5278 13.1241 17.8158 13.1241C18.1037 13.1241 18.3367 13.3571 18.3367 13.645V14.1944C18.3367 16.4765 16.4799 18.3334 14.1978 18.3334H5.80593C3.52382 18.3334 1.66699 16.4765 1.66699 14.1944V5.80563C1.66699 3.52351 3.52382 1.66669 5.80593 1.66669H6.36044ZM17.7893 1.69314C17.8571 1.69314 17.9246 1.70688 17.9882 1.7332C18.1158 1.78598 18.2174 1.8876 18.2702 2.01516C18.2965 2.07881 18.3103 2.14628 18.3103 2.21407V7.67568C18.3103 7.96362 18.0773 8.19661 17.7893 8.19661C17.5014 8.19661 17.2684 7.96362 17.2684 7.67568V3.47162L10.3915 10.3485C10.2898 10.4502 10.1565 10.5011 10.0232 10.5011C9.88993 10.5011 9.75665 10.4502 9.65491 10.3485C9.45142 10.145 9.45142 9.81536 9.65491 9.61187L16.5318 2.735H12.3277C12.0398 2.735 11.8068 2.502 11.8068 2.21407C11.8068 1.92613 12.0398 1.69314 12.3277 1.69314H17.7893Z" fill="#EC0000"/>
+        </svg>
+        <p class="subtitle-acciones test-exportar">Exportar movimientos</p>
+      </div>
+    </div>
+    <div class="acciones">
+<!--Agregar empleados-->
+    </div>
+    </div>
+  </div>
+        <!--LIMITE CRÉDITO POR ÁREA-->
+
+        <div *ngIf="showLimiteCredito">
+          <div class="editar-credito">
+            <img src="../../assets/media/Banca Privada.svg" alt="Tarjeta Banca Privada">
+            <div id="limit">
+              <p>Límite de crédito</p>
+              <div class="limite-credito">
+              <h2>$</h2>
+              <h2 #limiteEditable [contentEditable]="editandoLimiteCredito" (input)="onLimite($event)" (blur)="formatoFinal($event)" tabindex="0">
+                {{limitCreditoSub.limiteSub | number:'1.2-2'}}</h2>
+              <h2 class="mxn">MXN</h2>
+              </div>
+            </div>
+            <div *ngIf="errorMensaje" class="error-mensaje">
+              {{errorMensaje}}
+            </div>
+            <div id="edit-credito">
+              <p *ngIf="!editandoLimiteCredito" (click)="activarEdicion.emit(limitCreditoSub.limiteSub); establecerFoco()">Modificar límite de crédito</p>
+              <input class="button-modificar" type="submit" value="Aceptar y modificar" *ngIf="editandoLimiteCredito" (click)="mostrarEditarLimite.emit({nuevoLimite:nuevoLimiteCredito,limiteEditable: limiteEditable})">
+            </div>
+          </div>
+          <div class="detalles-pago">
+            <p>Detalles de pago</p>
+          </div>
+          <!--SALDO DISPONIBLE, SALDO GASTADO-->
+          <div class="datos-notarjeta">
+              <div id="saldo-disponible">
+                <p>Saldo disponible</p>
+                <h2>+${{limitCreditoSub.saldoDisponible | number:'1.2-2'}} MXN</h2>
+              </div>
+              <div id="saldo-gastado">
+                <p>Saldo gastado</p>
+                <span><h2>-</h2>${{limitCreditoSub.saldoGastado | number:'1.2-2'}} MXN</span>
+              </div>
+              <div id="linea-general">
+                <p>Línea general de crédito:</p>
+                <h2>${{limitCreditoSub.limiteSub | number: '1.2-2'}} MXN</h2>
+              </div>
+              <div id="linea-disponible">
+                <p>Línea disponible por asignar:</p>
+                <h2>${{limitCreditoSub.limiteAsignado | number:'1.2-2'}} MXN</h2>
+              </div>
+            </div>
+
+            <div class="user-area">
+              <p>Usuarios</p>
+              <div  id="form-user">
+                <div *ngFor="let usuario of limiteCreditoUsers | paginate:{itemsPerPage:1,currentPage:page}; let i = index;let last = last" >
+                  <div  [class.primer-elemento]="i === 0">
+                    <div id="form-cont-users" [class.border-bottom]="!last">
+                      <div  id="form-data">
+                        <p>{{usuario.usuario | transformWord}}</p>
+                        <h2>{{usuario.puesto | transformWord}}</h2>
+                      </div>
+                      <svg (click)="infoUsuario.emit(usuario.usuario)" class="row" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.19157 15C5.94274 15.0013 5.70358 14.9119 5.52691 14.7515C5.34969 14.5906 5.25 14.3716 5.25 14.1431C5.25 13.9146 5.34969 13.6956 5.52691 13.5347L10.4885 9.00174L5.52691 4.46879C5.15983 4.13278 5.15983 3.58801 5.52691 3.252C5.89399 2.916 6.48915 2.916 6.85623 3.252L12.4731 8.39335C12.6503 8.55424 12.75 8.77326 12.75 9.00174C12.75 9.23022 12.6503 9.44924 12.4731 9.61013L6.85623 14.7515C6.67957 14.9119 6.4404 15.0013 6.19157 15Z" fill="#999999"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="cargarUsuarios">
+              <pagination-controls (pageChange)="page = $event" previousLabel="" nextLabel=""></pagination-controls>
+            </div>
+          </div>
+

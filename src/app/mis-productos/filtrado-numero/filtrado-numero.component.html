@@ -1,0 +1,17 @@
+<div *ngIf="numero.length > 0 && datosNumero"  class="box-notarjeta">
+  <div  class="cont_title">
+    <p>No.Tarjeta</p>
+  </div>
+  <div *ngFor="let numero of numero">
+    <div class="search-notarjeta" [class.selected]="numero.numero === select">
+      <img src="../../assets/media/Banca Privada.svg" alt="Banca Privada">
+    <div  id="info-notarjeta">
+      <p>{{numero.usuario | transformWord}}</p>
+      <h2>{{numero.numero}}*</h2>
+    </div>
+    <div id="search_img">
+      <img (click)="numeroClick.emit(numero.usuario)" class="arrow" src="../../assets/media/Icon2.svg" alt="Arrow Right">
+    </div>
+    </div>
+  </div>
+</div>

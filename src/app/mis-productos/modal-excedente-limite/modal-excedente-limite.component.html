@@ -1,0 +1,18 @@
+<div *ngIf="showExcederLimite" class="container-exclimit">
+  <div class="container-header">
+    <div class="header">
+      <p class="dummy"></p>
+      <p class="text-limit">Excediste el límite de crédito</p>
+      <img class="close" (click)="cerrarExcederLimite.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+    </div>
+  </div>
+  <div class="position-icon">
+    <div class="container-icon">
+      <img class="icon-limit" src="../../../assets/media/IconExcedente.svg" alt="IconExcedente">
+    </div>
+  </div>
+  <div class="text-info">
+    <p class="txt-info">Haz excedido el límite de crédito permitido, si crees que hay un error acércate con tu administrador</p>
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showExcederLimite"></div>

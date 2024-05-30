@@ -1,0 +1,26 @@
+<div *ngIf="showEditarLimite" class="container-edit">
+  <div id="head-edit">
+    <p class="text-edit">Modificar límite de crédito</p>
+    <img class="close" (click)="closedLimite.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container">
+    <div class="limite-anterior">
+      <img src="../../../assets/media/Products V2.svg" alt="Limite Anterior">
+      <p class="text-limit">Límite anterior</p>
+      <p class="limite">${{limiteInicial | number: '1.2-2'}}</p>
+    </div>
+    <div class="interaction">
+      <img src="../../../assets/media/Sending Interaction.svg" alt="Cambio">
+      <!-- <p class="tdc">TDC*{{limitCreditoArea}}</p> -->
+    </div>
+    <div class="limite-nuevo">
+      <img src="../../../assets/media/Products V2.svg" alt="Limite Nuevo">
+      <p class="text-limit">Límite nuevo</p>
+      <p class="limite">${{obtenerLimite}}</p>
+    </div>
+  </div>
+  <div class="button-modificar">
+    <input (click)="tokenLimiteArea.emit()" class="modify" type="submit" value="Si, modificar">
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showEditarLimite"></div>

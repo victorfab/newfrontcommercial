@@ -1,0 +1,16 @@
+<div *ngIf="showCancelarProceso" class="container-cancelar">
+  <div id="head-add">
+    <img class="icon" src="../../assets/media/IconSnatnder.svg" alt="Icon Santander">
+    <img class="close" (click)="closeCancelarProceso.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="aviso">
+    <p class="question">¿Estás seguro(a) de cancelar el proceso?</p>
+    <img src="../../../assets/media/Group-cancel.svg" alt="">
+      <h1 class="reafirmacion">
+        Si cancelas el proceso se perderán los avances de los datos que puedes llevar en este momento
+      </h1>
+
+    <input (click)="cancelarProceso.emit()" class="cancel-process" type="submit" value="Cancelar proceso">
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showCancelarProceso"></div>

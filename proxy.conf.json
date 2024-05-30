@@ -1,0 +1,10 @@
+{
+  "/api":{
+    "target":
+             "https://gateway-service-mx-comercial-cards-dev.apps.str01.mex.dev.mx1.paas.cloudcenter.corp",
+    "secure": false,
+    "changeOrigin":true,
+    "logLevel":"debug",
+    "pathRewrite":{ "^/api": "" }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "commercial-cards",
+  "version": "1.0.7-SNAPSHOT",
+  "scripts":   {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
+  },
+  "private": true,
+  "dependencies":   {
+    "@angular/animations": "^15.2.0",
+    "@angular/cdk": "^14.2.7",
+    "@angular/common": "^15.2.0",
+    "@angular/compiler": "^15.2.0",
+    "@angular/core": "^15.2.10",
+    "@angular/forms": "^15.2.0",
+    "@angular/material": "^15.0.0",
+    "@angular/platform-browser": "^15.2.10",
+    "@angular/platform-browser-dynamic": "^15.2.0",
+    "@angular/router": "^15.2.0",
+    "@ngx-mxflame/atoms": "https://nexus.pro.pandora.mx.corp/repository/web-snapshot/flame-front-mx/ngx-mxflame/ngx-mxflame-atoms-3.0.0-beta.52.tgz",
+    "@ngx-mxflame/common": "https://nexus.pro.pandora.mx.corp/repository/web-snapshot/flame-front-mx/ngx-mxflame/ngx-mxflame-common-3.0.0-beta.3.tgz",
+    "@ngx-mxflame/models": "https://nexus.pro.pandora.mx.corp/repository/web-snapshot/flame-front-mx/ngx-mxflame/ngx-mxflame-models-2.0.1.tgz",
+    "@ngx-mxflame/molecules": "https://nexus.pro.pandora.mx.corp/repository/web-snapshot/flame-front-mx/ngx-mxflame/ngx-mxflame-molecules-3.0.0-beta.2.tgz",
+    "@ngx-mxflame/pipes": "https://nexus.pro.pandora.mx.corp/repository/web-snapshot/flame-front-mx/ngx-mxflame/ngx-mxflame-pipes-3.0.0-beta.2.tgz",
+    "@ngx-mxflame/tokens": "https://nexus.pro.pandora.mx.corp/repository/web-snapshot/flame-front-mx/ngx-mxflame/ngx-mxflame-tokens-2.0.0.tgz",
+    "cors": "^2.8.5",
+    "jspdf": "^2.5.1",
+    "lottie-web": "^5.7.13",
+    "ngx-device-detector": "^6.0.2",
+    "ngx-lottie": "^10.0.0",
+    "ngx-pagination": "^6.0.3",
+    "normalize.css": "^8.0.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.12.0"
+  },
+  "devDependencies":   {
+    "@angular-devkit/build-angular": "^15.2.4",
+    "@angular/cli": "~15.2.4",
+    "@angular/compiler-cli": "^15.2.0",
+    "@types/jasmine": "~4.3.0",
+    "jasmine-core": "~4.5.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.0.0",
+    "typescript": "~4.9.4"
+  }
+}

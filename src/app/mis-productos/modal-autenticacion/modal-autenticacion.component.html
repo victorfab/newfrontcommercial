@@ -1,0 +1,38 @@
+<div *ngIf="showAuthentication" class="modal-comprobante">
+  <div id="head-comprobante">
+    <img class="icon" src="../../../assets/media/IconSnatnder.svg" alt="">
+    <img class="close" (click)="closeAuthentication.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container-limite-credito">
+    <div class="text-limite">
+      <h1 class="text-authentication">Autenticación</h1>
+      <p class="indicacion-codigo">Ingresa el código que te enviamos por SMS al número ******1234</p>
+    </div>
+    <div class="container-input-limite">
+      <input type="password" [(ngModel)] ="authenticationCode[0]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(0)" [style.border-color]="inputColors[0] ? '#595959' : '#ccc'" name="firstdigit" aria-label="firstdigit">
+      <input type="password" [(ngModel)] ="authenticationCode[1]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(1)" [style.border-color]="inputColors[1] ? '#595959' : '#ccc'" name="seconddigit" aria-label="seconddigit">
+      <input type="password" [(ngModel)] ="authenticationCode[2]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(2)" [style.border-color]="inputColors[2] ? '#595959' : '#ccc'" name="thirddigit" aria-label="thirddigit">
+      <input type="password" [(ngModel)] ="authenticationCode[3]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(3)" [style.border-color]="inputColors[3] ? '#595959' : '#ccc'" name="fourthdigit" aria-label="fourthdigit">
+      <input type="password" [(ngModel)] ="authenticationCode[4]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(4)" [style.border-color]="inputColors[4] ? '#595959' : '#ccc'" name="fifthdigit" aria-label="fifthdigit">
+      <input type="password" [(ngModel)] ="authenticationCode[5]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(5)" [style.border-color]="inputColors[5] ? '#595959' : '#ccc'" name="sixthdigit" aria-label="sixthdigit">
+      <input type="password" [(ngModel)] ="authenticationCode[6]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(6)" [style.border-color]="inputColors[6] ? '#595959' : '#ccc'" name="seventhdigit" aria-label="seventhdigit">
+      <input type="password" [(ngModel)] ="authenticationCode[7]" class="container-limite" maxlength="1" size="1" (keyup)="verificarCaracteres(7)" [style.border-color]="inputColors[7] ? '#595959' : '#ccc'" name="eighthdigit" aria-label="eighthdigit">
+    </div>
+    <div class="progress-bar-container">
+    <div class="progress-bar" [style.width.%]="progresoCodigo"></div>
+    </div>
+    <div class="clasificacion">
+      <p></p>
+      <p class="indicacion">El código puede tardar unos segundos en llegar, por favor espera un poco</p>
+      <p class="time">Tu código expira en (34 segundos)</p>
+      <p class="code">Solicitar otro código</p>
+      <input class="button-limite" type="submit" value="Continuar"
+      (click)="continuarAuthenticarion()"
+      [disabled]="!todosInputsLlenos()"
+      [ngClass]="{'button-disabled': !todosInputsLlenos(), 'button-enabled': todosInputsLlenos()}"
+      >
+
+    </div>
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showAuthentication"></div>

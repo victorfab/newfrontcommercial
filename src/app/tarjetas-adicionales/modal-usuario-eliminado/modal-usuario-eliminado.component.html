@@ -1,0 +1,13 @@
+<div *ngIf="showUsuarioEliminado" class="container-usuarioEliminado">
+  <div id="head-add">
+    <img class="icon" src="../../assets/media/IconSnatnder.svg" alt="Icon Santander">
+    <img class="close" (click)="closedUsuarioEliminado.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container">
+      <h1 class="accion">Has eliminado con éxito a:</h1>
+      <p class="info">{{userEliminado.usuario.nombre}}</p>
+      <p class="info">Área: {{userEliminado.area}}</p>
+      <p class="info">Sin TDC</p>
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showUsuarioEliminado"></div>

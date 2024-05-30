@@ -1,0 +1,36 @@
+    <div class="navigation-bar">
+        <p class="btn" [routerLink]="['/initial-configuration/company-structure']"><flame-icon fontIcon="chefron-left" size="m"></flame-icon> Regresar</p>
+            <div class="status-navigation">
+                <sn-stepper [currentStep]="4" title="Direcciones de Entrega" [numSteps]="4"></sn-stepper>
+            </div>
+        <p class="btn" [routerLink]="['/authentication/login']" >Salir <flame-icon fontIcon="close-1px" size="m"></flame-icon></p>
+    </div>
+
+    <h2>Revisa la dirección de la empresa</h2>
+    <p>Confirma que los datos sean correctos. Puedes agregar diecciones extras para recibir tarjetas.</p>
+    <br>
+    <div>
+        <small>Si necesitas realizar algún cambio en la dirección principal acude a una sucursal.</small>
+    </div>
+    <br>
+    <div id="structure-boder">
+        <div class="row">
+            <p 
+            id="bottom-border"
+            *ngFor="let direccion of newDireccion">
+                <strong>{{ direccion.alias }}</strong> <br>
+                {{ direccion.calle}} {{ direccion.numExterior}} {{ direccion.colonia}}
+                CP. {{ direccion.codigoPostal}} {{ direccion.estado }}
+            </p>
+
+            <button class="addAreaButton" (click)="onAddNewAddress()"><strong class="color-red">+ </strong><strong>Agregar nueva dirección</strong></button>
+
+            <div *ngIf="addNewAddressButton;">
+                <app-direccion></app-direccion>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="center">
+        <button flameButton color="primary" routerLink="/mis-productos">Confirmar</button>
+    </div>   

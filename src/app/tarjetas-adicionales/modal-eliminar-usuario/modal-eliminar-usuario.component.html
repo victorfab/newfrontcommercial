@@ -1,0 +1,14 @@
+<div *ngIf="showDeleteUser" class="container-eliminar">
+  <div id="head-add">
+    <img class="icon" src="../../assets/media/IconSnatnder.svg" alt="Icon Santander">
+    <img class="close" (click)="closedEliminarUsuario.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container">
+    <p class="question">¿Estás seguro que deseas eliminar este usuario</p>
+    <h1 class="reafirmacion">Si eliminas este usuario puedes volver a registrarlo de forma manual
+      o descargando otra plantilla genérica
+    </h1>
+    <input (click)="afirmarEliminar.emit()" class="button-eliminar" type="submit" value="Eliminar usuario">
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showDeleteUser"></div>

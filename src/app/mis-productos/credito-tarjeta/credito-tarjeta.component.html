@@ -1,0 +1,39 @@
+ <!--LIMITE CREDITO - NUMERO DE TARJETA-->
+ <div *ngIf="visibilityTarjeta" class="datos-notarjeta">
+  <div *ngIf="selectNumero" id="limite-credito">
+    <p>Límite de crédito</p>
+    <h2>$ {{selectNumero.limite_credito}}</h2>
+  </div>
+  <div id="saldo-disponible">
+    <p>Saldo disponible</p>
+    <h2>+$ {{selectNumero.saldo_disponible}} MXN</h2>
+  </div>
+  <div id="saldo-gastado">
+    <p>Saldo gastado</p>
+    <span><h2>-</h2>${{selectNumero.saldo_gastado}} MXN</span>
+  </div>
+  <div id="fecha-limite">
+    <p>Fecha límite de pago:</p>
+    <h2>{{selectNumero.fecha_limite}}</h2>
+  </div>
+  <div id="fecha-corte">
+    <p>Fecha de corte:</p>
+    <h2>{{selectNumero.fecha_corte}}</h2>
+  </div>
+  <div id="pago-minimo">
+    <p>Pago mínimo en MXN:</p>
+    <h2>${{selectNumero.pago_minimo}} MXN</h2>
+  </div>
+  <div id="linea-general">
+    <p>Línea general de crédito:</p>
+    <h2>${{selectNumero.linea_general}} MXN</h2>
+  </div>
+  <div id="linea-asignada">
+    <p>Línea asignada:</p>
+    <h2>${{selectNumero.linea_asignada}} MXN</h2>
+  </div>
+  <div id="linea-disponible">
+    <p>Línea disponible por asignar:</p>
+    <h2>${{selectNumero.linea_disponible}} MXN</h2>
+  </div>
+</div>

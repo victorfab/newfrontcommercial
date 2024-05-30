@@ -1,0 +1,79 @@
+<div *ngIf="visibilityMovimientosUser" class="contUltimosMovimientos">
+  <div id="filtrar">
+    <p>Ultimos Movimientos</p>
+    <div id="icon-filter">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.9161 13.5752V19.5C12.9161 19.7764 13.1377 20 13.4115 20C13.6853 20 13.9068 19.7764 13.9068 19.5V13.7285L19.9147 4.78027C20.0681 4.55176 20.0091 4.24121 19.7822 4.08594C19.6682 4.0083 19.5334 3.98541 19.4078 4.01062C19.3898 4.00861 19.3741 4 19.3555 4H4.49534C4.48004 4 4.4671 4.00745 4.45217 4.00879C4.41867 4.01166 4.38717 4.01874 4.35445 4.02869C4.32192 4.03864 4.29193 4.05023 4.26261 4.06635C4.24948 4.07349 4.23473 4.07452 4.22203 4.08301C4.20831 4.09216 4.20099 4.10651 4.18847 4.11676C4.16138 4.13886 4.13798 4.16241 4.1161 4.1897C4.09656 4.21411 4.07994 4.2384 4.06542 4.26556C4.05025 4.29382 4.03888 4.32245 4.02927 4.35358C4.01917 4.38611 4.01294 4.41785 4.00961 4.45178C4.00798 4.46844 4 4.48291 4 4.5C4 4.51563 4.00738 4.52875 4.00877 4.54401C4.01161 4.57727 4.01856 4.60864 4.02824 4.6413C4.03815 4.67456 4.04976 4.7052 4.06591 4.73517C4.07298 4.74835 4.07389 4.76312 4.08223 4.77588L9.94408 13.7256V19.5C9.94408 19.7764 10.1656 20 10.4394 20C10.7132 20 10.9348 19.7764 10.9348 19.5V13.5752C10.9348 13.4771 10.9062 13.3813 10.8525 13.2993L5.4166 5H18.5704L13.0013 13.2949C12.9456 13.3774 12.9161 13.4751 12.9161 13.5752Z" fill="#EC0000"/>
+      </svg>
+      <h2 (click)="mostrarFiltrado = !mostrarFiltrado">Filtrar</h2>
+    </div>
+  </div>
+  <div *ngIf="mostrarFiltrado" id="container-filter">
+    <div id="container-title">
+      <h2 id="filtrado">Filtrar</h2>
+      <h2 (click)="quitarFiltro.emit();mostrarFiltrado = !mostrarFiltrado"  class="quitar-filtro">Quitar Filtros</h2>
+    </div>
+    <div id="container-periodo">
+      <div >
+        <select id="periodo" [(ngModel)]="filtroPeriodo" (change)="actualizarPeriodo.emit($event)" class="periodos">
+          <option value='actual'>Actual</option>
+          <option value='anterior'>Anterior</option>
+          <option value='pasado'>Pasado</option>
+        </select>
+        <label for="periodo" class="texto-periodo">Periodo</label>
+      </div>
+    </div>
+    <div id="container-tipo">
+      <div >
+        <select id="tipo" [(ngModel)]="filtroMovimiento" (change)="actualizarMovimiento.emit($event)" class="tipos">
+          <option value='todo'>Todo</option>
+          <option value='positivas'>Ingresos</option>
+          <option value='negativas'>Gastos</option>
+        </select>
+        <label for="tipo" class="texto-tipo">Tipo</label>
+      </div>
+    </div>
+    <div id="aplicar">
+      <input (click)="aplicarFiltro.emit(); mostrarFiltrado = !mostrarFiltrado" class="aplicar-filtros" type="button" value="Aplicar Filtros">
+    </div>
+  </div>
+  <div id="movimientos">
+    <div *ngFor="let movimiento of movimientosUsuarioMes; let last = last">
+
+        <div *ngIf="movimiento.movimientos.length > 0 " >
+          <!--<h2 id="fecha">{{todayDat(movimiento.fecha) ? 'Hoy' : movimiento.fecha  }}</h2>-->
+          <h2 id="fecha">{{  movimiento.fecha | fechaMovimientos }}</h2>
+          <!--{{todayDat(movimiento.fecha) }}-->
+        </div>
+
+          <div *ngIf="movimiento.movimientos.length > 0" class="movimiento-container">
+            <div *ngFor="let tipo of movimiento.movimientos;let i = index; let last = last">
+              <div  class="cont-movimientos test" [class.border-bottom]="!last" [ngClass]="{'negative-movement': tipo.cantidad < 0}">
+                <div *ngIf="tipo.cantidad >=0"  id="icon-movimiento">
+                  <svg class="mov" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M21.5228 3C21.7687 3 21.973 3.17746 22.0149 3.41117L22.0228 3.50121L21.9998 13.0012C21.9992 13.2462 21.8224 13.4498 21.5895 13.492L21.4998 13.5H19.009L19.01 20.5C19.01 20.7455 18.8331 20.9496 18.5999 20.9919L18.51 21H2.5C2.25454 21 2.05039 20.8231 2.00806 20.5899L2 20.5V11C2 10.7545 2.17688 10.5504 2.41012 10.5081L2.5 10.5H4.977L4.9778 3.5C4.9778 3.25454 5.15468 3.05039 5.38792 3.00806L5.4778 3H21.5228ZM21.0216 4H5.9778L5.977 10.5H8C8.24546 10.5 8.44961 10.6769 8.49194 10.9101L8.5 11C8.5 11.2455 8.32312 11.4496 8.08988 11.4919L8 11.5H3V20H18.01V13L18.0179 12.9101C18.0549 12.706 18.2158 12.5451 18.4199 12.5081L18.5098 12.5H21.001L21.0216 4ZM15.5 8C15.5038 8 15.5076 8.00004 15.5113 8.00013C15.5324 8.00061 15.5532 8.00239 15.5739 8.00546C15.5846 8.00701 15.595 8.00889 15.6052 8.01109C15.6205 8.0144 15.6358 8.01845 15.651 8.02324C15.6647 8.02756 15.678 8.03241 15.691 8.03779C15.7045 8.04335 15.7183 8.04975 15.7318 8.0568C15.744 8.06329 15.7557 8.07002 15.767 8.07719C15.7976 8.09647 15.8267 8.11961 15.8536 8.14645L15.8021 8.10158C15.8158 8.11192 15.8288 8.12294 15.8413 8.13459L15.8536 8.14645C15.8576 8.15053 15.8616 8.15468 15.8656 8.15887C15.8771 8.17118 15.8881 8.18425 15.8984 8.19786C15.9072 8.20939 15.9154 8.22117 15.923 8.23319C15.93 8.24432 15.9367 8.25595 15.943 8.26787C15.9503 8.28172 15.9566 8.29546 15.9624 8.30941C15.9676 8.32198 15.9724 8.33526 15.9767 8.3488C15.9816 8.36417 15.9856 8.37953 15.9889 8.39501C15.9962 8.4287 16 8.4639 16 8.5L15.9948 8.4281C15.9973 8.44546 15.9989 8.46293 15.9996 8.48043L16 8.5V13C16 13.2761 15.7761 13.5 15.5 13.5C15.2239 13.5 15 13.2761 15 13V9.706L10.8586 13.8486C10.685 14.0221 10.4156 14.0414 10.2207 13.9064L10.1514 13.8486C9.95618 13.6533 9.95618 13.3367 10.1514 13.1414L14.292 9H11C10.7545 9 10.5504 8.82312 10.5081 8.58988L10.5 8.5C10.5 8.22386 10.7239 8 11 8H15.5Z" fill="#4C4C4C"/>
+                  </svg>
+                </div>
+                <div *ngIf="tipo.cantidad < 0"  id="icon-movimiento-negative">
+                  <svg class="mov" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2C18.2054 2 20 3.74479 20 5.88889V13.6667C20 13.9737 19.7444 14.2222 19.4286 14.2222H17.7143V20.3333C17.7143 21.2524 16.9453 22 16 22C15.0547 22 14.2857 21.2524 14.2857 20.3333V2.55556C14.2857 2.24848 14.5413 2 14.8571 2H16ZM11.4286 2C11.7444 2 12 2.24848 12 2.55556V7C12 8.34169 11.0167 9.46365 9.71429 9.7219V20.3333C9.71429 21.2524 8.94531 22 8 22C7.05469 22 6.28571 21.2524 6.28571 20.3333V9.7219C4.98326 9.46365 4 8.34169 4 7V2.55556C4 2.24848 4.25558 2 4.57143 2C4.88728 2 5.14286 2.24848 5.14286 2.55556V7C5.14286 7.91905 5.91183 8.66667 6.85714 8.66667C7.17299 8.66667 7.42857 8.91515 7.42857 9.22222V20.3333C7.42857 20.6399 7.68471 20.8889 8 20.8889C8.31529 20.8889 8.57143 20.6399 8.57143 20.3333V9.22222C8.57143 8.91515 8.82701 8.66667 9.14286 8.66667C10.0882 8.66667 10.8571 7.91905 10.8571 7V2.55556C10.8571 2.24848 11.1127 2 11.4286 2ZM16 3.11111H15.4286V20.3333C15.4286 20.6399 15.6847 20.8889 16 20.8889C16.3153 20.8889 16.5714 20.6399 16.5714 20.3333V13.6667C16.5714 13.3596 16.827 13.1111 17.1429 13.1111H18.8571V5.88889C18.8571 4.35731 17.5753 3.11111 16 3.11111ZM6.85714 2C7.17299 2 7.42857 2.24848 7.42857 2.55556V7C7.42857 7.30707 7.17299 7.55556 6.85714 7.55556C6.54129 7.55556 6.28571 7.30707 6.28571 7V2.55556C6.28571 2.24848 6.54129 2 6.85714 2ZM9.14286 2C9.45871 2 9.71429 2.24848 9.71429 2.55556V7C9.71429 7.30707 9.45871 7.55556 9.14286 7.55556C8.82701 7.55556 8.57143 7.30707 8.57143 7V2.55556C8.57143 2.24848 8.82701 2 9.14286 2Z" fill="#595959"/>
+                  </svg>
+                </div>
+                <div id="nombre-movimientos">
+                  <p>{{tipo.nombre}}</p>
+                </div>
+                <div class="cantidad-movimientos test">
+                  <h2 [class.negative-amount]="negativeAmountTest(tipo.cantidad)" [class.positive-amount]="positiveAmount(tipo.cantidad)">
+                    <span [class.negative-sign]="negativeAmount(tipo.cantidad)" [class.positive-sign]="positiveAmountTest(tipo.cantidad)">{{ getSign(tipo.cantidad) }}</span>
+                    <span>{{ getTransformed(tipo.cantidad) }} MXN</span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div id="cargar-mas">
+    <p *ngIf="mostrarCargarMas" (click)="cargarMas.emit()">Cargar más movimientos</p>
+  </div>
+</div>

@@ -1,0 +1,86 @@
+/*[
+  {
+  "fecha":"2023-09-6",
+  "tipo":[
+    {
+      "nombre":"Pago Amazon",
+      "cantidad":"12000.00"
+    }
+  ],
+  "idUsuarioSub":1011
+},
+{
+  "fecha":"2023-09-2",
+  "tipo":[
+    {
+      "nombre":"Transferencia",
+      "cantidad":"1009.00"
+    },
+    {
+      "nombre":"Transferencia",
+      "cantidad": "-12000.00"
+    },
+    {
+      "nombre":"Pago Amazon",
+      "cantidad": "-4300.00"
+    }
+  ],
+  "idUsuarioSub":1011
+},
+{
+  "fecha":"2023-08-14",
+  "tipo":[
+    {
+      "nombre":"Pago Amazon",
+      "cantidad":"-1400.00"
+    },
+    {
+      "nombre":"Transferencia",
+      "cantidad":"100.00"
+    }
+  ],
+  "idUsuarioSub":1011
+},
+{
+  "fecha":"2023-08-25",
+  "tipo":[
+    {
+      "nombre":"Transferencia",
+      "cantidad": "-12000.00"
+    },
+    {
+      "nombre":"Pago Amazon",
+      "cantidad": "-4300.00"
+    }
+  ],
+  "idUsuarioSub":1011
+},
+{
+  "fecha":"2023-07-10",
+  "tipo":[
+    {
+      "nombre":"Transferencia",
+      "cantidad": "-12000.00"
+    },
+    {
+      "nombre":"Pago Amazon",
+      "cantidad": "-4300.00"
+    }
+  ],
+  "idUsuarioSub":1011
+},
+{
+  "fecha":"2023-07-11",
+  "tipo":[
+    {
+      "nombre":"Transferencia",
+      "cantidad": "-12000.00"
+    },
+    {
+      "nombre":"Pago Amazon",
+      "cantidad": "-4300.00"
+    }
+  ],
+  "idUsuarioSub":1011
+}
+]*/

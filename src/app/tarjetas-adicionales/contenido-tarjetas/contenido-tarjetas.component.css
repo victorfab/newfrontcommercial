@@ -1,0 +1,9 @@
+.container-tarjetas{
+  width: 97%;
+  height: 800px;
+  background: #fff;
+  float: left;
+  padding: 20px 12px 20px 12px;
+  border-radius: 12px;
+  margin-top: 28px;
+}

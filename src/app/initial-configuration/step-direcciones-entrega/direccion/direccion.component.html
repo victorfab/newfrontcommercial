@@ -1,0 +1,98 @@
+<div  class="container-modal">
+  <div id="head-edit">
+    <div class="iconstant">
+      <img class="icon-s" src="../../assets/media/IconSnatnder.svg" alt="Icon Santander">
+    </div>
+    <div class="closeicon">
+      <flame-icon fontIcon="close-1px" size="m"></flame-icon>
+    </div>
+  </div>
+  <div class="modal-content">
+    <h2 class="title-modal">Agregar dirección</h2>
+        <form (ngSubmit)="addNewAddress(f)" #f="ngForm">
+          <div class="row">
+            <div class="form-group">
+              <input
+                type="text"
+                id="alias"
+                class="form-control"
+                name="alias"
+                placeholder="Alias de la dirección"
+                ngModel
+              >
+              <label for="alias"></label>
+            </div>
+            <div class="col-sm-2 form-group">
+              <input
+                type="text"
+                id="calle"
+                class="form-control"
+                name="calle"
+                placeholder="Calle"
+                ngModel
+              >
+              <label for="calle"></label>
+            </div>
+            <div class="col-sm-2 form-group">
+              <input
+                type="text"
+                id="numExt"
+                class="form-control"
+                name="numExt"
+                placeholder="No. exterior"
+                ngModel
+              >
+              <label for="numExt"></label>
+            </div>
+            <div class="col-sm-2 form-group">
+              <input
+                type="text"
+                id="numInt"
+                class="form-control"
+                name="numInt"
+                placeholder="Número interior (si aplica)"
+                ngModel
+              >
+              <label for="numInt"></label>
+            </div>
+            <div class="col-sm-2 form-group">
+              <input
+                type="text"
+                id="cp"
+                class="form-control"
+                name="cp"
+                placeholder="Código postal"
+                [(ngModel)]="cp"
+                (focusout)="getcp()"
+              >
+              <label for="cp"></label>
+            </div>
+            <div class="col-sm-2 form-group colselect" [formGroup]="addresFormGroup">
+              <select (ngModelChange)="selectChangeColonia($event)" id="cp" formControlName="colonia" placeholder="Colonia o fraccionamiento" >
+                <option *ngFor="let col of coloniaselect" [value]="col.id">{{col.nombre}}</option>
+              </select>
+              <label for="cp"></label>
+            </div>
+            <div class="col-sm-2 form-group colselect" [formGroup]="addresFormGroup">
+              <select (ngModelChange)="selectChangeMunicip($event)" id="mun" formControlName="municipio" placeholder="Alcaldia o municipio">
+                <option *ngFor="let mun of municipioselect" [value]="mun.id">{{mun.nombre}}</option>
+              </select>
+              <label for="mun"></label>
+            </div>
+            <div class="col-sm-2 form-group">
+              <input
+                type="text"
+                id="estado"
+                class="form-control"
+                name="estado"
+                [(ngModel)]=estadoselect
+              >
+              <label for="estado" ></label>
+            </div>
+            <div class="col-xs-12">
+              <button flameButton color="primary" type="submit">Agregar</button>
+            </div>
+          </div>
+        </form>
+  </div>
+</div>

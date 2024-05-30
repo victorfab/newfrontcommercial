@@ -1,0 +1,74 @@
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  left: 70px;
+  width: 250px;
+  overflow: hidden;
+}
+#icons-content{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+ul .logo{
+  display: flex;
+  text-align: left;
+  margin-top: 35px;
+  margin-bottom: 75px;
+  left: 0;
+
+}
+.logo img{
+  width: 125px;
+  height: 22px;
+}
+a{
+  position: relative;
+  color: #191919;
+  width: 75%;
+  font-size: 13px;
+  display: inline-flex;
+  padding: 10px;
+  align-items: center;
+}
+nav .icon{
+  position: absolute;
+  justify-content: center;
+}
+nav .nav-item{
+  margin-left: 27px;
+}
+nav img:hover{
+  color: red;
+}
+.selected a{
+
+  background: #fff;
+  box-shadow: 0 20px 35px rgb(0,0,0,0.1);
+  border-radius: 10px;
+  font-weight: bolder;
+}
+.selected .icon .mis-productos {
+  fill: red;
+}
+.selected .icon .tarjetas-adicionales {
+  fill: red;
+}
+.selected .icon .configuracion {
+  fill: red;
+}
+.selected .icon .mi-banca {
+  fill: red;
+}
+.selected .icon .contacto {
+  fill: red;
+}
+.active a {
+  color: #000000;
+  font-weight: bold;
+}
+.active a flame-icon{
+  color: #EC0000;
+}

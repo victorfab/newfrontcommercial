@@ -1,0 +1,41 @@
+/*[
+  {
+    "idSolicitud":"Z941054",
+    "idArea":2000,
+    "area":"Marketing",
+    "idSubArea":3000,
+    "subarea":"Servicio",
+    "idEmpleado":"Z19HPW5",
+    "nombre":"Adriana Hernandez Monroy",
+    "correo":"adri@minsait.com",
+    "limite_credito":"13000.00",
+    "idStatus":2,
+    "fecha":"14/10/2023"
+  },
+  {
+    "idSolicitud":"Z015139",
+    "idArea":2000,
+    "area":"Marketing",
+    "idSubArea":3000,
+    "subarea":"Servicio",
+    "idEmpleado":"Z09LLW5",
+    "nombre":"José Luis Miranda Becerril",
+    "correo":"jose@minsait.com",
+    "limite_credito":"19000.00",
+    "idStatus":2,
+    "fecha":"14/10/2023"
+  },
+  {
+    "idSolicitud":"Z359877",
+    "idArea":2001,
+    "area":"Administración",
+    "idSubArea":3001,
+    "subarea":"Gestión",
+    "idEmpleado":"Z87NAG5",
+    "nombre":"Ricardo Pérez Hérnandez",
+    "correo":"richi@minsait.com",
+    "limite_credito":"45000.00",
+    "idStatus":2,
+    "fecha":"14/10/2023"
+  }
+]*/

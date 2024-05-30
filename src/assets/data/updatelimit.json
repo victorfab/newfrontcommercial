@@ -1,0 +1,20 @@
+{
+    "data": {
+        "rqUID": "rqUID",
+        "status": {
+            "statusCode": 0,
+            "serverStatusCode": "serverStatusCode",
+            "severity": "severity",
+            "statusDesc": "statusDesc",
+            "additionalStatus": [
+                {
+                    "addStatusCode": "addStatusCode",
+                    "addServerStatusCode": "addServerStatusCode",
+                    "addSeverity": "addSeverity",
+                    "addStatusDesc": "addStatusDesc"
+                }
+            ]
+        }
+    },
+    "message": "OK"
+}

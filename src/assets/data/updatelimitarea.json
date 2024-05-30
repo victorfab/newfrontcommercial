@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "idArea": "00e72051-d426-da1e-ceb0-ca5fde1b1ed9",
+            "idPadre": null,
+            "nombArea": "Area de TI 4",
+            "limite": 42990,
+            "idDireccion": "a9b0006e-7e69-11ee-b962-0242ac120002",
+            "limPorSubarea": null,
+            "idEmpresa": "7d2de5c6-7e99-11ee-b962-0242ac120002",
+            "empresa": null,
+            "lstEmpleado": []
+        }
+    ],
+    "message": "OK"
+}

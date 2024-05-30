@@ -1,0 +1,14 @@
+<div *ngIf="showEliminar" class="container-eliminar">
+  <div id="head-delete">
+    <p class="text-eliminar">Eliminar solicitud</p>
+    <img class="close" (click)="closedEliminar.emit()" src="../../../assets/media/Icon close.svg" alt="Close">
+  </div>
+  <div class="container">
+    <img class="img-delete" src="../../../assets/media/Frame 14436.svg" alt="Eliminar">
+      <p class="question">Si eliminas esta solicitud no podrás ver el registro en tu dashboard
+        de solicitudes de TDC
+      </p>
+      <input class="button-eliminar" (click)="confirmarEliminar.emit()" type="submit" value="Eliminar">
+  </div>
+</div>
+<div class="background-overlay" *ngIf="showEliminar"></div>

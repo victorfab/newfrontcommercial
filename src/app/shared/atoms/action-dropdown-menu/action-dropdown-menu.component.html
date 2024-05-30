@@ -1,0 +1,20 @@
+<div class="btn-group ml-30 bk-white border-white">
+<!--     <button type="button"
+        style="background-color: white; border-color: white;"
+        class="btn btn-primary dropdown-toggle"
+        appDropDown #r="appDropDown"
+        id="navbarDropdown" role="button" data-toggle="dropdown" 
+        aria-haspopup="true" aria-expanded="false"><strong style="color: red;">•••</strong><span class="caret"></span>
+    </button> -->
+    <div id="manage-dropdown">
+        <div *ngIf="showDropdownMenuForElement === 'areas' ">
+            <button flameButton (click)="onModifyArea(areaIndexPassed)">Modificar Área</button>
+            <button flameButton (click)="eliminateArea(areaIndexPassed)">Eliminar Área</button>
+        </div>
+        
+        <div *ngIf="showDropdownMenuForElement === 'subareas' ">
+            <button flameButton (click)="onModifySubarea(areaIndexPassed,subareaIndexPassed)">Modificar Subárea</button>
+            <button flameButton (click)="eliminateSubarea(areaIndexPassed,subareaIndexPassed)">Eliminar Subárea</button>
+        </div>
+    </div> 
+</div>

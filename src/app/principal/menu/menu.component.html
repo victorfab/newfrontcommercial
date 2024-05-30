@@ -1,0 +1,47 @@
+<nav>
+  <ul id="icons-cont">
+    <div class="logo">
+      <img class="icon" src="../../assets/media/Santander.svg" alt="Logo Santander">
+    </div>
+    <li [routerLinkActive]="['active']">
+      <a routerLink="/mis-productos">
+        <flame-icon fontIcon="card" size="m"></flame-icon>
+        <span class="nav-item">Mis productos</span>
+      </a>
+    </li>
+    <li [routerLinkActive]="['active']">
+      <a routerLink="/tarjetas-adicionales">
+        <flame-icon fontIcon="cards" size="m"></flame-icon>
+        <span class="nav-item">Solicitud de tarjetas</span> 
+      </a>
+    </li>
+    <li>
+      <a href="#">
+      <flame-icon fontIcon="clipboard" size="m"></flame-icon>
+      <span class="nav-item">Reportes</span>
+    </a>
+    </li>
+    <li>
+      <a routerLink="/initial-configuration/company-structure">
+        <flame-icon fontIcon="settings" size="m"></flame-icon>
+        <span class="nav-item">Configuración</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <flame-icon fontIcon="financing" size="m"></flame-icon>
+        <span class="nav-item">Ir a mi banca</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <flame-icon fontIcon="communication-message" size="m"></flame-icon>
+        <span class="nav-item">Contacto</span>
+      </a>
+    </li>
+    <li><a href="#">
+      <flame-icon fontIcon="sign-off" size="m"></flame-icon>
+      <span class="nav-item">Cerrar sesión</span>
+    </a></li>
+  </ul>
+</nav>

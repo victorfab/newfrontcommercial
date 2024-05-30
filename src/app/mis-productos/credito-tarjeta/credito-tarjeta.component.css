@@ -1,0 +1,181 @@
+.datos-notarjeta{
+  width: 100%;
+  height: 100%;
+
+}
+#limite-credito{
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+#limite-credito p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#limite-credito h2{
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#saldo-disponible{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px 5px 0px 0px;
+  align-items: center;
+  border-bottom: 0px;
+}
+#saldo-disponible p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#saldo-disponible h2{
+  font-size: 12px;
+  font-weight: 700;
+  color: #63B468;
+  letter-spacing: 1px;
+}
+#saldo-gastado{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 0px 0px 5px 5px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+#saldo-gastado p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#saldo-gastado h2{
+  font-size: 12px;
+  font-weight: 700;
+  color: #ff0000;
+  letter-spacing: 1px;
+}
+#saldo-gastado span{
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  letter-spacing: 1px;
+}
+
+#fecha-limite{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: 0px;
+  align-items: center;
+}
+#fecha-limite p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#fecha-limite h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#fecha-corte{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-bottom: 0px;
+  border-top: 0px;
+  align-items: center;
+}
+#fecha-corte p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#fecha-corte h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#pago-minimo{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-bottom: 0px;
+  border-top: 0px;
+  align-items: center;
+}
+#pago-minimo p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#pago-minimo h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#linea-general{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-bottom: 0px;
+  border-top: 0px;
+  align-items: center;
+}
+#linea-general p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#linea-general h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#linea-asignada{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-bottom: 0px;
+  border-top: 0px;
+  align-items: center;
+}
+#linea-asignada p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#linea-asignada h2{
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#linea-disponible{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #D9D9D9;
+  border-radius: 0px 0px 5px 5px;
+  border-top: 0px;
+  align-items: center;
+}
+#linea-disponible p{
+  font-size: 12px;
+  font-weight: 400;
+}
+#linea-disponible h2{
+  font-size: 12px;
+  font-weight: 700;
+}

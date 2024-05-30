@@ -1,0 +1,18 @@
+/*[
+  {
+    "idStatus":1,
+    "status":"Pendiente de envío"
+  },
+  {
+    "idStatus":2,
+    "status":"Envio Realizado"
+  },
+  {
+    "idStatus":3,
+    "status":"Entregadas"
+  },
+  {
+    "idStatus":4,
+    "status":"No se recibieron"
+  }
+]*/

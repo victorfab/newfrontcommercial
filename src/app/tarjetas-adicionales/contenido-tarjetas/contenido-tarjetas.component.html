@@ -1,0 +1,46 @@
+<div class="container-tarjetas">
+  <app-solicitar-tarjetas [showTarjetasAdicionales]="tarjetasAdicionales" [empresadata]="areas" [registrarUsuarios]="registroUsuarios" [totalEmpleados]="totalEmpleados"
+(muestraModal)="showModal()" (addEmpleados)="addEmpleado()" (muestraAsignadas)="closedComprobante()" (infoComprobante)="infoComprobante($event)"
+(showEliminarTarjetas)="showEliminarTarjetas($event)"></app-solicitar-tarjetas>
+
+<app-loading-modal [showLoading]="modalLoading" (closeModal)="closedModal()" ></app-loading-modal>
+
+<app-agregar-empleado [showAddEmpleado]="modalEmpleado" (closeModalEmpleado)="closeEmpleado()" [newUser]="nuevoUsuario"
+(addUsuario)="agregarUsuarios($event)" [usuarioSelect]="valorSeleccionado" [arregloAreas]="info_archivo">
+</app-agregar-empleado>
+
+<app-archivo-cargado (modalAddEmpleado)="addEmpleado()" [showArchivoCargado]="showArchivo" [cargarArchivoAreas]="getArea"
+(cancelarProceso)="showCancelarProceso()" (eliminarUsuario)="showEliminarUsuario($event)" (confirmarSolicitud)="showConfirmar()"
+(addEmpleado)="addEmpleado()" [selectUser]="usuariosSeleccionados" [alMenosUnUsuario]="botonHabilitado" (checkBoton)="usuarioSelect($event)"
+(busqueda)="busquedas($event)" [model]="model" [filtros]="filtroAreas" [filtrosSub]="filtroSubareas" [filtrosEmple]="filtroEmpleados"
+[numeroEmpleados]="totalEmpleados">
+</app-archivo-cargado>
+
+<app-modal-cancelar-proceso [showCancelarProceso]="modalCancelarProceso" (closeCancelarProceso)="closedCancelarProceso()" (cancelarProceso)="cancelarProceso()"></app-modal-cancelar-proceso>
+<app-modal-eliminar-usuario [showDeleteUser]="modalEliminarUsuario" (closedEliminarUsuario)="closeEliminarUsuario()"
+(afirmarEliminar)="eliminarUsuario()"
+></app-modal-eliminar-usuario>
+
+<app-modal-usuario-eliminado [showUsuarioEliminado]="modalUsuarioEliminado" (closedUsuarioEliminado)="closeUsuarioEliminado()" [userEliminado]="usuarioEliminado">
+</app-modal-usuario-eliminado>
+
+<app-modal-confirmar-solicitud [showConfirmarSolicitud]="modalConfirmarSolicitud" (closeConfirmarSolicitud)="closedConfirmar()"
+(solicitarToken)="showSuperToken()" [totalUserSelect]="totalSeleccionados" [infoUsuariosSelect]="datosUsuariosSeleccionados"
+></app-modal-confirmar-solicitud>
+
+<app-modal-supertoken [showSuperToken]="modalSuperToken" (closeSuperToken)="closedSuperToken()"
+(Comprobante)="showComprobante()"
+></app-modal-supertoken>
+
+<app-modal-comprobante-solicitud [showComprobante]="modalComprobante" (infoComprobante)="infoComprobante($event)" [totalUserSelect]="totalSeleccionados"
+[fecha]="currentDate"
+></app-modal-comprobante-solicitud>
+
+<app-rastreo-envio [showRastreoEnvio]="mostrarRastreo" [obtenerStatus]="obtenerStatus" (solicitarTarjetas)="showSolicitar()" [muestraStatus]="muestraStatus"
+[muestraStatusEnRuta]="statusEnRuta" [muestraStatusEntregadas]="statusEntregadas" (regresar)="regresar()" [muestraStatusNoRecibido]="statusNoRecibido"
+(eliminarRastreo)="deleteStatus($event)"
+></app-rastreo-envio>
+
+<app-modal-eliminar-solicitadas [showEliminar]="showEliminar" (confirmarEliminar)="deleteTarjetasAsignadas()" (closedEliminar)="closedEliminar()"></app-modal-eliminar-solicitadas>
+<app-modal-confirmacion [showConfirmacion]="showConfirmacion" (confirmarTarjeta)="confirTarjeta()" (closedConfirmar)="closedConfirmarcion()" [confirmarId]="confirmarTarjeta"></app-modal-confirmacion>
+</div>

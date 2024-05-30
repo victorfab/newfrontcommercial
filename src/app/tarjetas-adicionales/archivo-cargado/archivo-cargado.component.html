@@ -1,0 +1,181 @@
+<div class="container-asignadas">
+  <div class="contenido">
+    <div class="head-solicitar">
+      <div id="solicitar">
+        <svg class="return" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.7446 4.00002C16.0763 3.99828 16.3952 4.11751 16.6308 4.33137C16.8671 4.5459 17 4.83792 17 5.14256C17 5.4472 16.8671 5.73922 16.6308 5.95375L10.0154 11.9977L16.6308 18.0416C17.1202 18.4896 17.1202 19.216 16.6308 19.664C16.1413 20.112 15.3478 20.112 14.8584 19.664L7.36921 12.8089C7.13292 12.5943 7 12.3023 7 11.9977C7 11.693 7.13292 11.401 7.36921 11.1865L14.8584 4.33137C15.0939 4.1175 15.4128 3.99828 15.7446 4.00002Z" fill="#EC0000"/>
+        </svg>
+        <p>Solicitar tarjetas</p>
+      </div>
+      <div (click)="addEmpleado.emit()" class="agregar-empleado">
+        <input class="agregar" type="button" value="Agregar Empleado">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2821 16.2935C15.6589 16.2935 17.3846 17.4082 17.3846 18.9443V19.5278C17.3846 20.3394 16.7075 21 15.8742 21H3.51042C2.67708 21 2 20.3394 2 19.5278V18.9443C2 17.4824 3.83994 16.2935 6.10256 16.2935C6.53626 16.2935 7.05509 16.3799 7.51282 16.4561L7.79227 16.5015C8.14784 16.5571 8.5004 16.6304 8.84896 16.7202L9.01923 16.7646C9.25661 16.8286 9.48197 16.8887 9.69231 16.8887C9.89363 16.8887 10.2602 16.7954 10.5827 16.7129L10.9483 16.6226C11.5944 16.4722 12.5238 16.2935 13.2821 16.2935ZM13.2821 17.2935C12.7682 17.2935 12.024 17.4009 11.1867 17.5952L10.8421 17.6807C10.4405 17.7827 10.0248 17.8887 9.69231 17.8887C9.34375 17.8887 9.02724 17.8037 8.7478 17.729L8.58854 17.687C8.27204 17.606 7.95152 17.5396 7.62901 17.4888L7.34054 17.4414C6.92288 17.3721 6.45012 17.2935 6.10256 17.2935C4.46394 17.2935 3.02564 18.0649 3.02564 18.9443V19.5278C3.02564 19.7881 3.24299 20 3.51042 20H15.8742C16.1416 20 16.359 19.7881 16.359 19.5278V18.9443C16.359 18.0034 15.0359 17.2935 13.2821 17.2935ZM9.6903 5.6001C10.8311 5.6001 11.982 6.10693 12.6931 6.92285C13.2841 7.6001 13.5315 8.44141 13.3892 9.2915L12.9936 12.3843C12.7332 14.0474 11.406 15.1558 9.6903 15.1558C7.97656 15.1558 6.65144 14.0474 6.39303 12.3979L5.99239 9.27295C5.85316 8.43945 6.10056 7.59717 6.69251 6.91943C7.40264 6.10547 8.55148 5.6001 9.6903 5.6001ZM9.6903 6.6001C8.84395 6.6001 7.99459 6.9707 7.47376 7.56738C7.19531 7.88672 6.88882 8.4165 7.00701 9.13086L7.40865 12.2603C7.58894 13.4062 8.48538 14.1558 9.6903 14.1558C10.8982 14.1558 11.7957 13.4062 11.978 12.2466L12.3746 9.14893C12.4958 8.41846 12.1903 7.88916 11.9119 7.57031C11.39 6.97168 10.5387 6.6001 9.6903 6.6001ZM18.4103 3C18.6937 3 18.9231 3.22363 18.9231 3.5V6H21.4872C21.7706 6 22 6.22363 22 6.5C22 6.77637 21.7706 7 21.4872 7H18.9231V9.5C18.9231 9.77637 18.6937 10 18.4103 10C18.1268 10 17.8974 9.77637 17.8974 9.5V7H15.3333C15.0499 7 14.8205 6.77637 14.8205 6.5C14.8205 6.22363 15.0499 6 15.3333 6H17.8974V3.5C17.8974 3.22363 18.1268 3 18.4103 3Z" fill="#EC0000"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="container-scroll">
+    <div class="identificar">
+      <p class="check">Identificamos:</p>
+      <h3 class="empleados">{{totalEmpleados}} empleados en tu documento</h3>
+    </div>
+      <div id="search-box">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.68517 1.66667C4.36667 1.66667 1.66666 4.36669 1.66666 7.68519C1.66666 11.0037 4.36667 13.7037 7.68517 13.7037C8.67061 13.7037 9.59885 13.461 10.4207 13.0393L15.1486 17.7682C15.5094 18.129 15.9841 18.3089 16.458 18.3089C16.9327 18.3089 17.4074 18.129 17.7682 17.7682C18.4898 17.0457 18.4898 15.8711 17.7682 15.1487L13.0393 10.4207C13.461 9.59887 13.7037 8.67063 13.7037 7.68519C13.7037 4.36669 11.0037 1.66667 7.68517 1.66667ZM2.59258 7.68519C2.59258 4.87757 4.87711 2.5926 7.68517 2.5926C10.4932 2.5926 12.7778 4.87757 12.7778 7.68519C12.7778 10.4928 10.4932 12.7778 7.68517 12.7778C4.87711 12.7778 2.59258 10.4928 2.59258 7.68519ZM17.1135 15.8033C17.4743 16.1641 17.4743 16.7528 17.1135 17.1135C16.7527 17.4725 16.1659 17.4743 15.8033 17.1135L11.2292 12.5386C11.7303 12.1717 12.1717 11.7304 12.5386 11.2292L17.1135 15.8033Z" fill="#EC0000"/>
+        </svg>
+        <label for="search">
+          <input [ngModel]="model" (ngModelChange)="busqueda.emit($event)" type="text" id="search" placeholder="Buscar por ID, nombre, correo,área o sub área">
+        </label>
+      </div>
+      <div class="show-area">
+        <div class="areas">
+          <div *ngFor="let row of usuariosPorArea">
+            <div id="usuariosPorArea" *ngFor="let area of row.area | paginate: {itemsPerPage: 8, currentPage: page}; let i = index">
+              <div id="conexiona">
+                <div [class.contorno-area]="area.iconRotation" class="area" id="area-01">
+                  <div id="conexiona-01" class="length">
+                    <div class="text-area">
+                      <ul id="ul-con-01"><li></li></ul>
+                      <h2 id="infoclick" (click)="infoClick.emit(area.nombreArea)"
+                       [class.resaltar]="area.iconRotation">{{area.nombreArea}}</h2>
+                    </div>
+                    <div class="count" id="count">
+                      <h2 class="numero">{{area.subareas.length}} Sub áreas</h2>
+                      <h2 class="numero">{{area.empleadosArea.length}} empleados</h2>
+                    </div>
+                  </div>
+                  <svg (click)="rotation(area)" class="righta" [class.rotated]="area.iconRotation"  xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69157 15C6.44274 15.0013 6.20358 14.9119 6.02691 14.7515C5.84969 14.5906 5.75 14.3716 5.75 14.1431C5.75 13.9146 5.84969 13.6956 6.02691 13.5347L10.9885 9.00174L6.02691 4.46879C5.65983 4.13278 5.65983 3.58801 6.02691 3.252C6.39399 2.916 6.98915 2.916 7.35623 3.252L12.9731 8.39335C13.1503 8.55424 13.25 8.77326 13.25 9.00174C13.25 9.23022 13.1503 9.44924 12.9731 9.61013L7.35623 14.7515C7.17957 14.9119 6.9404 15.0013 6.69157 15Z" fill="#999999"/>
+                  </svg>
+                </div>
+                <div [class.show-border]="area.iconRotation" class="border-aplication" id="border-aplication">
+                  <div>
+                    <div *ngFor="let usuario of area.empleadosArea">
+                      <div *ngIf="area.showEmpleadosArea && area.empleadosArea" >
+                        <div [class.border-empl]="area.iconRotation" id="banca-comer" (click)="infoUserClicked(usuario.usuario)">
+                          <div id="tua-2" class="text-user-area">
+                            <ul id="ul-tua-01"><li></li></ul>
+                            <div id="ul-tua">
+                              <table class="table-empleado" id="table-empleado" aria-label="Tarjetas">
+                                <thead id="head-1">
+                                  <tr id="tr-te-01">
+                                    <th span="5" id="th-02" class="header">Nombre</th>
+                                    <th span="4" id="th-02" class="header">id Empleado</th>
+                                    <th span="4" id="th-02" class="headers">Limite de crédito</th>
+                                    <th span="4" id="th-02" class="icon">Email</th>
+                                    <th span="2" id="th-02" class="icon"></th>
+                                    <th span="2" id="th-02"class="icon"></th>
+                                  </tr>
+                                </thead>
+                                <tbody id="tbody-01">
+                                  <tr id="tr-tb-1">
+                                    <!-- <h2 class="name">{{usuario.usuario | transformWord}}</h2> -->
+                                    <!-- <p class="content">{{usuario.puesto | transformWord}}</p> -->
+                                    <td id="td-02">{{usuario.usuario | transformWord}}</td>
+                                    <td id="td-02">{{usuario.idEmpleado}}</td>
+                                    <td id="td-02">{{usuario.Limitecredito}}</td>
+                                    <td id="td-02">{{usuario.email}}</td>
+                                    <td id="td-02">
+                                      <a class="trash">
+                                        <flame-icon fontIcon="trash-bin" size="m"></flame-icon>
+                                      </a>
+                                    </td>
+                                    <td id="center">
+                                      <label  for="select-{{usuario.idempleado}}">
+                                        <input type="checkbox" id="select-{{usuario.idempleado}}" [(ngModel)]="usuario.idempleado" >
+                                      </label>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div *ngFor="let sub of area.subareas; let last = last">
+                      <div [hidden]="sub.empleadosSub.length === 0">
+                        <div [class.contorno-subarea]="area.iconRotation" [class.last-subarea]="last && area.iconRotation"
+                        *ngIf="area.showSubArea" class="subarea">
+                          <div class="length-sub">
+                              <div class="text-sub">
+                                <ul><li></li></ul>
+                                <div class="text-subarea">
+                                  <h2 (click)="infoSubarea.emit(sub.subarea)"
+                                  [class.resaltar]="sub.iconRotation" class="nombre-sub">{{sub.subarea}}</h2>
+                                  <p class="clasificacion">Subárea {{sub.empleadosSub.length}}</p>
+                                </div>
+                              </div>
+                              <div>
+                                <h2 class="numero">{{sub.empleadosSub.length}} empleados</h2>
+                              </div>
+                          </div>
+                          <div>
+                            <svg (click)="rotationEmpleados(sub)" class="righta" [class.rotated]="sub.iconRotation" xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69157 15C6.44274 15.0013 6.20358 14.9119 6.02691 14.7515C5.84969 14.5906 5.75 14.3716 5.75 14.1431C5.75 13.9146 5.84969 13.6956 6.02691 13.5347L10.9885 9.00174L6.02691 4.46879C5.65983 4.13278 5.65983 3.58801 6.02691 3.252C6.39399 2.916 6.98915 2.916 7.35623 3.252L12.9731 8.39335C13.1503 8.55424 13.25 8.77326 13.25 9.00174C13.25 9.23022 13.1503 9.44924 12.9731 9.61013L7.35623 14.7515C7.17957 14.9119 6.9404 15.0013 6.69157 15Z" fill="#999999"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div >
+                        <div *ngIf="area.showSubArea && sub.showEmpleados">
+                          <div *ngFor="let usuario of sub.empleadosSub">
+                            <div *ngIf="sub.showEmpleados">
+                              <div [class.border-empl]="sub.iconRotation" id="banca-comer" (click)="infoUserClicked(usuario.usuario)">
+                                <div class="user-sub" id="user-sub">
+                                  <ul id="ul-01"><li></li></ul>
+                                  <div id="ul-02">
+                                    <table class="table-empleado" id="table-empleado-01" aria-label="Tarjetas">
+                                      <thead id="th-tabemp-03">
+                                        <tr id="tr-tabemp-03">
+                                          <th span="5" id="tr-tabemp-03" class="header">Nombre</th>
+                                          <th span="4" id="tr-tabemp-03" class="header">id Empleado</th>
+                                          <th span="4" id="tr-tabemp-03" class="headers">Limite de crédito</th>
+                                          <th span="4" id="tr-tabemp-03" class="icon">Email</th>
+                                          <th span="2" id="tr-tabemp-03" class="icon"></th>
+                                          <th span="2" id="tr-tabemp-03" class="icon"></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <!-- <h2 class="name">{{usuario.usuario | transformWord}}</h2> -->
+                                          <!-- <p class="content">{{usuario.puesto | transformWord}}</p> -->
+                                          <td>{{usuario.usuario | transformWord}}</td>
+                                          <td>{{usuario.idEmpleado}}</td>
+                                          <td>{{usuario.Limitecredito}}</td>
+                                          <td>{{usuario.email}}</td>
+                                          <td>
+                                            <a class="trash">
+                                              <flame-icon fontIcon="trash-bin" size="m"></flame-icon>
+                                            </a>
+                                          </td>
+                                          <td id="center">
+                                            <label  for="select-{{usuario.idempleado}}">
+                                              <input type="checkbox" id="select-{{usuario.idempleado}}" [(ngModel)]="usuario.idempleado" >
+                                            </label>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="container-button">
+    <input (click)="cancelarProceso.emit()" class="cancel" type="submit" value="Cancelar">
+    <input [ngClass]="{'next-enabled':alMenosUnUsuario, 'next-disabled':!alMenosUnUsuario}" [disabled]="!alMenosUnUsuario" (click)="confirmarSolicitud.emit()" class="next" type="submit" value="Siguiente">
+  </div>
+</div>

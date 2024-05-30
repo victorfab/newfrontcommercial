@@ -1,0 +1,17 @@
+<div *ngIf="filtroSubarea.length >0 && showSubareas" class="box-subarea">
+  <div class="cont-title">
+    <p>Sub áreas</p>
+  </div>
+  <div *ngFor="let subarea of filtroSubarea" >
+    <div class="search-subarea" [class.selected]="subarea.subarea === select">
+      <img src="../../assets/media/Banca Privada.svg" alt="Banca Privada">
+      <div id="info-subarea">
+        <p>{{subarea.subarea}}</p>
+        <h2>${{subarea.limiteSub | number:'1.2-2'}}</h2>
+      </div>
+      <div id="search_img">
+        <img (click)="infoSubarea.emit(subarea.subarea)" class="arrow" src="../../assets/media/Icon2.svg" alt="Arrow Right">
+      </div>
+    </div>
+  </div>
+</div>

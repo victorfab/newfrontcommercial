@@ -1,0 +1,81 @@
+  <!--AREA-USUARIO-->
+  <div *ngIf="visibilityUserArea">
+    <div class="datos-area">
+      <div id="total-users">
+        <div [class.contorno-area]="selectArea.iconRotation" class="first-data">
+          <div class="length">
+            <div class="text-area">
+              <ul><li></li></ul>
+              <h2 (click)="infoClick.emit(selectArea.nombreArea)" [class.resaltar]="selectArea.iconRotation"
+              class="nom-area">{{selectArea.nombreArea}}</h2>
+            </div>
+            <div class="count">
+              <h2 class="numero">{{selectArea.subareas.length}} Sub áreas</h2>
+              <h2 class="numero">{{selectArea.empleadosArea.length}} empleados</h2>
+            </div>
+          </div>
+          <svg (click)="rotation(selectArea)" class="righta" [class.rotated]="selectArea.iconRotation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.8792 16.6663C6.60272 16.6678 6.33698 16.5684 6.14069 16.3902C5.94377 16.2114 5.83301 15.9681 5.83301 15.7142C5.83301 15.4603 5.94377 15.217 6.14069 15.0382L11.6535 10.0016L6.14069 4.965C5.73282 4.59166 5.73282 3.98635 6.14069 3.61301C6.54855 3.23967 7.20984 3.23967 7.61771 3.61301L13.8587 9.32561C14.0556 9.50439 14.1663 9.74774 14.1663 10.0016C14.1663 10.2555 14.0556 10.4988 13.8587 10.6776L7.61771 16.3902C7.42141 16.5684 7.15568 16.6678 6.8792 16.6663Z" fill="#999999"/>
+          </svg>
+        </div>
+        <div  [class.show-border]="selectArea.iconRotation" class="border-empleados">
+          <div>
+            <div  *ngFor="let usuario of selectUserArea">
+              <div *ngIf="selectArea.showEmpleadosArea">
+                <div id="cont-users" (click)="infoUser.emit(usuario.usuario)">
+                  <div class="text-user-area">
+                    <ul><li></li></ul>
+                    <div>
+                      <p>{{usuario.usuario | transformWord}}</p>
+                      <h2>{{usuario.puesto | transformWord}}</h2>
+                    </div>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div *ngFor="let subarea of subareaDeArea | paginate: {itemsPerPage: 2, currentPage: page}; let last = last">
+            <div [class.contorno-subarea]="subarea.iconRotation" [class.last-subarea]="last && selectArea.iconRotation"
+             *ngIf="selectArea.showSubArea" class="subarea">
+              <div class="length-sub">
+                <div class="text-sub">
+                  <ul><li></li></ul>
+                  <div class="text-subarea">
+                    <h2 (click)="infoSubarea.emit(subarea.subarea)" [class.resaltar]="subarea.iconRotation"
+                    class="nombre-sub">{{subarea.subarea}}</h2>
+                    <p class="clasificacion">Subárea</p>
+                  </div>
+                </div>
+                <div>
+                  <h2 class="numero">{{subarea.empleadosSub.length}} empleados</h2>
+                </div>
+              </div>
+              <div>
+                <svg (click)="rotationSub(subarea)" class="righta" [class.rotated]="subarea.iconRotation" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M6.8792 16.6663C6.60272 16.6678 6.33698 16.5684 6.14069 16.3902C5.94377 16.2114 5.83301 15.9681 5.83301 15.7142C5.83301 15.4603 5.94377 15.217 6.14069 15.0382L11.6535 10.0016L6.14069 4.965C5.73282 4.59166 5.73282 3.98635 6.14069 3.61301C6.54855 3.23967 7.20984 3.23967 7.61771 3.61301L13.8587 9.32561C14.0556 9.50439 14.1663 9.74774 14.1663 10.0016C14.1663 10.2555 14.0556 10.4988 13.8587 10.6776L7.61771 16.3902C7.42141 16.5684 7.15568 16.6678 6.8792 16.6663Z" fill="#999999"/>
+                </svg>
+              </div>
+            </div>
+            <div *ngIf="selectArea.showSubArea && subarea.showEmpleados">
+              <div *ngFor="let usuario of subarea.empleadosSub">
+                <div *ngIf="subarea.showEmpleados">
+                  <div id="cont-users" (click)="infoUser.emit(usuario.usuario)">
+                    <div class="text-user-sub">
+                      <ul><li></li></ul>
+                      <div>
+                        <p>{{usuario.usuario | transformWord}}</p>
+                        <h2>{{usuario.puesto | transformWord}}</h2>
+                      </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pagination-controls">
+      <pagination-controls (pageChange)="page = $event" previousLabel="" nextLabel="" class="custom-pagination"></pagination-controls>
+    </div>
+  </div>

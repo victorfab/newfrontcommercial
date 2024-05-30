@@ -1,0 +1,121 @@
+
+/*[
+  {
+  "idArea":2000,
+  "area":"Contabilidad",
+  "subarea":[
+    {
+      "idSubArea":3000,
+      "nombre":"Servicio",
+      "empleados":[
+        {
+          "idEmpleado":"ZS02ER0",
+          "nombre":"Elena Velasco Flores",
+          "correo": "elena@gmail.com",
+          "limite_credito":"12000.00"
+        },
+        {
+          "idEmpleado":"ZRT3ER0",
+          "nombre":"Aron Cuevas Pérez",
+          "correo": "aron@gmail.com",
+          "limite_credito":"13000.00"
+        },
+        {
+          "idEmpleado":"Z2ERTY0",
+          "nombre":"Pablo Agustin Cruz",
+          "correo": "agustin@gmail.com",
+          "limite_credito":"14000.00"
+        },
+        {
+          "idEmpleado":"Z098ER0",
+          "nombre":"Liliana Martinez Becerril",
+          "correo": "lili@gmail.com",
+          "limite_credito":"15000.00"
+        },
+        {
+          "idEmpleado":"ZUUY120",
+          "nombre":"Miguel Angel Dionisio Velasco",
+          "correo": "miguel@gmail.com",
+          "limite_credito":"16000.00"
+        }
+      ]
+    },
+    {
+      "idSubArea":3001,
+      "nombre":"Mantenimiento",
+      "empleados":[
+        {
+          "idEmpleado":"Z098ER0",
+          "nombre":"Liliana Martinez Becerril",
+          "correo": "lili@gmail.com",
+          "limite_credito":"15000.00"
+        },
+        {
+          "idEmpleado":"ZUUY120",
+          "nombre":"Miguel Angel Dionisio Velasco",
+          "correo": "miguel@gmail.com",
+          "limite_credito":"16000.00"
+        }
+      ]
+    }
+  ]
+
+  },
+  {
+    "idArea":2001,
+    "area":"Administración",
+    "subarea":[
+      {
+        "idSubArea":3001,
+        "nombre":"Gestión",
+        "empleados":[
+          {
+            "idEmpleado":"Z23BFS0",
+            "nombre":"Elena Velasco Flores",
+            "correo": "elena@gmail.com",
+            "limite_credito":"12000.00"
+          }
+        ]
+      }
+    ]
+
+    },
+    {
+      "idArea":2002,
+      "area":"Marketing",
+      "subarea":[
+        {
+          "idSubArea":3002,
+          "nombre":"Control",
+          "empleados":[
+            {
+              "idEmpleado":"ZSASDFT",
+              "nombre":"Elena Velasco Flores",
+              "correo": "elena@gmail.com",
+              "limite_credito":"12000.00"
+            }
+          ]
+        }
+      ]
+
+      },
+      {
+        "idArea":2003,
+        "area":"Recursos Humanos",
+        "subarea":[
+          {
+            "idSubArea":3003,
+            "nombre":"Tesoreria",
+            "empleados":[
+              {
+                "idEmpleado":"Z09NGW3",
+                "nombre":"Elena Velasco Flores",
+                "correo": "elena@gmail.com",
+                "limite_credito":"12000.00"
+              }
+            ]
+          }
+        ]
+
+        }
+]*/

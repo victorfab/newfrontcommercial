@@ -1,0 +1,1772 @@
+{
+  "movimientos": {
+      "rqUID": "rqUID",
+      "recCtrlOut": {
+          "subseqRec": true,
+          "cursor": {
+              "cursorValue": "7"
+          }
+      },
+      "docCtrlOut": {
+          "sentTotalCount": 2
+      },
+      "acctTrnRec": [
+          {
+              "acctTrnId": "1",
+              "acctTrnInfo": {
+                  "postedDt": "2024-03-11",
+                  "stmtDt": "024-03-11",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1704152134138,
+                  "trnSubType": "Amazone",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 15000,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-01",
+                      "trnTime": 1704152134138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 10000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "2",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-02",
+                  "stmtDt": "2024-01-15",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1704238534138,
+                  "trnSubType": "Mercado Libre",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": -12000,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-02",
+                      "trnTime": 1704238534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "3",
+              "acctTrnInfo": {
+                  "postedDt": "2023-12-21",
+                  "stmtDt": "2023-12-21",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1704238534138,
+                  "trnSubType": "Aliexpress",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 11000,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-02",
+                      "trnTime": 1704238534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "4",
+              "acctTrnInfo": {
+                  "postedDt": "2023-12-15",
+                  "stmtDt": "2023-12-15",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1704238534138,
+                  "trnSubType": "Shein",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": -1500,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-02",
+                      "trnTime": 1704238534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "3",
+              "acctTrnInfo": {
+                  "postedDt": "2023-12-21",
+                  "stmtDt": "2023-12-21",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1704238534138,
+                  "trnSubType": "Aliexpress",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 11000,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-02",
+                      "trnTime": 1704238534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "4",
+              "acctTrnInfo": {
+                  "postedDt": "2023-12-15",
+                  "stmtDt": "2023-12-15",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705361734138,
+                  "trnSubType": "Shein",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": -1500,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-15",
+                      "trnTime": 1705361734138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "5",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-16",
+                  "stmtDt": "2024-01-16",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705448134138,
+                  "trnSubType": "Mercado Libre 16",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1000,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-16",
+                      "trnTime": 1705448134138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "6",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-17",
+                  "stmtDt": "2024-01-17",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705534534138,
+                  "trnSubType": "Mercado Libre 17",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1100,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-17",
+                      "trnTime": 1705534534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "7",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-18",
+                  "stmtDt": "2024-01-18",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705620934138,
+                  "trnSubType": "Mercado Libre 18",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1300,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-18",
+                      "trnTime": 1705620934138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "8",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-19",
+                  "stmtDt": "2024-01-19",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705707334138,
+                  "trnSubType": "Mercado Libre 19",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1400,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-19",
+                      "trnTime": 1705707334138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "9",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-20",
+                  "stmtDt": "2024-01-20",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705793734138,
+                  "trnSubType": "Mercado Libre 20",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1500,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-20",
+                      "trnTime": 1705793734138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "10",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-21",
+                  "stmtDt": "2024-01-21",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705880134138,
+                  "trnSubType": "Mercado Libre 21",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1600,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-21",
+                      "trnTime": 1705880134138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "11",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-22",
+                  "stmtDt": "2024-01-22",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1705966534138,
+                  "trnSubType": "Mercado Libre 22",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1600,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-22",
+                      "trnTime": 1705966534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "12",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-23",
+                  "stmtDt": "2024-01-23",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706052934138,
+                  "trnSubType": "Mercado Libre 23",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1700,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-23",
+                      "trnTime": 1706052934138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "13",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-24",
+                  "stmtDt": "2024-01-24",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706139334138,
+                  "trnSubType": "Mercado Libre 24",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1800,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-24",
+                      "trnTime": 1706139334138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "14",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-25",
+                  "stmtDt": "2024-01-25",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706225734138,
+                  "trnSubType": "Mercado Libre 25",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 1900,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-25",
+                      "trnTime": 1706225734138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "15",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-26",
+                  "stmtDt": "2024-01-26",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706312134138,
+                  "trnSubType": "Mercado Libre 26",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 2000,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-26",
+                      "trnTime": 1706312134138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "16",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-27",
+                  "stmtDt": "2024-01-27",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706398534138,
+                  "trnSubType": "Mercado Libre 27",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 2100,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-27",
+                      "trnTime": 1706398534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "17",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-28",
+                  "stmtDt": "2024-01-28",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706484934138,
+                  "trnSubType": "Mercado Libre 28",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 2200,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-28",
+                      "trnTime": 1706484934138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "18",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-29",
+                  "stmtDt": "2024-01-29",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706571334138,
+                  "trnSubType": "Mercado Libre 29",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 2300,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-29",
+                      "trnTime": 1706571334138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "19",
+              "acctTrnInfo": {
+                  "postedDt": "2024-01-30",
+                  "stmtDt": "2024-01-30",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706657734138,
+                  "trnSubType": "Mercado Libre 30",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 2400,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-30",
+                      "trnTime": 1706657734138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "20",
+              "acctTrnInfo": {
+                  "postedDt": "2024-03-11",
+                  "stmtDt": "2024-03-11",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1706744134138,
+                  "trnSubType": "Mercado Libre 31",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 2400,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2024-01-30",
+                      "trnTime": 1706744134138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "21",
+              "acctTrnInfo": {
+                  "postedDt": "2024-03-11",
+                  "stmtDt": "2024-03-11",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1700091334138,
+                  "trnSubType": "Amazone",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": 400,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2023-11-15",
+                      "trnTime": 1700091334138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "22",
+              "acctTrnInfo": {
+                  "postedDt": "2023-12-17",
+                  "stmtDt": "2023-12-17",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1700264134138,
+                  "trnSubType": "Amazone",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": -1400,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2023-12-17",
+                      "trnTime": 1702856134138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "23",
+              "acctTrnInfo": {
+                  "postedDt": "2023-12-18",
+                  "stmtDt": "2023-12-18",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1700350534138,
+                  "trnSubType": "Liverpool",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": -1800,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2023-12-18",
+                      "trnTime": 1702942534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          },
+          {
+              "acctTrnId": "24",
+              "acctTrnInfo": {
+                  "postedDt": "2023-11-18",
+                  "stmtDt": "2023-11-18",
+                  "salesSlipRefNum": "salesSlipRefNum",
+                  "trnTime": 1700350534138,
+                  "trnSubType": "Suburvia",
+                  "athKeys": {
+                      "athId": "athId"
+                  },
+                  "cardRef": {
+                      "cardInfo": {
+                          "cardNum": "1234567890123456789022",
+                          "partyCardRelType": "partyCardRelType",
+                          "cardType": "Credit"
+                      }
+                  },
+                  "exchangeRate": {
+                      "exchRate": 0
+                  },
+                  "origCurAmt": {
+                      "amt": -1100,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "ISO4217-Alpha",
+                          "curCodeDesc": "PESOS"
+                      }
+                  },
+                  "parentTrnData": {
+                      "stmtDt": "2023-11-18",
+                      "trnTime": 1700350534138,
+                      "acctTrnKeys": {
+                          "salesSlipRefNum": "salesSlipRefNum"
+                      },
+                      "totalCurAmt": {
+                          "amt": 15000,
+                          "curCode": {
+                              "curCodeValue": "curCodeValue",
+                              "curCodeType": "ISO4217-Alpha",
+                              "curCodeDesc": "curCodeDesc"
+                          }
+                      }
+                  },
+                  "totalCurAmt": {
+                      "amt": 0,
+                      "curCode": {
+                          "curCodeValue": "curCodeValue",
+                          "curCodeType": "curCodeType",
+                          "curCodeDesc": "curCodeDesc"
+                      }
+                  },
+                  "trnType": {
+                      "trnTypeCode": "trnTypeCode",
+                      "trnSubTypeCode": "trnSubTypeCode",
+                      "desc": "desc",
+                      "pmtOption": "SI",
+                      "cancelledInd": false
+                  },
+                  "networkTrnData": {
+                      "posEntryCapability": "posEntryCapability",
+                      "merchNum": "merchNum",
+                      "merchName": "merchName",
+                      "cardTechnology": "cardTechnology"
+                  }
+              }
+          }
+      ],
+      "status": {
+          "statusCode": 0,
+          "serverStatusCode": "serverStatusCode",
+          "severity": "severity",
+          "statusDesc": "statusDesc",
+          "additionalStatus": [
+              {
+                  "addStatusCode": "addStatusCode",
+                  "addServerStatusCode": "addServerStatusCode",
+                  "addSeverity": "addSeverity",
+                  "addStatusDesc": "addStatusDesc"
+              }
+          ]
+      }
+  }
+}

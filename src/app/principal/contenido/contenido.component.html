@@ -1,0 +1,136 @@
+<div class="main-container">
+  <div id="container">
+    <div id="search-box">
+      <!--<button type="submit"><i class="fa fa-search" aria-hidden="true" (click)="activarEdicion()"></i></button>-->
+      <img class="search" src="../../../assets/media/Search Icon.svg" alt="">
+      <label for="search">
+        <input type="text" id="search" [ngModel]="model" (ngModelChange)="busqueda($event)" placeholder="Buscar ">
+      </label>
+    </div>
+
+    <div id="search-cont">
+      <p *ngIf="mostrarDatos" class="text-linea-credito">Línea de crédito general</p>
+      <div *ngIf="mostrarDatos" class="nuevo">
+      <!--
+        <label for="select">
+          <input type="checkbox" id="select" [ngModel]="mostrarDiv" (ngModelChange)="toogleDiv($event)">
+        </label>-->
+        <img class="tarjeta-linea" src="../../../assets/media/Banca Privada.svg" alt="">
+        <div class="credito">
+          <p class="text-disponible">Dinero disponible en MXN</p>
+          <ng-template #asteriscos>
+          <h2 class="linea-credito">****</h2>
+          </ng-template>
+          <ng-container *ngIf="mostrarLimite;else asteriscos">
+          <h2 class="linea-credito">{{limiteEmpresa | number:'1.2-2'}}</h2>
+          </ng-container>
+          <h2 class="tdc">TDC *4816</h2>
+          <div class="ver-detalles" (click)="mostrarAuthentication()">
+            <img [src]="mostrarLimite ? ' ../../../assets/media/VisibilityOff.svg' : '../../../assets/media/Ver.svg'" alt="Visibilizar">
+            <p class="text-menos">{{ mostrarLimite ? 'Ver menos': 'Ver detalles'}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--     <app-filtrado-area [area]="filtroarea" [datos]="datosareas"
+      (areaClick)="activarArea_user($event)" (infoClick)="infoArea($event)" [select]="select">
+    </app-filtrado-area> -->
+    <app-filtrado-subareas [filtroSubarea]="filtroSubarea" [showSubareas]="showSubareas"
+      (infoSubarea)="infoSubArea($event)" [select]="select">
+    </app-filtrado-subareas>
+    <app-filtrado-usuarios [usuarios]="filtro" [dataUser]="datosUsuarios" (numeroClick)="numeroClick($event)"
+      (infoUser)="infoUsuario($event)" [selectUser]="selectUser" [select]="select">
+    </app-filtrado-usuarios>
+    <app-filtrado-numero [numero]="filtronumero" [datosNumero]="datosnumero" (numeroClick)="numeroClick($event)"
+      [select]="select">
+    </app-filtrado-numero>
+    <app-modal-autenticacion [showAuthentication]="showAuthentication" (closeAuthentication)="closeAuthentication()"
+      (mostrarLimiteEmpresa)="mostrarLimiteEmpresa()">
+    </app-modal-autenticacion>
+    <app-modal-export [showModal]="muestraModal" (closeModal)="closeModal()" [selectUser]="selectUser"
+      [movimientosUser]="filtrarMes" [periodoInicial]="periodoInicial" [periodoFinal]="periodoFinal" (cargarMas)="cargarMas()"
+      [exportArea]="exportArea" [isSubarea]="isSubarea">
+    </app-modal-export>
+    <app-modal-export-area [showModalArea]="muestraModalArea" (closedModalArea)="closeModalArea()" [exportCreditoArea]="limiteCreditoArea"
+      [exportArea]="areaLimiteCredito">
+    </app-modal-export-area>
+    <app-modal-excedente-limite [showExcederLimite]="showExcedenteLimite" (cerrarExcederLimite)="cerrarExcederLimite()"></app-modal-excedente-limite>
+    <app-modal-editar-limite-credito [showEditarLimite]="showEditarLimite" (guardarNuevoLimite)="guardarNuevoLimite()" (closedLimite)="closedLimite()"
+      [obtenerLimite]="obtenerLimite" [limiteInicial]="limiteInicial" (tokenLimiteArea)="tokenLimiteArea()">
+    </app-modal-editar-limite-credito>
+    <app-moda-supertoken-limite-area [showTokenLimiteArea]="showTokenLimiteArea" (closedTokenArea)="closedTokenArea()" (guardarNuevoLimite)="guardarNuevoLimite()"
+      (comprobanteLimiteArea)="comprobanteLimiteArea()">
+    </app-moda-supertoken-limite-area>
+    <app-modal-comprobante-limite-area [showComprobanteLimiteArea]="showComprobanteLimiteArea" [limiteCreditoArea]="limiteCreditoArea" [obtenerLimite]="obtenerLimite"
+      [idArea]="idArea" [areaLimiteCredito]="areaLimiteCredito" [limiteInicial]="limiteInicial" (closedComprobante)="closedComprobante()">
+    </app-modal-comprobante-limite-area>
+    <app-modal-editar-limite-subarea [showEditarLimiteSub]="showEditarLimiteSub" (guardarNuevoLimiteSub)="guardarNuevoLimiteSub()"
+      (closedLimiteSub)="closedLimiteSub()" [limiteInicialSub]="limiteInicialSub" [obtenerLimiteSub]="obtenerLimiteSub" [creditoSub]="creditoSub" (tokenLimiteSubArea)="tokenLimiteSubArea()">
+    </app-modal-editar-limite-subarea>
+    <app-modal-supertoken-limite-subarea [showTokenLimiteSubarea]="showTokenLimiteSubarea" (closedTokenSubarea)="closedTokenSubarea()" (guardarNuevoLimiteSub)="guardarNuevoLimiteSub()"
+      (comprobanteLimiteSubarea)="comprobanteLimiteSubarea()">
+    </app-modal-supertoken-limite-subarea>
+    <app-modal-comprobante-limite-subarea [showComprobanteLimiteSubarea]="showComprobanteLimiteSubarea" (closedComprobanteSubarea)="closedComprobanteSubarea()" [idSubArea]="idSubArea" [creditoSub]="creditoSub"
+      [limitCreditoSub]="limitCreditoSub" [obtenerLimiteSub]="obtenerLimiteSub" [limiteInicialSub]="limiteInicialSub">
+    </app-modal-comprobante-limite-subarea>
+    <app-modal-editar-limite-empleado [showEditarLimiteEmp]="showEditarLimiteEmp" (guardarNuevoLimiteEmp)="guardarNuevoLimiteEmp()" (closedLimiteEmp)="closedLimiteEmp()"
+      [obtenerLimiteEmp]="obtenerLimiteEmp" [limiteCreditoUser]="limiteCreditoUser" (tokenLimiteEmp)="tokenLimiteEmp()" [limiteInicialEmp]="limiteInicialEmp"
+      [selectUser]="selectUser" [lmtCredito]="lmtCredito">
+    </app-modal-editar-limite-empleado>
+    <app-modal-supertoken-limite-empleado [showTokenLimiteEmp]="showTokenLimiteEmp" (closedTokenEmp)="closedTokenEmp()" (guardarNuevoLimiteEmp)="guardarNuevoLimiteEmp()"
+      (comprobanteLimiteEmp)="comprobanteLimiteEmp()">
+    </app-modal-supertoken-limite-empleado>
+    <app-modal-comprobante-limite-empleado [showComprobanteLimiteEmp]="showComprobanteLimiteEmp" (closedComprobanteEmp)="closedComprobanteEmp()" [selectUser]="selectUser"
+      [limiteCreditoUser]="limiteCreditoUser" [obtenerLimiteEmp]="obtenerLimiteEmp" [limiteInicialEmp]="limiteInicialEmp">
+    </app-modal-comprobante-limite-empleado>
+    <app-modal-export-subarea [showModalSubArea]="showModalSubArea" (closedModalSubArea)="closeModalSubArea()" [exportCreditoSubArea]="creditoSub"
+      [exportSubArea]="limitCreditoSub">
+    </app-modal-export-subarea>
+    <app-limitecredito-area [visibilityInfoArea]="mostrarInfo_por_area" [areaLimiteCredito]="areaLimiteCredito"
+      [limiteCredito]="limiteCreditoArea" (exportArea)="exportModalArea()" (solicitando)="tarjetasAdicionales()"
+      (regresarArea)="return()">
+    </app-limitecredito-area>
+    <app-limitecredito-subarea [showLimiteCreditoSub]="showLimiteCreditoSub" [limitCreditoSub]="limitCreditoSub"
+    (exportSub)="exportModalSubArea()" (return)="return()">
+    </app-limitecredito-subarea>
+    <app-limitecredito-usuarios [visibilityInfoUsuario]="mostrarInfo_por_usuario"  [selectUser]="selectUser"
+      [limiteCreditoPorUsuario]="limiteCreditoUser" (exportMovimientos)="exportMovimientos()" (return)="return()"
+      [droDisponible]="droDisponible">
+    </app-limitecredito-usuarios>
+  </div>
+
+  <!--SEGUNDA SECCIÓN-->
+  <div id="container-right">
+    <app-administracion-credito [visibility]="mostrarDiv" [userPorArea]="usuariosPorArea" (infoUser)="infoUsuario($event)"
+    [totalEmpleados]="totalEmpleados" (cargarMasAreas)="cargarAreas()" (infoClick)="infoArea($event)" (infoSubarea)="infoSubArea($event)">
+    </app-administracion-credito>
+    <app-limitecredito-area [limiteCredito]="limiteCreditoArea" [visibilityLimiteCreditoArea]="limiteCredito_area"
+      [limiteUsers]="limiteCreditoUsers" (irInfoUsuario)="infoUsuario($event)" [visibilityMasUsuarios]="muestraUsuarios"
+      [moreUsuarios]="masUsers" (masUsuarios)="cargarMasUsuarios()" (menosUsuarios)="ocultarUsuarios()"
+      (activarEdicion)="activarEdicionLimite($event)" [editandoLimiteCredito]="editandoLimiteCredito" [nuevoLimiteCredito]="nuevoLimite"
+      (mostrarEditarLimite)="mostrarEditarLimite($event)" (closedLimite)="closedLimite()" [areaLimiteCredito]="areaLimiteCredito">
+    </app-limitecredito-area>
+    <app-limitecredito-subarea  [showLimiteCredito]="showLimiteCredito" [limitCreditoSub]="limitCreditoSub"
+      [limiteCreditoUsers]="limiteCreditoUsers" (infoUsuario)="infoUsuario($event)"
+      (activarEdicion)="activarLimiteSub($event)" [editandoLimiteCredito]="editandoLimiteSub" [nuevoLimiteCredito]="nuevoLimiteSub"
+      (mostrarEditarLimite)="mostrarLimiteSub($event)">
+    </app-limitecredito-subarea>
+    <app-limitecredito-usuarios [visibilityLimitUser]="mostrarLimiteUsuario" [limitCreditUser]="limiteCreditoUser"
+      (activarLimiteEmp)="activarLimiteEmp($event)" [editandoLimiteEmp]="editandoLimiteEmp" [nuevoLimiteEmp]="nuevoLimiteEmp"
+      (mostrarLimiteEmp)="mostrarLimiteEmp($event)" [lmtCredito]="lmtCredito" [fchLimite]="fchLimite" [fchCorte]="fchCorte"
+      [droDisponible]="droDisponible" [sldGastado]="sldGastado" [lnaAsiganada]="lnaAsiganada" [pgoMinimo]="pgoMinimo">
+    </app-limitecredito-usuarios>
+    <app-movimientos-usuario [visibilityMovimientosUser]="mostrarMovimientosUsuario" [movimientosUsuarioMes]="filtrarMes"
+      (mesPasado)="cargarMesPasado()" (mesAnterior)="cargarMesAnterior()" (mesActual)="cargarMesActual()" [filtroPeriodo]="filtroPeriodo" [filtroMovimiento]="filtroMovimiento" (actualizarPeriodo)="actualizarPeriodo($event)" (actualizarMovimiento)="actualizarMovimiento($event)"
+      (aplicarFiltro)="updateMes()" (quitarFiltro)="updateFiltro()" (mesGastos)="mostrarNegativas()" (mesTodo)="mostrarTodo()"
+      (mesIngresos)="mostrarPositivas()" [visibilityMovimientos]="muestraMovimientos" [moreMovimientos]="masMovi"  (masMovimientos)="cargarMasMovimientos()"
+      (menosMovimientos)="ocultarMovimientos()" (cargarMas)="cargarMas()" [mostrarCargarMas]="mostrarCargarMas" [mostrarMas]="mostrarMas"
+      [mostrarFiltrado]="mostrarFiltrado">
+    </app-movimientos-usuario>
+    <app-usuarios-area [visibilityUserArea]="mostrar_area_user" [selectArea]="areaSeleccionada"
+      [selectUserArea]="usuariosAreaSeleccionada" (infoUser)="infoUsuario($event)" [subareaDeArea]="subareaDeArea" [usuariosSubArea]="usuariosSubArea"
+      [totalEmpleados]="totalEmpleados" (infoClick)="infoArea($event)" (infoSubarea)="infoSubArea($event)">
+    </app-usuarios-area>
+    <app-credito-tarjeta [visibilityTarjeta]="mostrar_notarjeta" [selectNumero]="numeroSeleccionado"></app-credito-tarjeta>
+  </div>
+</div>

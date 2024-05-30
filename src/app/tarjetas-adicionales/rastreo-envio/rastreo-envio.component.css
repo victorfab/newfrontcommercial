@@ -1,0 +1,140 @@
+.container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #D9D9D9;
+
+}
+.text-asignadas{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.text-tarjetas{
+  margin-left: 10px;
+  font-size: 26px;
+  font-weight: 700;
+}
+.button-asignar{
+  padding: 10px 22px;
+  border: 1px solid red;
+  color: red;
+  font-weight: 700;
+  background: transparent;
+  border-radius: 22px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.container-table{
+  width: 100%;
+  border: 1px solid #D9D9D9;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 2px 7px 2px 7px;
+  text-align: left;
+  font-size: 13px;
+}
+tr,th{
+  width: 25%;
+}
+
+.icon{
+  width: 5%;
+}
+.container-status{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8em;
+}
+.status{
+  display: flex;
+  align-items: center;
+}
+.first{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #63B468;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+}
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+}
+.secondRuta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #63B468;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+}
+.third{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #999;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+}
+.thirdEntregada{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #63B468;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+}
+.thirdNoEntregada{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #EC0000;
+  height:40px;
+  width:40px;
+  border-radius:50px;
+}
+#linea{
+  width: 5em;
+  border: 1.5px dashed #D9D9D9;
+  border-spacing: 0.5px;
+}
+#lineaCorrect{
+  width: 5em;
+  border: 1.5px dashed #63B468;
+  border-spacing: 0.5px;
+}
+#lineaNull{
+  width: 5em;
+  border: 1.5px dashed #EC0000;
+  border-spacing: 0.5px;
+}
+.aviso{
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.notificacion{
+  font-size: 14px;
+  color: #595959;
+  margin-top: 15px;
+}
+.nota{
+  color: red;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+}

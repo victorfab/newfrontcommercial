@@ -1,0 +1,5 @@
+@import '../node_modules/@ngx-mxflame/atoms/assets/styles/flame';
+@import '../src/styles.css';
+@include flame-theme();
+@include merge-digital-bank-light();
+@include legacy-santander-font();

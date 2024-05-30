@@ -1,0 +1,19 @@
+<div *ngIf="usuarios.length > 0 && dataUser"  class="box-usuarios">
+  <div  class="cont_title">
+    <p>Usuarios</p>
+  </div>
+  <div *ngFor="let usuario of usuarios" >
+    <div class="search-usuarios" [class.selected]="usuario.usuario === select">
+      <img src="../../assets/media/Banca Privada.svg" alt="Banca Privada">
+    <div id="info-usuarios">
+      <p>{{usuario.usuario | transformWord}}</p>
+      <h2>${{usuario.linea_asignada | number:'1.2-2'}}</h2>
+      <h3>{{usuario.puesto | transformWord}}</h3>
+    </div>
+    <div id="search_img">
+      <img (click)="infoUser.emit(usuario.usuario)" class="arrow" src="../../assets/media/Icon2.svg" alt="Arrow Right">
+    </div>
+    </div>
+  </div>
+</div>
+
